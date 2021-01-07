@@ -1,1 +1,4 @@
-<nav><pre><a href="https://wryyyyyyyy.github.io/docker/">Main page</a>                   <a href="https://wryyyyyyyy.github.io/docker/doc">Documentation</a>                      <a href="https://wryyyyyyyy.github.io/docker/research">Research</a>                    <a href="https://wryyyyyyyy.github.io/docker/contact">Contact us</a>                     <a href="https://wryyyyyyyy.github.io/docker/about">About us</a></pre></nav>
+---
+{% include vars.tpl %}
+---
+<nav><pre><a href="/">Main page</a>                   <a href="/doc">Documentation</a>                      <a href="/research">Research</a>                    <a href="/contact">Contact us</a>                     <a href="/about">About us</a></pre></nav>

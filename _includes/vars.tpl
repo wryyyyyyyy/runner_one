@@ -1,3 +1,3 @@
 {% assign owner="wryyyyyyyy" %}
-{% assign hosted="github.com" %}
+{% assign hosted="github.io" %}
 {% assign cpyear="2020 - 2021" %}
