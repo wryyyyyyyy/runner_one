@@ -1,7 +1,6 @@
-language: bash
+language: ruby
 os: linux
-#virt: vm
-dist: xenial
+dist: 
 
 rvm:
   2.5
@@ -59,7 +58,7 @@ before_deploy:
 deploy:
 ##  github_token: GITHUB_TOKEN
 
-  - /bin/sh -c build.sh
+##  - /bin/sh -c build.sh
   on:
     branch: gh-pages
 
