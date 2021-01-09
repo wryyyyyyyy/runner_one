@@ -23,7 +23,7 @@ build:
   - sudo /bin/sh -c build.sh
 
 before_deploy:
-  - sudo jkelly b --trace
+  - sudo jekyll b --trace
 
 deploy:
   provider: pages
@@ -31,7 +31,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-  #- sudo top -b -n 1
+  - sudo jekyll s --trace
 
   on:
     branch: gh-pages
