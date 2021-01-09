@@ -1,5 +1,5 @@
 {% include vars.tpl %}
-{% assign title="Home page" %}
+{% assign title="runner_one" %}
 <!doctype html>
 <html>
 <head>
