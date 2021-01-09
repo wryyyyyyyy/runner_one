@@ -25,8 +25,8 @@ jobs:
 
 deploy:
   working_directory: ./docs/_site
-    docker:
-    - image: circleci/ruby:2.5.0
+  docker:
+  - image: circleci/ruby:2.5.0
     steps:
     - checkout
 
