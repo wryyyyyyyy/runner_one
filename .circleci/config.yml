@@ -12,16 +12,13 @@ env:
 
 install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-  #- rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
 
 before_install:
-  #- ruby -v
   - gem update --system
   - gem --version
 
 build:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-  #- rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
   - sudo /bin/sh -c build.sh
 
 before_deploy:
@@ -29,11 +26,9 @@ before_deploy:
   - gem --version
 
 deploy:
-  #provider: pages
-  skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  keep_history: true
 
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
 
   on:
     branch: gh-pages
