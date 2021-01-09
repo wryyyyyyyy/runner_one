@@ -16,14 +16,16 @@ install:
 #  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
 
 before_install:
+  - ruby -v
   - gem update --system
   - gem --version
 
 build:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
   - sudo /bin/sh -c build.sh
 
 before_deploy:
-#  - sudo jekyll b --trace
   - gem update --system
   - gem --version
 
@@ -33,7 +35,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-  - sudo jekyll s --trace
+  - ruby -v
 
   on:
     branch: gh-pages
