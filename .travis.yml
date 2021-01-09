@@ -10,10 +10,10 @@ install:
   script: sudo apt-get update && sudo apt-get upgrade
 
 before_install:
-  script: sudo /bin/sh -c id
+  script: sudo w
 
-  rvm:
-    2.5
+rvm:
+  2.5
 
 
 build:
