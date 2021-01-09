@@ -3,23 +3,24 @@
 {% include header.tpl %}
 {% include navigation.tpl %}
 
+
 <nav>
 <ul class="main-menu">
 {% include pic.tpl %}
 </ul>
 </nav>
-
+{% include date.tpl %}
 <nav>
 <ul class="main-menu">
-<li><a href="#url">Blog</a></li>
-<li><a href="#url">Mail</a></li>
-<li><a href="#url">Chat</a></li>
+<ul>Blog</ul>
+<ul>Mail</ul>
+<ul>Chat</ul>
 </ul>
 </nav>
-
+{% include date.tpl %}
 <div class="w3-row">
 <div class="w3-col w3-container m4 l3 w3-yellow">
-
+{% include date.tpl %}
 </div>
 <div class="w3-col w3-container m8 l9">
 </br>
