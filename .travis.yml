@@ -1,7 +1,7 @@
 language: bash
 os: linux
 #virt: vm
-dist: precise
+#dist: precise
 
 rvm:
   2.5
@@ -14,7 +14,10 @@ install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jkelly
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
-#  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+
+before_install:
+  - gem update --system
+  - gem --version
 
 build:
   - sudo /bin/sh -c build.sh
@@ -28,7 +31,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-  - sudo top -b -n 1
+  #- sudo top -b -n 1
 
   on:
     branch: gh-pages
