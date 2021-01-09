@@ -23,7 +23,9 @@ build:
   - sudo /bin/sh -c build.sh
 
 before_deploy:
-  - sudo jekyll b --trace
+#  - sudo jekyll b --trace
+  - gem update --system
+  - gem --version
 
 deploy:
   provider: pages
