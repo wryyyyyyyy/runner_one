@@ -10,7 +10,7 @@ install:
   script: sudo apt-get update && sudo apt-get upgrade
 
 before_install:
-  script: sudo w
+  script: id
 
 rvm:
   2.5
