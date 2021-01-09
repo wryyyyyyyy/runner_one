@@ -1,38 +1,62 @@
-version: 2
-
-name: CI
-
-on:
-  push:
-    branches: [ gh-pages ]
-
-  pull_request:
-    branches: [ gh-pages ]
-
-  workflow_dispatch:
-
-rvm:
-  2.5
-
-env:
-  global:
-
-
-jobs:
-  test:
-    docker:
-      - image: python:3.7
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: pip install -r requirements.txt
-      - run:
-          name: Test
-          command: pytest
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - test
+{
+  "name": "CI",
+  "on": {
+    "push": {
+      "branches": [
+        "gh-pages"
+      ]
+    },
+    "pull_request": {
+      "branches": [
+        "gh-pages"
+      ]
+    },
+    "workflow_dispatch": null
+  },
+  "workflows": {
+    "version": 2,
+    "build": {
+      "jobs": [
+        "test"
+      ]
+    }
+  },
+  "language": "ruby",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "version": "2",
+  "rvm": [
+    "2.5"
+  ],
+  "env": {
+    "global": [
+      {}
+    ]
+  },
+  "jobs": {
+    "test": {
+      "docker": [
+        {
+          "image": "python:3.7"
+        }
+      ],
+      "steps": [
+        "checkout",
+        {
+          "run": {
+            "name": "Install dependencies",
+            "command": "pip install -r requirements.txt"
+          }
+        },
+        {
+          "run": {
+            "name": "Test",
+            "command": "pytest"
+          }
+        }
+      ]
+    }
+  }
+}
