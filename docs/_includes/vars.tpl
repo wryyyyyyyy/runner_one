@@ -1,4 +1,4 @@
 {% assign owner="wryyyyyyyy" %}
 {% assign hosted="github.io" %}
 {% assign cpyear={{ site.time | date: "%Y" }} %}
-{% assign siteurl={{ baseurl }} %}
+{% assign homeurl="https://wryyyyyyyy.github.io/runner_one/" %}
