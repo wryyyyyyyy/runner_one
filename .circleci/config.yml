@@ -10,11 +10,14 @@ env:
   global:
 
 jobs:
-  run:
-    name: somewhat
-    command: echo moo
+  build:
+    run:
+      name: somewhat
+      #command: echo moo
 
 install:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install what_you_mean
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 
 before_install:
@@ -32,7 +35,7 @@ before_deploy:
 deploy:
 ##  github_token: GITHUB_TOKEN
 
-## - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
 
   on:
     branch: gh-pages
