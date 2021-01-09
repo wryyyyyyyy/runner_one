@@ -10,7 +10,11 @@ install:
   script: sudo apt-get update && sudo apt-get upgrade
 
 before_install:
-  script: sudo /bin/sh -c whoami
+  script: sudo /bin/sh -c id
+
+  rvm:
+    2.5
+
 
 build:
   script: sudo /bin/sh -c build.sh
