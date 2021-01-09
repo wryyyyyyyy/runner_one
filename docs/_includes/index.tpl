@@ -1,5 +1,5 @@
 {% include vars.tpl %}
-{% assign page.title="index page" %}
+{% assign page.title="main page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="w3-row">
@@ -22,4 +22,6 @@
 </p>
 </div>
 </div>
+</br>
+</br>
 {% include footer.tpl %}
