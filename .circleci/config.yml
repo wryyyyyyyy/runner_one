@@ -1,39 +1,47 @@
+#!/usr/bin/env ruby2.5
 language: ruby
 os: linux
-dist:
+dist: xenial
 
 rvm:
   2.5
 
 env:
   global:
+    secure: j1Cd7pgx6JLX02LpXwBTxz9TQKaUyfdB9sjW78EpMQOhMwVgAXZX90KSDHVtEC07IVLBYbl5YTfIkLFNqfIHykFbXGGINJFTxxEZHOFJ2dYi7h4a5mGUK/MbTPQw8bNm08rymdECAwnc/zl/YpOlhkBSvxDyfOkhFBxX2v6kFwwVNJ5VIOyrSEbnN8ZfWgOqfpBn4oI+j8BBZOx5qPvEaL4GepNC6tE3B1FdLIOIIfwYYuutG8pyofbB9HC+0MyCOQILJXsG2uhRj2sCcfblXnzkONAdimjRii5lYbDUm4brcsOw91yp8HgbIQQ2thMFBOtOmeyTr6AhPI15gzd7kZPSNnYYfNJk2uq2nra1Ld/yiSDEzM9KLmCKhG96R0Hur63Ng68tSjBcON7VMaF056IjLTd975gES4PskoYtbwlyBPylvhTfJ7E8pSygqWqVr4XcZJ4GuAD7CnL3FJXUdrb6JEPONErSvjHmyX/LvrNM1GULlTz8Tk7duTX+XaIBwmm+Q4Sw6UAKzuPc2olf0vQBeDcx2ouzYLXjDl+ZfR1mDp8EN2giiSu1Cz0uqX492KjL8ukAmqhMEpFQdD5DLq7yeEZcYAjLGJs6y746guHkx3RmKueF6rYudvW+JsR+onvjEo2JpCiobsaIDdyqTUj0EYSjHjP3+bfqrpr++18=
+
+#########################
 
 jobs:
   build:
-    run:
-      name: "build1"
-      command: |
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
-          sudo jekyll cleanup
+     run:
+        name: "build1"
+        command: |
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+          - sudo jekyll cleanup
 
-    run:
-      name: "build2"
-      command: |
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
-        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
-        - sudo jekyll b --trace
+      run:
+        name: "build2"
+        command: |
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+          - sudo jekyll b --trace
+
+#########################
 
 test:
   run:
-    name: none1
+    name: test1
     command: gem update
+
   run:
-    name: none2
+    name: test2
     command: gem upgrade
 
+#########################
 
 install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install ext
@@ -46,19 +54,23 @@ before_install:
   - gem update --system
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
 
+#########################
 
 build:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S bundle install jekyll
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S bundle install liquid
+  on:
+    branch: gh-pages
 
-
+#########################
 
 before_deploy:
   - gem update --system
   - gem --version
 
 deploy:
-##  github_token: GITHUB_TOKEN
 
-##  - /bin/sh -c build.sh
   on:
     branch: gh-pages
 
