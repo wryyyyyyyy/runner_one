@@ -12,20 +12,38 @@ on:
 rvm:
   2.5
 
-#workflows:
-#  jobs:
-#    build:
-#      disallowed-key: true
-#      steps:
-#        - uses: actions/checkout@v2
-
-#        - name: Run a one-line script
-#          run: echo Hello, world!
-
-#        - name: Run a multi-line script
-#          run: |
-#            echo Add other actions to build,
-#            echo test, and deploy your project.
+# Original config.yml file:
+version: 2
+  jobs:
+    build:
+      working_directory: ~\/code
+      docker:
+        - image: circleci\/android:api-25-alpha
+      environment:
+        JVM_OPTS: -Xmx3200m
+      steps:
+        - checkout
+        - restore_cache:
+            key: jars-{{ checksum \"build.gradle\" }}-{{ checksum  \"app\/build.gradle\" }}
+        - run:
+            name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
+            command: sudo chmod +x .\/gradlew
+        - run:
+            name: Download Dependencies
+            command: .\/gradlew androidDependencies
+        - save_cache:
+            paths:
+            - ~\/.gradle
+            key: jars-{{ checksum \"build.gradle\" }}-{{ checksum  \"app\/build.gradle\" }}
+        - run:
+            name: Run Tests
+            command: .\/gradlew lint test
+        - store_artifacts:
+            path: app\/build\/reports
+            destination: reports
+        - store_test_results:
+            path: app\/build\/test-results
+        # See https:\/\/circleci.com\/docs\/2.0\/deployment-integrations\/ for deploy examples
 
 
 workflows:
