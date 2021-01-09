@@ -15,7 +15,7 @@ install:
   #- rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
 
 before_install:
-  - ruby -v
+  #- ruby -v
   - gem update --system
   - gem --version
 
@@ -34,7 +34,7 @@ deploy:
   #github_token: $GITHUB_TOKEN
   #keep_history: true
 
-  #- ruby -v
+  - gem --version
 
   on:
     branch: gh-pages
