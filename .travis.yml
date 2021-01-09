@@ -1,7 +1,7 @@
 language: bash
 os: linux
 #virt: vm
-#dist: xenial
+dist: precise
 
 rvm:
   2.5
