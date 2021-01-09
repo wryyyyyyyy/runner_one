@@ -1,7 +1,5 @@
----
-title: header
----
 {% include vars.tpl %}
+{{ assign title="Home page" }}
 <!doctype html>
 <html>
 <head>
