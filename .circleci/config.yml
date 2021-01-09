@@ -23,6 +23,26 @@ jobs:
             sudo apt-get -y install aptitude
 
 
+deploy:
+  working_directory: ./docs/_site
+    docker:
+    - image: circleci/ruby:2.5.0
+    steps:
+    - checkout
+
+    - run:
+        name: Installing deployment dependencies
+        working_directory: /
+        command: echo woo
+#          sudo apt-get -y -qq update
+#          sudo apt-get install python-pip python-dev build-essential
+#          sudo pip install awsebcli --upgrade
+
+    - run:
+        name: Deploying
+        command: echo deploy $CIRCLE_BRANCH-admin
+
+
 workflows:
   version: 2
   build:
