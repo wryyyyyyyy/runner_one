@@ -1,5 +1,9 @@
 # config.yml
 version: 2.1
+os: linux
+virt: vm
+
+
 jobs:
   main:
     machine: true
@@ -31,3 +35,10 @@ workflows:
 #                name: Deploy Over SSH
 #                command: |
 #                  ssh $SSH_USER@$SSH_HOST "<remote deploy command>"
+    on:
+      branch: gh-pages
+
+branches:
+  only:
+  - gh-pages
+  - "/.*/"
