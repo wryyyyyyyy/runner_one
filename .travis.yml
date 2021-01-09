@@ -10,11 +10,10 @@ install:
   script: sudo apt-get update && sudo apt-get upgrade
 
 before_install:
-  script: sudo /bin/sh -c whoami
+  script: echo moo
 
 build:
-  script:
-  - sudo /bin/sh -c build.sh
+  script: sudo /bin/sh -c build.sh
 
 deploy:
   provider: pages
