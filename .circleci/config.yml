@@ -29,7 +29,7 @@ workflows:
       - main:
           pre-steps:
             - run:
-                command: /bin/sh -c whoami
+                command: /bin/sh -v
           post-steps:
 #            - run:
 #                command: echo "build stage"
