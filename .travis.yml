@@ -10,8 +10,8 @@ env:
   global:
 
 
-install:
-  - sudo apt-get install perl5
+#install:
+#  - sudo apt-get install perl5
 
 #before_install:
 #  - sudo /bin/sh -c which perl && sudo perl -v
@@ -25,7 +25,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-  - sudo /bin/sh -c perl -v
+  #- sudo /bin/sh -c perl -v
 
   on:
     branch: gh-pages
