@@ -13,8 +13,8 @@ env:
 install:
   - sudo apt-get install perl5
 
-before_install:
-  - sudo /bin/sh -c which perl && sudo perl -v
+#before_install:
+#  - sudo /bin/sh -c which perl && sudo perl -v
 
 build:
   - sudo /bin/sh -c build.sh
