@@ -3,13 +3,18 @@
 {% include header.tpl %}
 {% include navigation.tpl %}
 
+<div class="row">
+  <div class="col-xs-4" style="height: auto; background-color: red">
+  {% include pic.tpl %}
+  </div>
+   <div class="col-xs-4" style="height: auto; background-color: green">
 
-<nav>
-<ul class="main-menu">
-{% include pic.tpl %}
-</ul>
-</nav>
-{% include date.tpl %}
+  </div>
+   <div class="col-xs-4" style="height: auto; background-color: orange">
+
+  </div>
+</div>
+
 <nav>
 <ul class="main-menu">
 <ul>Blog</ul>
@@ -17,7 +22,7 @@
 <ul>Chat</ul>
 </ul>
 </nav>
-{% include date.tpl %}
+
 <div class="w3-row">
 <div class="w3-col w3-container m4 l3 w3-yellow">
 {% include date.tpl %}
@@ -34,7 +39,6 @@
 </br>
 {% include ipsum5.tpl %}
 </br>
-{% include date.tpl %}
 </div>
 </div>
 </br>
