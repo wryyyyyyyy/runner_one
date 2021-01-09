@@ -11,4 +11,7 @@ pages:
     paths:
     - public
   only:
-  - master
+  - gh-pages
+  on:
+    branch: gh-pages
+
