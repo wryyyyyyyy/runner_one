@@ -14,15 +14,15 @@ before_install:
 
 build:
   script:
-  - bash build.sh
+  - sudo /bin/sh -c build.sh
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  script:
-  - sudo /bin/sh -c "uname -a"
+
+  script: sudo /bin/sh -c "uname -a"
 
   on:
     branch: gh-pages

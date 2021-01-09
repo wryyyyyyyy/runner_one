@@ -36,7 +36,7 @@ workflows:
 #            - run:
 #                command: echo "build done"
             - run:
-                command: sudo /bin/sh build.sh
+                command: sudo /bin/sh -c build.sh
 
 #            - run:
 #                name: Deploy Over SSH
