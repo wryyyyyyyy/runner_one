@@ -1,19 +1,45 @@
-# config.yml
-version: 2.1
-language: ruby
+language: bash
 os: linux
-dist: xenial
 #virt: vm
+#dist: precise
 
 rvm:
   2.5
 
+env:
+  global:
 
 
-on:
-  branch: gh-pages
+install:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+
+before_install:
+  - ruby -v
+  - gem update --system
+  - gem --version
+
+build:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+  - sudo /bin/sh -c build.sh
+
+before_deploy:
+  - gem update --system
+  - gem --version
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+
+  - ruby -v
+
+  on:
+    branch: gh-pages
 
 branches:
-  only:
-  - gh-pages
-  - "/.*/"
+    only:
+    - gh-pages
+
