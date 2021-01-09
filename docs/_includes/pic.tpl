@@ -1,1 +1,1 @@
-<img src="/assets/img/red-hat-openshift-vector-logo-small.png"></img>
+<img src="baseurl/assets/img/red-hat-openshift-vector-logo-small.png"></img>

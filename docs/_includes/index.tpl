@@ -1,7 +1,6 @@
 ---
 title: home
 ---
-
 {% include vars.tpl %}
 {% include header.tpl %}
 {% include navigation.tpl %}
