@@ -12,13 +12,29 @@ env:
 jobs:
   build:
     run:
-      name: "build"
+      name: "build1"
       command: |
-#        sudo jekyll cleanup
-#        sudo jekyll b --trace
-  test:
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+          sudo jekyll cleanup
+
     run:
-      name: none
+      name: "build2"
+        command: |
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+        - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+        - sudo jekyll b --trace
+
+test:
+  run:
+    name: none1
+    command: gem update
+  run:
+    name: none2
+    command: gem upgrade
+
 
 install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install ext
@@ -33,7 +49,7 @@ before_install:
 
 
 build:
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+
 
 
 before_deploy:
