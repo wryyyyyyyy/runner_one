@@ -2,7 +2,8 @@
 version: 2.1
 os: linux
 #virt: vm
-
+rvm:
+  2.5
 
 jobs:
   main:
