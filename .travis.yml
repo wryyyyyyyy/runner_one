@@ -10,13 +10,17 @@ env:
   global:
 
 
-nstall:
-  - sudo apt-get install perl5
+install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jkelly
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+#  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
 
 build:
   - sudo /bin/sh -c build.sh
+
+before_deploy:
+  - sudo jkelly b --trace
 
 deploy:
   provider: pages
@@ -24,11 +28,10 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-  #- sudo /bin/sh -c perl -v
+  - sudo top -b -n 1
 
   on:
     branch: gh-pages
-
 
 branches:
     only:
