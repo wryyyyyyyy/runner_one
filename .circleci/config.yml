@@ -12,24 +12,29 @@ env:
 jobs:
   build:
     run:
-      name: somewhat
-      #command: echo moo
+      name: "build"
+      command: |
+        sudo jekyll cleanup
+        sudo jekyll b --trace
   test:
     run:
       name: none
 
 install:
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install what_you_mean
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install ext
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
 
 before_install:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install what_you_mean
   - gem update --system
-  - gem --version
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jeykill
+
 
 build:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-  - sudo /bin/sh -c build.sh
+
 
 before_deploy:
   - gem update --system
@@ -38,8 +43,7 @@ before_deploy:
 deploy:
 ##  github_token: GITHUB_TOKEN
 
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
-
+  - /bin/sh -c build.sh
   on:
     branch: gh-pages
 
