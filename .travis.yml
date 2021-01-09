@@ -1,7 +1,7 @@
 language: bash
 os: linux
 #virt: vm
-dist: xenial
+#dist: xenial
 
 rvm:
   2.5
@@ -10,11 +10,10 @@ env:
   global:
 
 
-#install:
-#  - sudo apt-get install perl5
-
-#before_install:
-#  - sudo /bin/sh -c which perl && sudo perl -v
+nstall:
+  - sudo apt-get install perl5
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jkelly
 
 build:
   - sudo /bin/sh -c build.sh
