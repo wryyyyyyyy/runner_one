@@ -2,6 +2,7 @@
 version: 2.1
 os: linux
 #virt: vm
+dist: ubuntu
 rvm:
   2.5
 
@@ -20,8 +21,7 @@ jobs:
           command: |
             sudo apt-get -y install ddate
             sudo apt-get -y install aptitude
-#      - run:
-#          command: bash build.sh
+
 
 workflows:
   version: 2
