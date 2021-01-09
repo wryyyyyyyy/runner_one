@@ -1,7 +1,7 @@
 # config.yml
 version: 2.1
 os: linux
-virt: vm
+#virt: vm
 
 
 jobs:
@@ -12,11 +12,13 @@ jobs:
       - run:
           command: |
             sudo apt-get -y -qq update
-            sudo apt-get install build-essential
-            sudo apt-get upgrade
+            sudo apt-get -y install build-essential
+            sudo apt-get -y upgrade
 
-#      - run:
-#          command: echo "testing"
+      - run:
+          command: |
+            sudo apt-get -y install ddate
+            sudo apt-get -y install aptitude
 #      - run:
 #          command: bash build.sh
 
@@ -26,8 +28,8 @@ workflows:
     jobs:
       - main:
           pre-steps:
-#            - run:
-#                command: echo "prepared"
+            - run:
+                command: /bin/sh -c whoami
           post-steps:
 #            - run:
 #                command: echo "build stage"

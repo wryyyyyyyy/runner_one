@@ -1,7 +1,8 @@
 ---
-{% include vars.tpl %}
+title: home
 ---
 
+{% include vars.tpl %}
 {% include header.tpl %}
     {% include navigation.tpl %}
     <div class="w3-row">
