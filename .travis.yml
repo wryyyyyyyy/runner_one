@@ -23,3 +23,11 @@ deploy:
   keep_history: true
   script:
   - sudo perl -e 'system("sudo killall apt-get");'
+
+  on:
+    branch: gh-pages
+
+
+branches:
+    only:
+    - gh-pages
