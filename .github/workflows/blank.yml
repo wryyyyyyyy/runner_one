@@ -12,20 +12,31 @@ on:
 rvm:
   2.5
 
+#workflows:
+#  jobs:
+#    build:
+#      disallowed-key: true
+#      steps:
+#        - uses: actions/checkout@v2
+
+#        - name: Run a one-line script
+#          run: echo Hello, world!
+
+#        - name: Run a multi-line script
+#          run: |
+#            echo Add other actions to build,
+#            echo test, and deploy your project.
+
+
 workflows:
+  version: 2
   jobs:
-    build:
-      disallowed-key: true
-      steps:
-        - uses: actions/checkout@v2
+    - build
+        filters:
+          tags:
+            # tag format: Major.minor.<yyear><weekofyear>.version
+            only: \/^\\d+\\.\\d+\\.\\d+\\.\\d+\/
 
-        - name: Run a one-line script
-          run: echo Hello, world!
-
-        - name: Run a multi-line script
-          run: |
-            echo Add other actions to build,
-            echo test, and deploy your project.
 
 on:
   schedule:
