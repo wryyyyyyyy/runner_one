@@ -1,70 +1,17 @@
 # config.yml
 version: 2.1
+language: ruby
 os: linux
+dist: xenial
 #virt: vm
-#dist: ubuntu
+
 rvm:
   2.5
 
-jobs:
-  main:
-    machine: true
-    steps:
-      - checkout
-      - run:
-          command: |
-            sudo apt-get -y -qq update
-            sudo apt-get -y install build-essential
-            sudo apt-get -y upgrade
-
-#      - run:
-#          command: |
-#            sudo apt-get -y install ddate
-#            sudo apt-get -y install aptitude
 
 
-deploy:
-  #working_directory: ./docs/_site
-  #docker:
-  #- image: circleci/ruby:2.5.0
-  steps:
-  - checkout
-
-  - run:
-    name: Installing deployment dependencies
-#        working_directory: /
-#        command: echo woo
-#          sudo apt-get -y -qq update
-#          sudo apt-get install python-pip python-dev build-essential
-#          sudo pip install awsebcli --upgrade
-
-  - run:
-    name: Deploying
-#        command: echo deploy $CIRCLE_BRANCH-admin
-
-
-workflows:
-  version: 2
-  build:
-    jobs:
-      - main:
-          pre-steps:
-            - run:
-                #command: /bin/sh -v
-          post-steps:
-#            - run:
-#                command: echo "build stage"
-#            - run:
-#                command: echo "build done"
-            - run:
-                #command: sudo /bin/sh -c build.sh
-
-#            - run:
-#                name: Deploy Over SSH
-#                command: |
-#                  ssh $SSH_USER@$SSH_HOST "<remote deploy command>"
-        on:
-          branch: gh-pages
+on:
+  branch: gh-pages
 
 branches:
   only:
