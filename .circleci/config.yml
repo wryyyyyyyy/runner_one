@@ -1,7 +1,7 @@
 language: bash
 os: linux
 #virt: vm
-#dist: precise
+dist: xenial
 
 rvm:
   2.5
@@ -30,11 +30,10 @@ before_deploy:
 
 deploy:
   #provider: pages
-  #skip_cleanup: true
-  #github_token: $GITHUB_TOKEN
-  #keep_history: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
 
-  - gem --version
 
   on:
     branch: gh-pages
