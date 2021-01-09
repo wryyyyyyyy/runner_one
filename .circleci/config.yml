@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby2.5
 language: ruby
 os: linux
-dist: xenial
+#dist: xenial
 
 rvm:
   2.5
@@ -11,12 +11,8 @@ rvm:
 
 jobs:
   build:
-    name: "build1"
-    command: |
-
-
-    name: "build2"
-    command: |
+#    command:
+#    command:
 
 
 #########################
