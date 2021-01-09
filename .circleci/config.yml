@@ -9,6 +9,10 @@ rvm:
 env:
   global:
 
+jobs:
+  run:
+    name: somewhat
+    command: echo moo
 
 install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
@@ -26,9 +30,9 @@ before_deploy:
   - gem --version
 
 deploy:
-  github_token: $GITHUB_TOKEN
+##  github_token: GITHUB_TOKEN
 
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
+## - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install bundler
 
   on:
     branch: gh-pages
