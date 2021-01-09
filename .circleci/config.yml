@@ -14,32 +14,27 @@ env:
 
 jobs:
   build:
-     run:
-        name: "build1"
-        command: |
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
-          - sudo jekyll cleanup
+    name: "build1"
+    command: |
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+      - sudo jekyll cleanup
 
-      run:
-        name: "build2"
-        command: |
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
-          - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
-          - sudo jekyll b --trace
+    name: "build2"
+    command: |
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
+      - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
+      - sudo jekyll b --trace
 
 #########################
 
-test:
-  run:
-    name: test1
-    command: gem update
+test1:
+- gem update
 
-  run:
-    name: test2
-    command: gem upgrade
+test2:
+- gem upgrade
 
 #########################
 
@@ -69,7 +64,9 @@ before_deploy:
   - gem update --system
   - gem --version
 
+
 deploy:
+
 
   on:
     branch: gh-pages
