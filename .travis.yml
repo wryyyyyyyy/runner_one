@@ -12,7 +12,7 @@ env:
 
 install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jkelly
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jekyll
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install liquid
 
 before_install:
