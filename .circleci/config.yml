@@ -9,14 +9,19 @@ jobs:
     machine: true
     steps:
       - checkout
-#      - run:
-#          command: echo "building"
+      - run:
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install build-essential
+            sudo apt-get upgrade
+
 #      - run:
 #          command: echo "testing"
 #      - run:
 #          command: bash build.sh
 
 workflows:
+  version: 2
   build:
     jobs:
       - main:
@@ -29,7 +34,7 @@ workflows:
 #            - run:
 #                command: echo "build done"
             - run:
-                command: bash build.sh
+                command: sudo /bin/sh build.sh
 
 #            - run:
 #                name: Deploy Over SSH
