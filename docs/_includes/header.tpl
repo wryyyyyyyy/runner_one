@@ -1,4 +1,5 @@
 {% include vars.tpl %}
+{% assign page.title="header" %}
 <!doctype html>
 <html>
 <head>

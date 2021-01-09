@@ -14,8 +14,8 @@ jobs:
     run:
       name: "build"
       command: |
-        sudo jekyll cleanup
-        sudo jekyll b --trace
+#        sudo jekyll cleanup
+#        sudo jekyll b --trace
   test:
     run:
       name: none
@@ -29,7 +29,7 @@ install:
 before_install:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install what_you_mean
   - gem update --system
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install jeykill
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
 
 
 build:

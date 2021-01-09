@@ -1,40 +1,14 @@
-language: bash
-os: linux
+image: ruby:latest
 
-dist: xenial
+variables:
+  JEKYLL_ENV: production
 
-rvm:
-  2.5
-
-env:
-  global:
-
-
-install:
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-
-before_install:
-  - gem update --system
-  - gem --version
-
-build:
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem update
-  - sudo /bin/sh -c build.sh
-
-before_deploy:
-  - echo pooque
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-
-  -echo srenque
-
-  on:
-    branch: gh-pages
-
-branches:
-    only:
-    - gh-pages
+pages:
+  script:
+  - bundle install
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
