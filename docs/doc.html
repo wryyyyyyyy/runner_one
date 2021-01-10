@@ -1,4 +1,11 @@
 ---
-title: documentation
+title: documentation page
 ---
-{% include index.tpl %}
+
+{% include vars.tpl %}
+{% assign title={{ page.title }} %}
+{% include header.tpl %}
+{% include navigation.tpl %}
+{% include table.tpl %}
+{% include atom.tpl %}
+{% include footer.tpl %}
