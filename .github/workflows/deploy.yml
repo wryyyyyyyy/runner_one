@@ -27,6 +27,9 @@ jobs:
     # if dev brach is not the default branch
     # then you can specify the branch with 'ref'
     - name: Test
+    - uses:
+      with:
+
     - run: echo "TEST STAGE"
     #- uses: actions/checkout@v2
     # then setup nodejs on the machine
@@ -45,6 +48,9 @@ jobs:
 
     # Copy all files from the build folder to the master branch
     - name: Deploy
+    - uses:
+      with:
+
     - run: echo "DEPLOYMENT STAGE"
     #-  uses: actions/actions-gh-pages@v3
     #  with:
