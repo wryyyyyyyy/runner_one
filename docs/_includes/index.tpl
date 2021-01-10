@@ -1,21 +1,15 @@
-
-
-
-
-
 {% include vars.tpl %}
 {% assign page.title="main page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="row">
-<div class="col-xs-4" style="height: auto; background-color: none">
+<div class="col-xs-4" style="height: auto; background-color: green">
 <p>{% include pic.tpl %}</p>
 </div>
-<div class="col-xs-4" style="height: auto; background-color: none">
+<div class="col-xs-4" style="height: auto; background-color: grey">
 <p>{% include table.tpl %}</p>
 </div>
-<div class="col-xs-4" style="height: auto; background-color: none">
-<center><h5>{% include date.tpl %}</h5></center>
+<div class="col-xs-4" style="height: auto; background-color: red">
 </div>
 </div>
 <div class="w3-row">
