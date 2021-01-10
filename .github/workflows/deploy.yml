@@ -12,7 +12,7 @@ on:
 # Specifies what to run on the trigger
 jobs:
   deploy:
-#    runs-on: xenial
+    runs-on: ubuntu
     steps:
     # first we need to checkout the repo
     # if dev brach is not the default branch
