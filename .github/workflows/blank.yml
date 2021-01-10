@@ -41,12 +41,11 @@
   },
   "jobs": {
     "test": {
-        "working_directory": "."
 #      "docker": [
 #        {
 #          "image": "python:3.7"
 #        }
-      ],
+#      ],
       "steps": [
         "checkout",
         {
