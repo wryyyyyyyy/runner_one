@@ -1,13 +1,13 @@
 # Where things are
 source              : ./docs
-destination         : _site
-collections_dir     : _collection
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+destination         : ./docs_site
+collections_dir     : ./docs_collection
+plugins_dir         : ./docs_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : ./docs_layouts
+data_dir            : ./docs_data
+includes_dir        : ./docs_includes
 sass:
-  sass_dir:           _sass
+  sass_dir:           ./docs_sass
 collections:
   posts:
     output          : true
@@ -42,7 +42,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "{{ site.url }}" # does not include hostname
+baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
