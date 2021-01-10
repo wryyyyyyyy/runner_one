@@ -31,14 +31,14 @@
 #  ],
 #  "dist": "ubuntu",
 #  "version": "2",
-  "rvm": [
-    "2.5"
-  ],
-  "env": {
-    "global": [
-      {}
-    ]
-  },
+#  "rvm": [
+#    "2.5"
+#  ],
+#  "env": {
+#    "global": [
+#      {}
+#    ]
+#  },
   "jobs": {
     "test": {
 #      "docker": [
