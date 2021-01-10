@@ -29,7 +29,7 @@
   "os": [
     "linux"
   ],
-  "dist": "xenial",
+#  "dist": "ubuntu",
   "version": "2",
   "rvm": [
     "2.5"
