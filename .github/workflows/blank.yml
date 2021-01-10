@@ -26,9 +26,9 @@
 #    }
   },
 #  "language": "ruby",
-  "os": [
-    "linux"
-  ],
+#  "os": [
+#    "linux"
+#  ],
 #  "dist": "ubuntu",
   "version": "2",
   "rvm": [
