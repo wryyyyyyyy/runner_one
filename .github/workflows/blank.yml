@@ -46,21 +46,21 @@
 #          "image": "python:3.7"
 #        }
 #      ],
-      "steps": [
-        "checkout",
-        {
-          "run": {
-            "name": "Install dependencies",
+#      "steps": [
+#        "checkout",
+#        {
+#          "run": {
+#            "name": "Install dependencies",
 #            "command": "pip install -r requirements.txt"
-          }
-        },
-        {
-          "run": {
-            "name": "Test",
+#          }
+#        },
+#        {
+#          "run": {
+#            "name": "Test",
 #            "command": "pytest"
-          }
-        }
-      ]
+#          }
+#        }
+#      ]
     }
   }
 }
