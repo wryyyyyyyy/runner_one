@@ -1,1 +1,1 @@
-<center><h5>{{ date: "%HH:%MM:%SS" }}</h5></center>
+<center><h5>{{ date: "%Y" }}</h5></center>
