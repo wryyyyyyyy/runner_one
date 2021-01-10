@@ -30,7 +30,7 @@
 #    "linux"
 #  ],
 #  "dist": "ubuntu",
-  "version": "2",
+#  "version": "2",
   "rvm": [
     "2.5"
   ],
