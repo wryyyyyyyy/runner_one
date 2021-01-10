@@ -1,3 +1,8 @@
+
+
+
+
+
 {% include vars.tpl %}
 {% assign page.title="main page" %}
 {% include header.tpl %}
