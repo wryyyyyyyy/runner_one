@@ -7,27 +7,28 @@
   {% include pic.tpl %}
   </div>
    <div class="col-xs-4" style="height: auto; background-color: none">
-
+  {% include table.tpl %}
   </div>
    <div class="col-xs-4" style="height: auto; background-color: none">
-
+    <center><h5>{% include date.tpl %}</h5></center>
+    {% include atom.tpl %}
   </div>
 </div>
 <div class="w3-row">
 <div class="w3-col w3-container m4 l3 w3-yellow">
 </div>
 <div class="w3-col w3-container m8 l9">
-</br>
+<br>
 {% include ipsum1.tpl %}
-</br>
+<br>
 {% include ipsum2.tpl %}
-</br>
+<br>
 {% include ipsum3.tpl %}
-</br>
+<br>
 {% include ipsum4.tpl %}
-</br>
+<br>
 {% include ipsum5.tpl %}
-</br>
+<br>
 </div>
 </div>
 </br>
