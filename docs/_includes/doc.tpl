@@ -3,13 +3,13 @@
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="row">
-<div class="col-xs-4" style="height: auto; background-color: green">
+<div class="col-xs-4" style="height: auto; background-color: #aaa">
 <p>{% include pic.tpl %}</p>
 </div>
-<div class="col-xs-4" style="height: auto; background-color: grey">
+<div class="col-xs-4" style="height: auto; background-color: #bbb">
 <p>{% include table.tpl %}</p>
 </div>
-<div class="col-xs-4" style="height: auto; background-color: red">
+<div class="col-xs-4" style="height: auto; background-color: #ccc">
 </div>
 </div>
 <div class="w3-row">
