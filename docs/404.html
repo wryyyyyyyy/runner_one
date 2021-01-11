@@ -6,6 +6,6 @@ title: 404 page not found
 {% assign title={{ page.title }} %}
 {% include header.tpl %}
 <center><h3>{{ page.title }}</h3></center>
-<center><h4>{% include time.tpl %}</h4></center>
-<center><h5>{% include date.tpl</h5></center>
+<center><h4>{{ "now" | date: "%T" }}</h4></center>
+<center><h5>{{ "now" | date: "%Y" }}</h5></center>
 {% include footer.tpl %}
