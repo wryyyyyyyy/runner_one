@@ -9,26 +9,6 @@
 </head>
 <body>
 {% include navigation.tpl %}
-<div class="w3-row">
-<div class="w3-col w3-container m4 l3 w3-yellow">
-  {% include pic.tpl %}
-</div>
-<div class="w3-col w3-container m8 l9">
-  {% include pic.tpl %}
-</div>
-</div>
-
-{% highlight html %}
-
-<div class="w3-row">
-<div class="w3-col w3-container m4 l3 w3-yellow">
-  {% include pic.tpl %}
-</div>
-<div class="w3-col w3-container m8 l9">
-  {% include pic.tpl %}
-</div>
-</div>
-
-{% endhighlight %}
-
+<center><h3>{{ page.title }}</h3></center>
+<center><h4>{{ page.desription }}</h4></center>
 {% include footer.tpl %}
