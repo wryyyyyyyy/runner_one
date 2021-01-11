@@ -1,11 +1,5 @@
 ---
 permalink: /404.html
 title: 404 page not found
+layout: 404
 ---
-{% include vars.tpl %}
-{% assign title={{ page.title }} %}
-{% include header.tpl %}
-<center><h3>{{ page.title }}</h3></center>
-<center><h4>{{ "now" | date: "%T" }}</h4></center>
-<center><h5>{{ "now" | date: "%Y" }}</h5></center>
-{% include footer.tpl %}
