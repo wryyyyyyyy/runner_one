@@ -10,21 +10,5 @@
 </head>
 <body>
 {% include navigation.tpl %}
-
-<div class="row">
-  <div class="column">{% include ipsum1.tpl %}</div>
-  <div class="column">{% include ipsum2.tpl %}</div>
-  <div class="column">{% include ipsum3.tpl %}</div>
-</div>
-
-{% highlight html %}
-
-<div class="row">
-  <div class="column">1</div>
-  <div class="column">2</div>
-  <div class="column">3</div>
-</div>
-
-{% endhighlight %}
-
+<center><h3>{{ page.description }}</h3></center>
 {% include footer.tpl %}
