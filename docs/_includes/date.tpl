@@ -1,1 +1,1 @@
-{{ "now" | date: "%Y-%m-%d %H:%M" }}
+{{ "now" | date: "%Y" }}
