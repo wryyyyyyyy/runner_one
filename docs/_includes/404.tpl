@@ -3,5 +3,4 @@
 {% assign page.description="404 page not found" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
-{% include time.tpl %}
 {% include footer.tpl %}
