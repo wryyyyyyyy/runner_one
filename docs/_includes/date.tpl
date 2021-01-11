@@ -1,1 +1,1 @@
-{{ "" | date "%Y" }}
+{{ site.time | date_to_string }}
