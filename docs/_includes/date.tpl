@@ -1,1 +1,1 @@
-{{ site.time | date_to_string }}
+{{ "now" | date: "%Y-%m-%d %H:%M" }}
