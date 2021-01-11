@@ -1,13 +1,13 @@
 # Where things are
 source              : ./docs
-destination         : ./docs_site
-collections_dir     : ./docs_collection
-plugins_dir         : ./docs_plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : ./docs_layouts
-data_dir            : ./docs_data
-includes_dir        : ./docs_includes
+destination         : ./docs/_site
+collections_dir     : ./docs/_collection
+plugins_dir         : ./docs/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : ./docs/_layouts
+data_dir            : ./docs/_data
+includes_dir        : ./docs/_includes
 sass:
-  sass_dir:           ./docs_sass
+  sass_dir:           ./docs/_sass
 collections:
   posts:
     output          : true
@@ -42,7 +42,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "/runner_one" # does not include hostname
+baseurl             : "." # does not include hostname
 show_dir_listing    : false
 
 # Outputting

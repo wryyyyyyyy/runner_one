@@ -1,5 +1,4 @@
 {% include vars.tpl %}
-{% assign page.title="main page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="row">
@@ -17,19 +16,7 @@
 </div>
 <div class="w3-col w3-container m8 l9">
 <p>
-{% include ipsum1.tpl %}
-</p>
-<p>
-{% include ipsum2.tpl %}
-</p>
-<p>
-{% include ipsum3.tpl %}
-</p>
-<p>
-{% include ipsum4.tpl %}
-</p>
-<p>
-{% include ipsum5.tpl %}
+{{ content }}
 </p>
 </div>
 </div>
