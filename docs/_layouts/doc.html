@@ -6,10 +6,11 @@
 <meta charset="utf-8">
 <title>{{ page.title }}</title>
 <link rel="stylesheet" href="{{ homeurl }}assets/css/style.css">
+<link rel="stylesheet" href="{{ homeurl }}assets/css/layout.css">
 </head>
 <body>
 {% include navigation.tpl %}
-
+<center><h3>{{ page.description }}</h3></center>
 <div class="row">
   <div class="column">{% include ipsum1.tpl %}</div>
   <div class="column">{% include ipsum2.tpl %}</div>
