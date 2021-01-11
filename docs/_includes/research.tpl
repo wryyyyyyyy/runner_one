@@ -1,11 +1,12 @@
 {% include vars.tpl %}
+{% assign page.title="research page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="row">
 <div class="col-xs-4" style="height: auto; background-color: green">
-<p><h3>{{ page.description }}</h3></p>
+<p>{% include pic.tpl %}</p>
 </div>
-<div class="col-xs-4" style="height: auto; background-color: green">
+<div class="col-xs-4" style="height: auto; background-color: grey">
 <p>{% include table.tpl %}</p>
 </div>
 <div class="col-xs-4" style="height: auto; background-color: red">

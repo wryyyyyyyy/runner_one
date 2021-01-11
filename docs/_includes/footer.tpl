@@ -1,4 +1,4 @@
 {% include vars.tpl %}
-<center><pre>copyright &copy; {% include time_oneliner.tpl %} by <a href="{{ homeurl }}">{{ owner }}</a></pre></center>
+<center><pre>copyright &copy; <h5>{{ date: "%Y" }}</h5> by <a href="{{ homeurl }}">{{ owner }}</a></pre></center>
 </body>
 </html>
