@@ -1,3 +1,3 @@
 | CircleCI | TravisCI |
 | ------------ | ------------ |
-| ![CircleCI](https://circleci.com/gh/wryyyyyyyy/runner_one.svg?style=shield) | ![TravisCI](https://travis-ci.com/wryyyyyyyy/runner_one.svg) |
+| ![CircleCI](https://circleci.com/gh/wryyyyyyyy/runner_one.svg?style=shield) | ![GithubCI](https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg) |
