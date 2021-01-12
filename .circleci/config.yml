@@ -1,0 +1,33 @@
+version: 2.1
+language: ruby
+os: linux
+dist: xenial
+
+#################
+
+jobs:
+  main:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          command: echo "building"
+      - run:
+          command: echo "testing"
+
+##################
+
+workflows:
+  build:
+    jobs:
+      - main:
+          pre-steps:
+            - run:
+                command: echo "prepared"
+          post-steps:
+            - run:
+                command: echo "post-step"
+            - run:
+                command: bash build.sh
+
+
