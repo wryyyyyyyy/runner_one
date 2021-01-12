@@ -1,15 +1,10 @@
 name: deploy
 on: [push, pull_request]
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-#    - uses: ruby/setup-ruby@v1
-#      with:
-#        ruby-version: 2.5 # Not needed with a .ruby-version file
-#        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: sudo gem install bundler
     - run: bundle install
-#    - run: sudo gem update
     - run: cd docs && bundle exec jekyll b --trace #--watch --incremental
