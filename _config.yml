@@ -1,13 +1,13 @@
 # Where things are
-source              : ./docs
-destination         : ./docs/_site
-collections_dir     : ./docs/_collection
-plugins_dir         : ./docs/_plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : ./docs/_layouts
-data_dir            : ./docs/_data
-includes_dir        : ./docs/_includes
+source              : .
+destination         : _site
+collections_dir     : _collection
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
 sass:
-  sass_dir:           ./docs/_sass
+  sass_dir:           _sass
 collections:
   posts:
     output          : true
@@ -42,7 +42,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "." # does not include hostname
+baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
