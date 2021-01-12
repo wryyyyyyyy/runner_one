@@ -40,15 +40,20 @@ jobs:
           cd docs
           bundle exec jekyll b --trace
 
-  deploy:
-    needs: [build]
-    runs-on: ubuntu-latest
+        uses: './'
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: '${{ github.ref }}'
 
-    steps:
-      - uses: actions/checkout@v2
+#  deploy:
+#    needs: [build]
+#    runs-on: ubuntu-latest
 
-      - name: Pull
-        run: echo "pulled"
+#    steps:
+#      - uses: actions/checkout@v2
 
-      - name: Push
-        run: echo "pushed"
+#      - name: Pull
+#        run: echo "pulled"
+
+#      - name: Push
+#        run: echo "pushed"
