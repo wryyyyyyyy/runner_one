@@ -41,6 +41,7 @@ jobs:
           bundle exec jekyll b --trace
 
   deploy:
+    needs: [build]
     runs-on: ubuntu-latest
 
     steps:
