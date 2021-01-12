@@ -28,8 +28,8 @@ future              : false
 unpublished         : false
 
 # Plugins
-whitelist           : []
-plugins             : []
+#whitelist           : []
+#plugins             : []
 
 # Conversion
 markdown            : kramdown
@@ -71,3 +71,9 @@ kramdown:
   show_warnings     : false
 
 theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - github-pages
