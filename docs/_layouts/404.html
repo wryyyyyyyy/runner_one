@@ -11,5 +11,6 @@
 <body>
 {% include navigation.tpl %}
 <center><h3>{{ page.title }}</h3></center>
-<center><h4>{{ "now" | date: "%T" }}&nbsp;{{ "now" | date: "%Y" }}</h4></center>
+<center><h3>{{ page.description }}</h3></center>
+<center><h5>{{ "now" | date: "%T" }}&nbsp;{{ "now" | date: "%Y" }}</h5></center>
 {% include footer.tpl %}
