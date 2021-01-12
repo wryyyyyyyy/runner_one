@@ -10,6 +10,6 @@ jobs:
 #        ruby-version: 2.5 # Not needed with a .ruby-version file
 #        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: sudo gem install bundler
-    - run: sudo gem update
     - run: sudo gem install jekyll
+    - run: sudo gem update
     - run: cd docs && jekyll b --trace #--watch --incremental
