@@ -15,7 +15,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  test:
+  #test:
     #runs-on: ubuntu-latest
 
   # This workflow contains a single job called "build"
@@ -41,10 +41,16 @@ jobs:
           bundle exec jekyll b --trace
 
   deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: "$GITHUB_TOKEN"
-    save_history: true
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pull
+        run: echo "pulled"
+
+      - name: Push
+        run: echo "pushed"
 
     on:
       branch: gh-pages
