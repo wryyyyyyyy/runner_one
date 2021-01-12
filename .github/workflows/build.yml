@@ -51,6 +51,3 @@ jobs:
 
       - name: Push
         run: echo "pushed"
-
-    on:
-      branch: gh-pages
