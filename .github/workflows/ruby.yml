@@ -11,4 +11,4 @@ jobs:
 #        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: sudo gem install bundler
     - run: sudo gem install jekyll
-    - run: sudo bundle exec jekyll b --trace
+    - run: jekyll b --trace
