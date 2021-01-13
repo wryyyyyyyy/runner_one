@@ -1,16 +1,14 @@
-{% include vars.tpl %}
 <!doctype html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title>{{ page.title }}</title>
-<link rel="stylesheet" href="{{ homeurl }}/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 {% feed_meta %}
 {% seo %}
 </head>
 <body>
 {% include navigation.tpl %}
-<center><h3>{{ page.description }}</h3></center>
-{% include table.tpl %}
+{{ content }}
 {% include footer.tpl %}
