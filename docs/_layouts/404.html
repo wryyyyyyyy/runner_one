@@ -5,10 +5,12 @@
 <meta charset="utf-8">
 <title>{{ page.title }}</title>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+{% feed_meta %}
+{% seo %}
 </head>
 <body>
 {% include navigation.tpl %}
 <center><h3>{{ page.title }}</h3></center>
 <center><h3>{{ page.description }}</h3></center>
-<center><h5>{{ "now" | date: "%T" }}&nbsp;{{ "now" | date: "%Y" }}</h5></center>
+<center><pre>{{ "now" | date: "%T" }}&nbsp;{{ "now" | date: "%Y" }}</pre></center>
 {% include footer.tpl %}
