@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/about.html</loc>
+<loc>/runner_one/about.html</loc>
 </url>
 <url>
-<loc>/contact.html</loc>
+<loc>/runner_one/contact.html</loc>
 </url>
 <url>
-<loc>/doc.html</loc>
+<loc>/runner_one/doc.html</loc>
 </url>
 <url>
-<loc>/</loc>
+<loc>/runner_one/</loc>
 </url>
 <url>
-<loc>/research.html</loc>
+<loc>/runner_one/research.html</loc>
 </url>
 </urlset>
