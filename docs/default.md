@@ -1,11 +1,11 @@
 ---
-permalink: /index.html
-title: Main
-layout: index
-description: Main page
+permalink: /default.html
+title: Default
+layout: default
+description: Default page
 ---
 
-### Main page
+### Default page
 
 Just a kind of some starter project for [Github Actions](https://github.com/wryyyyyyyy/runner_one/actions) testing purposes.
 Can be labelled as template for future projects including [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages) uses [Jekyll](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll) as
