@@ -54,7 +54,7 @@ Produced rendered default pages over <a href="https://docs.github.com/en/free-pr
           <span class="s">cd docs</span>
           <span class="s">bundle exec jekyll b --trace</span>
           <span class="s">date &gt; generated.txt</span>
-          <span class="s">git log -1 &gt; log.txt</span>
+          <span class="s">git log -1 &gt; _posts/`git log -1 --format='%H'`.md</span>
           <span class="s">git config user.name github-actions</span>
           <span class="s">git config user.email github-actions@github.com</span>
           <span class="s">git add .</span>
