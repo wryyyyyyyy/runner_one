@@ -21,9 +21,14 @@
 <body>
 <nav><pre><center><a href="/runner_one/">Main</a>                          <a href="/runner_one/about">About</a>                          <a href="/runner_one/notes">Notes</a>                          <a href="/runner_one/logs">Logs</a>                          <a href="/runner_one/status">Status</a></center></pre></nav>
 
-<h2 id="build-logs-sample">Build logs sample</h2>
+<h3 id="build-logs-sample">Build logs sample</h3>
 
-<h3 id="set-up-job">Set up job</h3>
+<blockquote>
+
+  <h4 id="set-up-job">Set up job</h4>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Current runner version: <span class="s1">'2.275.1'</span>
 Operating System
   Ubuntu
@@ -38,8 +43,12 @@ Prepare all required actions
 Getting action download info
 Download action repository <span class="s1">'actions/checkout@v2'</span>
 </code></pre></div></div>
+<blockquote>
 
-<h3 id="run-actionscheckoutv2">Run actions/checkout@v2</h3>
+  <h4 id="run-actionscheckoutv2">Run actions/checkout@v2</h4>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run actions/checkout@v2
   with:
     fetch-depth: 0
@@ -494,8 +503,12 @@ Checking out the ref
 /usr/bin/git log <span class="nt">-1</span> <span class="nt">--format</span><span class="o">=</span><span class="s1">'%H'</span>
 <span class="s1">'686796df6b3a8cd48f8a41a62512ee5c99ce608f'</span>
 </code></pre></div></div>
+<blockquote>
 
-<h3 id="install-bundler">Install bundler</h3>
+  <h3 id="install-bundler">Install bundler</h3>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run <span class="nb">sudo </span>gem <span class="nb">install </span>bundler
   <span class="nb">sudo </span>gem <span class="nb">install </span>bundler
   bundle <span class="nb">install
@@ -727,8 +740,12 @@ See html-pipeline README.md <span class="k">for </span>more details.
 https://github.com/jch/html-pipeline#dependencies
 <span class="nt">-------------------------------------------------</span>
 </code></pre></div></div>
+<blockquote>
 
-<h3 id="build-site">Build site</h3>
+  <h3 id="build-site">Build site</h3>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run <span class="nb">cd </span>docs
   <span class="nb">cd </span>docs
   bundle <span class="nb">exec </span>jekyll b <span class="nt">--trace</span>
@@ -753,8 +770,12 @@ Configuration file: /home/runner/work/runner_one/runner_one/docs/_config.yml
 To https://github.com/wryyyyyyyy/runner_one
    ecc1a61..b46534e  gh-pages -&gt; gh-pages
 </code></pre></div></div>
+<blockquote>
 
-<h3 id="post-run-actionscheckoutv2">Post run actions/checkout@v2</h3>
+  <h3 id="post-run-actionscheckoutv2">Post run actions/checkout@v2</h3>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Post job cleanup.
 /usr/bin/git version
 git version 2.29.2
@@ -765,8 +786,12 @@ http.https://github.com/.extraheader
 /usr/bin/git config <span class="nt">--local</span> <span class="nt">--unset-all</span> http.https://github.com/.extraheader
 /usr/bin/git submodule foreach <span class="nt">--recursive</span> git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> <span class="s1">'http\.https\:\/\/github\.com\/\.extraheader'</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--local</span> <span class="nt">--unset-all</span> <span class="s1">'http.https://github.com/.extraheader'</span> <span class="o">||</span> :
 </code></pre></div></div>
+<blockquote>
 
-<h3 id="complete-job">Complete job</h3>
+  <h3 id="complete-job">Complete job</h3>
+
+</blockquote>
+
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cleaning up orphan processes
 </code></pre></div></div>
 
