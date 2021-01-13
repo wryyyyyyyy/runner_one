@@ -7,6 +7,6 @@ description: Notes page
 
 ### Notes page
 
-[Last build timestamp](https://wryyyyyyyy.github.io/runner_one/generated.txt)
+[Last commit timestamp](https://wryyyyyyyy.github.io/runner_one/log.txt)
 
-[Last build log](https://wryyyyyyyy.github.io/runner_one/log.txt)
+[Last build timestamp](https://wryyyyyyyy.github.io/runner_one/generated.txt)
