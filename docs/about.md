@@ -7,25 +7,7 @@ description: About page
 
 ### About CI build process
 
-<ul>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-##### Posts: {{ site.posts }}
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
->
->
->
+{% include posts.tpl %}
 
 <table>
   <thead>
