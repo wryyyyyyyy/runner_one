@@ -24,12 +24,12 @@ jobs:
           cd docs
           export logdata=`date '+%Y-%m-%d'`
           export logfile=`git log -1 --format='%H'`
-          echo "---" > ./_posts/$logdata-$logfile.md
-          echo title: "$logfile" >> ./_posts/$logdata-$logfile.md
-          echo layout: post >> ./_posts/$logdata-$logfile.md
-          echo "---" >> ./_posts/$logdata-$logfile.md
-          echo "" >> ./_posts/$logdata-$logfile.md
-          git log -1 >> ./_posts/$logdata-$logfile.md
+          echo "---" > ./_posts/$logdata-commit-$logfile.md
+          echo title: "$logfile" >> ./_posts/$logdata-commit-$logfile.md
+          echo layout: post >> ./_posts/$logdata-commit-$logfile.md
+          echo "---" >> ./_posts/$logdata-commit-$logfile.md
+          echo "" >> ./_posts/$logdata-commit-$logfile.md
+          git log -1 >> ./_posts/$logdata-commit-$logfile.md
           bundle exec jekyll b --trace
           date > generated.txt
           git config user.name github-actions

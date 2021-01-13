@@ -1,9 +1,7 @@
-<p>
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ page.url }}">{{ page.title }} at {{ site.baseurl }}</a>
     </li>
   {% endfor %}
 </ul>
-</p>
