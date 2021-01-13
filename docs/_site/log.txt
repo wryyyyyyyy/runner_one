@@ -1,6 +1,0 @@
-commit ffdc4569417452693e579bcf13f1b434e66a7b24
-Merge: 547aa1c d75c4ca
-Author: wryyyyyyyy <no@spam.here>
-Date:   Wed Jan 13 21:19:34 2021 +0100
-
-    Merge branch 'gh-pages' of github.com:wryyyyyyyy/runner_one into gh-pages
