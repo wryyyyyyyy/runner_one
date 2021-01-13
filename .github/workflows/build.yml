@@ -23,7 +23,8 @@ jobs:
         run: |
           cd docs
           export logfile=`git log -1 --format='%H'`.md
-          git log -1 > ./_posts/$logfile
+          echo "---\n---\n" > ./_posts/$logfile
+          git log -1 >> ./_posts/$logfile
           bundle exec jekyll b --trace
           date > generated.txt
           git config user.name github-actions
