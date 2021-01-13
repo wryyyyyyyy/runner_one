@@ -7,10 +7,10 @@ description: Main page
 
 ### Main page
 
-Just a kind of some starter project for | [Github Actions](https://github.com/wryyyyyyyy/runner_one/actions) | testing purposes.
-Can be labelled as template for future projects including | [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages) | uses | [Jekyll](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll) | as
+Just a kind of some starter project for [Github Actions](https://github.com/wryyyyyyyy/runner_one/actions) testing purposes.
+Can be labelled as template for future projects including [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages) uses [Jekyll](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll) as
 static site generator.
-Produced rendered default pages over | [CI workflow](https://docs.github.com/en/free-pro-team@latest/actions/guides/setting-up-continuous-integration-using-workflow-templates) |
+Produced rendered default pages over [CI workflow](https://docs.github.com/en/free-pro-team@latest/actions/guides/setting-up-continuous-integration-using-workflow-templates)
 
 ```yaml
 name: CI
