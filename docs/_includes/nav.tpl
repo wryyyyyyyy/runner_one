@@ -1,1 +1,1 @@
-| -[Main]({{ site.baseurl }}/)Main- | -[About]({{ site.baseurl }}/about)About- | -[Notes]({{ site.baseurl }}/notes)Notes- | -[Logs]({{ site.baseurl }}/logs)Logs- | -[Status]({{ site.baseurl }}/status)Status- |
+| [Main]({{ site.baseurl }}/) | [About]({{ site.baseurl }}/about) | [Notes]({{ site.baseurl }}/notes) | [Logs]({{ site.baseurl }}/logs) | [Status]({{ site.baseurl }}/status) |
