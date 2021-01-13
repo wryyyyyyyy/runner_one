@@ -1,0 +1,1 @@
+| -[Main]({{ site.baseurl }}/)Main- | -[About]({{ site.baseurl }}/about)About- | -[Notes]({{ site.baseurl }}/notes)Notes- | -[Logs]({{ site.baseurl }}/logs)Logs- | -[Status]({{ site.baseurl }}/status)Status- |
