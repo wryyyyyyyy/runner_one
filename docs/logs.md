@@ -721,6 +721,7 @@ Run cd docs
   cd docs
   bundle exec jekyll b --trace
   date > generated.txt
+  git log -1 > log.txt
   git config user.name github-actions
   git config user.email github-actions@github.com
   git add .
@@ -733,12 +734,12 @@ Configuration file: /home/runner/work/runner_one/runner_one/docs/_config.yml
  Incremental build: disabled. Enable with --incremental
       Generating...
        Jekyll Feed: Generating feed for posts
-                    done in 0.268 seconds.
+                    done in 0.254 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
-[gh-pages fd84745] generated
- 4 files changed, 4 insertions(+), 4 deletions(-)
+[gh-pages b46534e] generated
+ 6 files changed, 15 insertions(+), 15 deletions(-)
 To https://github.com/wryyyyyyyy/runner_one
-   686796d..fd84745  gh-pages -> gh-pages
+   ecc1a61..b46534e  gh-pages -> gh-pages
 ```
 
 ### Post run actions/checkout@v2
