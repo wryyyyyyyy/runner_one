@@ -8,3 +8,5 @@ description: Notes page
 ### Notes page
 
 [Last build timestamp](https://wryyyyyyyy.github.io/runner_one/generated.txt)
+
+[Last build log](https://wryyyyyyyy.github.io/runner_one/log.txt)

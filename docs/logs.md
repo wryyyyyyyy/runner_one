@@ -5,9 +5,9 @@ layout: default
 description: Logs page
 ---
 
-### Logs page
+# Build logs sample
 
-#### Set up job
+### Set up job
 ```
 Current runner version: '2.275.1'
 Operating System
@@ -24,7 +24,7 @@ Getting action download info
 Download action repository 'actions/checkout@v2'
 ```
 
-#### Run actions/checkout@v2
+### Run actions/checkout@v2
 ```
 Run actions/checkout@v2
   with:
@@ -481,7 +481,7 @@ Checking out the ref
 '686796df6b3a8cd48f8a41a62512ee5c99ce608f'
 ```
 
-#### Install bundler
+### Install bundler
 ```
 Run sudo gem install bundler
   sudo gem install bundler
@@ -715,7 +715,7 @@ https://github.com/jch/html-pipeline#dependencies
 -------------------------------------------------
 ```
 
-#### Build site
+### Build site
 ```
 Run cd docs
   cd docs
@@ -741,7 +741,7 @@ To https://github.com/wryyyyyyyy/runner_one
    686796d..fd84745  gh-pages -> gh-pages
 ```
 
-#### Post run actions/checkout@v2
+### Post run actions/checkout@v2
 ```
 Post job cleanup.
 /usr/bin/git version
@@ -754,7 +754,7 @@ http.https://github.com/.extraheader
 /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
 ```
 
-#### Complete job
+### Complete job
 ```
 Cleaning up orphan processes
 ```
