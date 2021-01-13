@@ -8,7 +8,7 @@ description: Logs page
 ## Build logs sample
 
 ### Set up job
-```
+```shell
 Current runner version: '2.275.1'
 Operating System
   Ubuntu
@@ -25,7 +25,7 @@ Download action repository 'actions/checkout@v2'
 ```
 
 ### Run actions/checkout@v2
-```
+```shell
 Run actions/checkout@v2
   with:
     fetch-depth: 0
@@ -482,7 +482,7 @@ Checking out the ref
 ```
 
 ### Install bundler
-```
+```shell
 Run sudo gem install bundler
   sudo gem install bundler
   bundle install
@@ -716,7 +716,7 @@ https://github.com/jch/html-pipeline#dependencies
 ```
 
 ### Build site
-```
+```shell
 Run cd docs
   cd docs
   bundle exec jekyll b --trace
@@ -743,7 +743,7 @@ To https://github.com/wryyyyyyyy/runner_one
 ```
 
 ### Post run actions/checkout@v2
-```
+```shell
 Post job cleanup.
 /usr/bin/git version
 git version 2.29.2
@@ -756,6 +756,6 @@ http.https://github.com/.extraheader
 ```
 
 ### Complete job
-```
+```shell
 Cleaning up orphan processes
 ```
