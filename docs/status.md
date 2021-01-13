@@ -11,7 +11,7 @@ description: Status page
 <table>
   <thead>
     <tr>
-      <th><center>Test</th>
+      <th><center>Test</center></th>
       <th><center>CI</center></th>
       <th><center>Deployment</center></th>
     </tr>
