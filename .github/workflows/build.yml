@@ -24,8 +24,8 @@ jobs:
           cd docs
           export logfile=`git log -1 --format='%H'`.md
           cd _posts
-          touch $logfile
-          git log -1 > $logfile
+          sudo touch $logfile
+          sudo git log -1 > $logfile
           cd ..
           bundle exec jekyll b --trace
           date > generated.txt
