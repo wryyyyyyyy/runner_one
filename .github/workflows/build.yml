@@ -28,6 +28,7 @@ jobs:
           echo title: "$logfile" >> ./_posts/$logdata-$logfile.md
           echo layout: post >> ./_posts/$logdata-$logfile.md
           echo "---" >> ./_posts/$logdata-$logfile.md
+          echo "" >> ./_posts/$logdata-$logfile.md
           git log -1 >> ./_posts/$logdata-$logfile.md
           bundle exec jekyll b --trace
           date > generated.txt
