@@ -3,13 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<title>{{ page.title }}</title>
+<title>{{ page.title }} | {{ page.description }}</title>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-{% feed_meta %}
-{% seo %}
 </head>
 <body>
-<center><h3>{{ page.title }}</h3></center>
-<center><h3>{{ page.description }}</h3></center>
+<center><h1>{{ page.title }} | {{ page.description }}</h1></center>
 <center>{{ "now" | date: "%T" }}&nbsp;{{ "now" | date: "%Y" }}</center>
 {% include footer.tpl %}
