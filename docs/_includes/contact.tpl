@@ -1,4 +1,3 @@
-{% include vars.tpl %}
 {% assign page.title="contact page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}
