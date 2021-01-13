@@ -48,7 +48,6 @@ show_dir_listing    : false
 # Outputting
 permalink           : date
 paginate_path       : /page:num
-paginate            : 5
 timezone            : null
 
 quiet               : false
@@ -77,5 +76,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
+#  - jekyll-paginate
   - github-pages

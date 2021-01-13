@@ -19,17 +19,22 @@ jobs:
           sudo gem install bundler
           bundle install
 
+      - name: Prepare post
+        run: |
+          export logdata=`date '+%Y-%m-%d'`
+          export logfile=`git log -1 --format='%H'`
+          echo "---" > docs//_posts/$logdata-commit-$logfile.md
+          echo "layout: post" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "title: $logfile" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "published: true" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "tags: commit post" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "---" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "" >> docs/_posts/$logdata-commit-$logfile.md
+          git log -1 >> docs/_posts/$logdata-commit-$logfile.md
+
       - name: Build site
         run: |
           cd docs
-          export logdata=`date '+%Y-%m-%d'`
-          export logfile=`git log -1 --format='%H'`
-          echo "---" > ./_posts/$logdata-commit-$logfile.md
-          echo title: "$logfile" >> ./_posts/$logdata-commit-$logfile.md
-          echo layout: post >> ./_posts/$logdata-commit-$logfile.md
-          echo "---" >> ./_posts/$logdata-commit-$logfile.md
-          echo "" >> ./_posts/$logdata-commit-$logfile.md
-          git log -1 >> ./_posts/$logdata-commit-$logfile.md
           bundle exec jekyll b --trace
           date > generated.txt
           git config user.name github-actions
