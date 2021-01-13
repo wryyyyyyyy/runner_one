@@ -7,4 +7,4 @@ description: Notes page
 
 ### Notes page
 
-Just a template for current page. Placeholder. Should be changed later.
+[Last build timestamp](https://wryyyyyyyy.github.io/runner_one/generated.txt)
