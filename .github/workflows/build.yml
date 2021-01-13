@@ -21,9 +21,12 @@ jobs:
 
       - name: Build site
         run: |
+          pwd
           cd docs
+          pwd
           export logfile=`git log -1 --format='%H'`.md
-          touch _posts/$logfile
+          pwd
+          touch ./_posts/$logfile
           git log -1 > _posts/$logfile
           bundle exec jekyll b --trace
           date > generated.txt
