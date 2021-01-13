@@ -1,4 +1,3 @@
-{% include vars.tpl %}
 {% assign page.title="research page" %}
 {% include header.tpl %}
 {% include navigation.tpl %}

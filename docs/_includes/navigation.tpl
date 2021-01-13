@@ -1,2 +1,1 @@
-{% include vars.tpl %}
-<nav><pre><a href="{{ homeurl }}">Main page</a>                   <a href="{{ homeurl }}doc">Documentation</a>                      <a href="{{ homeurl }}research">Research</a>                    <a href="{{ homeurl }}contact">Contact us</a>                     <a href="{{ homeurl }}about">About us</a></pre></nav>
+<nav><pre><a href="{{ site.baseurl }}">Main page</a>                   <a href="{{ site.baseurl }}doc">Documentation</a>                      <a href="{{ site.baseurl }}research">Research</a>                    <a href="{{ site.baseurl }}contact">Contact us</a>                     <a href="{{ site.baseurl }}about">About us</a></pre></nav>

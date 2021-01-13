@@ -4,11 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title>{{ page.title }}</title>
-<link rel="stylesheet" href="{{ baseurl }}/assets/css/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 {% feed_meta %}
 {% seo %}
 </head>
 <body>
 {% include navigation.tpl %}
-{{ site.url }}{{ site.baseurl }}
+{{ content }}
 {% include footer.tpl %}

@@ -1,4 +1,3 @@
-{% include vars.tpl %}
 {% include header.tpl %}
 {% include navigation.tpl %}
 <div class="row">
