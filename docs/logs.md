@@ -5,7 +5,7 @@ layout: default
 description: Logs page
 ---
 
-# Build logs sample
+## Build logs sample
 
 ### Set up job
 ```
