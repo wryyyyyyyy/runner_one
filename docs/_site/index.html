@@ -23,7 +23,44 @@
 
 <h3 id="main-page">Main page</h3>
 
-<p>Just a template for current page. Placeholder. Should be changed later.</p>
+<p>Just a kind of some starter project for <a href="https://github.com/wryyyyyyyy/runner_one/actions">Github Actions</a> testing purposes.
+Can be labelled as template for future projects including [Github Pages] (https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages) uses <a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">Jekyll</a> as
+static site generator. Produced rendered default pages over [workflow] (https://docs.github.com/en/free-pro-team@latest/actions/guides/setting-up-continuous-integration-using-workflow-templates)
+Demonstrated project URL available at <a href="https://wryyyyyyyy.github.io/runner_one/">project site</a>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">CI</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">fetch-depth</span><span class="pi">:</span> <span class="m">0</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install bundler</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">sudo gem install bundler</span>
+          <span class="s">bundle install</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">cd docs</span>
+          <span class="s">bundle exec jekyll b --trace</span>
+          <span class="s">date &gt; generated.txt</span>
+          <span class="s">git config user.name github-actions</span>
+          <span class="s">git config user.email github-actions@github.com</span>
+          <span class="s">git add .</span>
+          <span class="s">git commit -m "generated"</span>
+          <span class="s">git push</span>
+
+</code></pre></div></div>
 
 <p><center><pre>copyright &copy; 2021 by <a href="/runner_one">runner_one</a></pre></center></p>
 </body>
