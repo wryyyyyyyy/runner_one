@@ -21,9 +21,9 @@
 <body>
 <nav><pre><center><a href="/runner_one/">Main</a>                          <a href="/runner_one/about">About</a>                          <a href="/runner_one/notes">Notes</a>                          <a href="/runner_one/logs">Logs</a>                          <a href="/runner_one/status">Status</a></center></pre></nav>
 
-<h3 id="logs-page">Logs page</h3>
+<h1 id="build-logs-sample">Build logs sample</h1>
 
-<h4 id="set-up-job">Set up job</h4>
+<h3 id="set-up-job">Set up job</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Current runner version: '2.275.1'
 Operating System
   Ubuntu
@@ -39,7 +39,7 @@ Getting action download info
 Download action repository 'actions/checkout@v2'
 </code></pre></div></div>
 
-<h4 id="run-actionscheckoutv2">Run actions/checkout@v2</h4>
+<h3 id="run-actionscheckoutv2">Run actions/checkout@v2</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run actions/checkout@v2
   with:
     fetch-depth: 0
@@ -495,7 +495,7 @@ Checking out the ref
 '686796df6b3a8cd48f8a41a62512ee5c99ce608f'
 </code></pre></div></div>
 
-<h4 id="install-bundler">Install bundler</h4>
+<h3 id="install-bundler">Install bundler</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run sudo gem install bundler
   sudo gem install bundler
   bundle install
@@ -728,7 +728,7 @@ https://github.com/jch/html-pipeline#dependencies
 -------------------------------------------------
 </code></pre></div></div>
 
-<h4 id="build-site">Build site</h4>
+<h3 id="build-site">Build site</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run cd docs
   cd docs
   bundle exec jekyll b --trace
@@ -753,7 +753,7 @@ To https://github.com/wryyyyyyyy/runner_one
    686796d..fd84745  gh-pages -&gt; gh-pages
 </code></pre></div></div>
 
-<h4 id="post-run-actionscheckoutv2">Post run actions/checkout@v2</h4>
+<h3 id="post-run-actionscheckoutv2">Post run actions/checkout@v2</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Post job cleanup.
 /usr/bin/git version
 git version 2.29.2
@@ -765,7 +765,7 @@ http.https://github.com/.extraheader
 /usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' &amp;&amp; git config --local --unset-all 'http.https://github.com/.extraheader' || :
 </code></pre></div></div>
 
-<h4 id="complete-job">Complete job</h4>
+<h3 id="complete-job">Complete job</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cleaning up orphan processes
 </code></pre></div></div>
 
