@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-14-commit-1b650a4f9f55a1aedda23ac2e463a5bed8683658
+author: commit
+tags: commit 1b650a4f9f55a1aedda23ac2e463a5bed8683658
+---
+
+commit 1b650a4f9f55a1aedda23ac2e463a5bed8683658
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 11:18:10 2021 +0100
+
+    config, templates and workflow updated
