@@ -26,7 +26,7 @@ jobs:
           echo "---" > docs/_posts/$logdata-commit-$logfile.md
           echo "layout: post" >> docs/_posts/$logdata-commit-$logfile.md
           echo "title: $logdata-commit-$logfile" >> docs/_posts/$logdata-commit-$logfile.md
-          echo "published: true" >> docs/_posts/$logdata-commit-$logfile.md
+          echo "tags: commit $logfile" >> docs/_posts/$logdata-commit-$logfile.md
           echo "---" >> docs/_posts/$logdata-commit-$logfile.md
           echo "" >> docs/_posts/$logdata-commit-$logfile.md
           git log -1 >> docs/_posts/$logdata-commit-$logfile.md
