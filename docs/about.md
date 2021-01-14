@@ -10,8 +10,9 @@ description: About page
 {% include posts.tpl %}
 
 {% highlight markdown %}
-[Link to a post]({% link _posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md %})
-[Link to a post]({% link _posts/2021-01-13-commit-b6d6dd1e96b59127ba03fdd2c64ad607d5d57d42.md %})
+
+[Link to a post]({% link _posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md | relative_url %})
+[Link to a post]({% link _posts/2021-01-13-commit-b6d6dd1e96b59127ba03fdd2c64ad607d5d57d42.md | relative_url %})
 
 <table>
   <thead>
@@ -29,10 +30,8 @@ description: About page
     </tr>
   </tbody>
 </table>
-{% endhighlight %}
 
-[Link to a post]({% link _posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md %})
-[Link to a post]({% link _posts/2021-01-13-commit-b6d6dd1e96b59127ba03fdd2c64ad607d5d57d42.md %})
+{% endhighlight %}
 
 <table>
   <thead>
