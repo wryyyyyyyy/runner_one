@@ -37,6 +37,7 @@ jobs:
         run: |
           bundle exec jekyll new _site --force
           cp -f ./config.conf ./_site/_config.yml
+          cp -f ./Gemfile.conf ./_site/Gemfile
           cd _site
           bundle exec jekyll b --trace
           cd ..
