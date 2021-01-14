@@ -89,11 +89,15 @@ feed:
   posts_limit: 15
 
   collections:
-    - commits
-      path: "/commits.xml"
-    - drafts
-      path: "/drafts.xml"
+    commits:
+      path: commits.xml
+    posts:
+      path: posts.xml
+    drafts:
+      path: drafts.xml
 
   categories:
-    - jekyll
-    - update
+    jekyll:
+      path: jeykill.xml
+    update:
+      path: update.xml
