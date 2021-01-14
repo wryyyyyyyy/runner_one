@@ -1,6 +1,6 @@
 ---
 title: strict post
-layout: post
+layout: default
 description: Just a strict post
 ---
 

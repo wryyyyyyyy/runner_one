@@ -1,6 +1,6 @@
 ---
 title: just a draft post
-layout: post
+layout: default
 description: Just a draft post
 ---
 

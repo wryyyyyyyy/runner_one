@@ -45,15 +45,14 @@ description: About page
   </ul>
 {% endfor %}
 
-#### for commit in site.commits
-{% for commit in site.commits %}
-<a href="{{ commit.url | prepend: site.baseurl }}">
-  <h2>{{ commit.title }}</h2>
-  <p>{{ commit.content | markdownify }}</p>
+#### for post in site.commits
+{% for post in site.commits %}
+<a href="{{ post.url | prepend: site.baseurl }}">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content | markdownify }}</p>
 </a>
-<p class="post-excerpt">{{ commit.description | truncate: 160 }}</p>
+<p class="post-excerpt">{{ post.description | truncate: 160 }}</p>
 {% endfor %}
-
 
 #### for post in paginator.posts
 <ul>

@@ -87,7 +87,7 @@ plugins:
 
 feed:
   tags: true
-  path: atom.xml
+  path: feed.xml
   posts_limit: 15
 
   collections:
