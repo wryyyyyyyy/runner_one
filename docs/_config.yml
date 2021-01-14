@@ -7,15 +7,17 @@ layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 sass:
-  sass_dir:           _sass
+  sass_dir          : _sass
 collections:
-  output            : true
-posts:
-  output            : true
-commits:
-  output            : true
-drafts:
-  output            : true
+  posts:
+    output: true
+    permalink: /posts/:title/
+  commits:
+    output: true
+    permalink: /commits/:title/
+  drafts:
+    output: true
+    permalink: /drafts/:title/
 
 # Handling Reading
 safe                : false
