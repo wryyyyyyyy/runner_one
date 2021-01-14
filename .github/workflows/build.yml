@@ -33,15 +33,20 @@ jobs:
           bundle exec jekyll new www
           cd www
           bundle exec jekyll b --trace
-          cd ..
-
-      - name: Build site
-        run: |
-          cd docs
-          bundle exec jekyll b --trace
-          date > generated.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "generated"
+          git commit -m "generated www"
           git push
+          cd ..
+
+#      - name: Build site
+#        run: |
+#          cd docs
+#          bundle exec jekyll b --trace
+#          date > generated.txt
+#          git config user.name github-actions
+#          git config user.email github-actions@github.com
+#          git add .
+#          git commit -m "generated docs"
+#          git push
