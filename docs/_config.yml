@@ -1,13 +1,13 @@
 # Where things are
 source              : .
-destination         : ./_site/
-collections_dir     : ./_collection/
-plugins_dir         : ./_plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : ./_layouts/
-data_dir            : ./_data/
-includes_dir        : ./_includes/
+destination         : ..
+collections_dir     : _collection
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
 sass:
-  sass_dir          : ./_sass/
+  sass_dir          : _sass
 collections:
   commits:
     output: true
@@ -29,7 +29,7 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : true
+show_drafts         : false
 limit_posts         : 15
 future              : false
 unpublished         : false
@@ -54,13 +54,13 @@ baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : pretty
+permalink           : date
 paginate            : 15
 paginate_path       : /page:num
 timezone            : null
 
 quiet               : false
-verbose             : true
+verbose             : false
 defaults            : []
 
 liquid:
@@ -77,7 +77,7 @@ kramdown:
   input             : GFM
   hard_wrap         : false
   footnote_nr       : 1
-  show_warnings     : true
+  show_warnings     : false
 
 theme: minima
 
@@ -95,12 +95,9 @@ feed:
 
   collections:
     commits:
-      tags: true
       path: ./feed/commits.xml
     posts:
-      tags: true
       path: ./feed/posts.xml
     drafts:
-      tags: true
       path: ./feed/drafts.xml
 
