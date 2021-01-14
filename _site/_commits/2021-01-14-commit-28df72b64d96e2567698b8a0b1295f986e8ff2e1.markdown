@@ -1,0 +1,12 @@
+---
+layout: post
+title: 2021-01-14-commit-28df72b64d96e2567698b8a0b1295f986e8ff2e1
+author: commit
+tags: commit 28df72b64d96e2567698b8a0b1295f986e8ff2e1
+---
+
+commit 28df72b64d96e2567698b8a0b1295f986e8ff2e1
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 10:19:06 2021 +0100
+
+    config updated

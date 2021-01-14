@@ -50,7 +50,6 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new _site --force
           cd ./_site
           bundle exec jekyll b --trace
           git config user.name github-actions
