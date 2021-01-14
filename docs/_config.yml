@@ -9,13 +9,13 @@ includes_dir        : _includes
 sass:
   sass_dir          : _sass
 collections:
-  posts:
+  _posts:
     output: true
     permalink: /posts/:title/
-  commits:
+  _commits:
     output: true
     permalink: /commits/:title/
-  drafts:
+  _drafts:
     output: true
     permalink: /drafts/:title/
 
