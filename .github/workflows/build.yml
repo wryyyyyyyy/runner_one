@@ -43,8 +43,8 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new docs
-          cd docs
+          bundle exec jekyll new www
+          cd www
           bundle exec jekyll b --trace
           git config user.name github-actions
           git config user.email github-actions@github.com
