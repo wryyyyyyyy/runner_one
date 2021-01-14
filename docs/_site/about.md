@@ -5,12 +5,25 @@ layout: default
 description: About page
 ---
 
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll
+
+
 #### for post in site.posts
 <ul>
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
@@ -20,7 +33,6 @@ description: About page
   {% for draft in site.drafts %}
     <li>
       <a href="{{ draft.url }}">{{ draft.title }}</a>
-      <p>{{ draft.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
@@ -30,7 +42,6 @@ description: About page
   {% for commit in site.commits %}
     <li>
       <a href="{{ commit.url }}">{{ commit.title }}</a>
-      <p>{{ commit.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
@@ -41,7 +52,6 @@ description: About page
   <ul>
     {% for post in tag[1] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      <li><p>{{ commit.content | markdownify }}</p></li>
     {% endfor %}
   </ul>
 {% endfor %}
@@ -51,14 +61,13 @@ description: About page
 
 <a href="{{ commit.url | prepend: site.baseurl }}">
   <h2>{{ commit.title }}</h2>
-  <p>{{ commit.content | markdownify }}</p>
 </a>
 
 <p class="post-excerpt">{{ commit.description | truncate: 160 }}</p>
 
 {% endfor %}
 
-#### Valid Atom 1.0
+#### end
 <table>
   <thead>
     <tr>
