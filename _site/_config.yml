@@ -48,8 +48,8 @@ exclude:
   - vendor/gems/
 
 source              : .
-destination         : ../docs
-collections_dir     : ../docs
+destination         : _site
+collections_dir     : /docs
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
