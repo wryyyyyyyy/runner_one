@@ -80,6 +80,10 @@ commonmark:
   extensions        : ["strikethrough", "autolink", "table", "tagfilter"]
 
 theme: jekyll-theme-minimal
+title: Runner One
+description: >-
+  Here some desc.
+author: wryyyyyyyy
 
 plugins:
   - jekyll-feed
