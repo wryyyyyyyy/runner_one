@@ -11,13 +11,13 @@ sass:
 collections:
   commits:
     output: true
-    permalink: /commits/:path/
+#    permalink: /commits/:path/
   posts:
     output: true
-    permalink: /posts/:path/
+#    permalink: /posts/:path/
   drafts:
     output: true
-    permalink: /drafts/:path/
+#    permalink: /drafts/:path/
 
 # Handling Reading
 safe                : false
@@ -31,7 +31,7 @@ strict_front_matter : false
 # Filtering Content
 show_drafts         : true
 limit_posts         : 15
-future              : true
+future              : false
 unpublished         : false
 
 # Plugins
@@ -54,13 +54,13 @@ baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-#permalink           : date
 permalink           : pretty
+paginate            : 15
 paginate_path       : /page:num
 timezone            : null
 
 quiet               : false
-verbose             : false
+verbose             : true
 defaults            : []
 
 liquid:
