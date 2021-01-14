@@ -46,15 +46,18 @@ jobs:
         run: |
           echo BUILD STAGE
           cd _site
-          bundle exec jekyll b --trace --incremental
+          bundle exec jekyll b --trace
           cd ../
-#          mv -f _site/*.xml -t docs/
-#          mv -f _site/*.txt -t docs/
-#          mv -f _site/*.html -t docs/
-#          mv -f _site/.gitignore docs/.gitignore
-#          mv -f _site/drafts -t docs/drafts
-#          mv -f _site/commits -t docs/commits
-#          mv -f _site/docs/assets -t docs/assets
+          cd docs
+          bundle exec jekyll b --trace
+          cd ../
+#          cp -f _site/*.xml -t docs/
+#          cp -f _site/*.txt -t docs/
+#          cp -f _site/*.html -t docs/
+#          cp -f _site/.gitignore docs/.gitignore
+#          cp -fR _site/drafts -t docs/drafts
+#          cp -fR _site/commits -t docs/commits
+#          cp -fR _site/docs/assets -t docs/assets
 
       - name: Deploy site
         run: |
