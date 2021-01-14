@@ -1,5 +1,5 @@
 # Where things are
-source              : ./_site
+source              : .
 destination         : ./docs
 collections_dir     : ./docs
 plugins_dir         : ./docs/_plugins # takes an array of strings and loads plugins in that order
