@@ -1,1 +1,1 @@
-Sitemap: /runner_one/sitemap.xml
+Sitemap: https://wryyyyyyyy.github.io/runner_one/sitemap.xml
