@@ -90,14 +90,14 @@ plugins:
 
 feed:
   tags: true
-  path: atom.xml
+  path: _site/atom.xml
   posts_limit: 15
 
   collections:
     commits:
-      path: feed/commits.xml
+      path: _site/feed/commits.xml
     posts:
-      path: feed/posts.xml
+      path: _site/feed/posts.xml
     drafts:
-      path: feed/drafts.xml
+      path: _site/feed/drafts.xml
 

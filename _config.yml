@@ -1,6 +1,6 @@
 # Where things are
-source              : docs/
-destination         : .
+source              : .
+destination         : docs/_site
 collections_dir     : docs/_collection
 plugins_dir         : docs/_plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : docs/_layouts
@@ -9,15 +9,12 @@ includes_dir        : docs/_includes
 sass:
   sass_dir          : docs/_sass
 collections:
-  - posts
+  posts:
     output: true
-#    permalink: /posts/:title/
-  - commits
+  commits:
     output: true
-#    permalink: /commits/:title/
-  - drafts
+  drafts:
     output: true
-#    permalink: /drafts/:title/
 
 # Handling Reading
 safe                : false
@@ -77,7 +74,7 @@ kramdown:
   input             : GFM
   hard_wrap         : false
   footnote_nr       : 1
-  show_warnings     : true
+  show_warnings     : false
 
 theme: jekyll-theme-minimal
 
@@ -90,13 +87,13 @@ plugins:
 
 feed:
   tags: true
-  path: feed/atom.xml
+  path: docs/_site/feed/atom.xml
   posts_limit: 15
 
   collections:
     commits:
-      path: feed/commits.xml
+      path: docs/_site/feed/commits.xml
     posts:
-      path: feed/posts.xml
+      path: docs/_site/feed/posts.xml
     drafts:
-      path: feed/drafts.xml
+      path: docs/_site/feed/drafts.xml

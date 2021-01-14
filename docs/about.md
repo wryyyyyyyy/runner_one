@@ -47,15 +47,40 @@ description: About page
 
 #### for commit in site.commits
 {% for commit in site.commits %}
-
 <a href="{{ commit.url | prepend: site.baseurl }}">
   <h2>{{ commit.title }}</h2>
   <p>{{ commit.content | markdownify }}</p>
 </a>
-
 <p class="post-excerpt">{{ commit.description | truncate: 160 }}</p>
-
 {% endfor %}
+
+
+#### for post in paginator.posts
+<ul>
+  {% for post in paginator.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+#### if paginator.total_pages > 1
+{% if paginator.total_pages > 1 %}
+<ul>
+  {% if paginator.previous_page %}
+  <li>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+    <li>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+    </li>
+  {% endif %}
+</ul>
+{% endif %}
+
 
 #### Valid Atom 1.0
 <table>
