@@ -5,17 +5,29 @@ layout: default
 description: About page
 ---
 
-#### for commit in site.commits
-{% for commit in site.commits %}
-  <h2>{{ commit.date }} - {{ commit.title }}</h2>
-  <p>{{ commit.content | markdownify }}</p>
-{% endfor %}
-
 #### for post in site.posts
 <ul>
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+#### for draft in site.drafts
+<ul>
+  {% for draft in site.drafts %}
+    <li>
+      <a href="{{ draft.url }}">{{ draft.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+#### for commit in site.commits
+<ul>
+  {% for commit in site.commits %}
+    <li>
+      <a href="{{ commit.url }}">{{ commit.title }}</a>
     </li>
   {% endfor %}
 </ul>

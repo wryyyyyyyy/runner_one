@@ -10,8 +10,11 @@ sass:
   sass_dir:           docs/_sass
 collections:
   posts:
-    commits:
-      output        : true
+    output: true
+  commits:
+    output: true
+  drafts:
+    output: true
 
 # Handling Reading
 safe                : false
