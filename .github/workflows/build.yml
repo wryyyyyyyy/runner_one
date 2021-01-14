@@ -23,14 +23,14 @@ jobs:
         run: |
           export logdata=`date '+%Y-%m-%d'`
           export logfile=`git log -1 --format='%H'`
-          echo "---" > docs/_commits/$logdata-commit-$logfile.md
-          echo "layout: post" >> docs/_commits/$logdata-commit-$logfile.md
-          echo "title: $logdata-commit-$logfile" >> docs/_commits/$logdata-commit-$logfile.md
-          echo "author: commit" >> docs/_commits/$logdata-commit-$logfile.md
-          echo "tags: commit $logfile" >> docs/_commits/$logdata-commit-$logfile.md
-          echo "---" >> docs/_commits/$logdata-commit-$logfile.md
-          echo "" >> docs/_commits/$logdata-commit-$logfile.md
-          git log -1 >> docs/_commits/$logdata-commit-$logfile.md
+          echo "---" > docs/_commits/$logdata-commit-$logfile.markdown
+          echo "layout: post" >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "title: $logdata-commit-$logfile" >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "author: commit" >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "tags: commit $logfile" >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "---" >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "" >> docs/_commits/$logdata-commit-$logfile.markdown
+          git log -1 >> docs/_commits/$logdata-commit-$logfile.markdown
 #          bundle exec jekyll new www
 #          cd www
 #          bundle exec jekyll b --trace

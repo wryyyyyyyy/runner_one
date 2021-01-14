@@ -1,0 +1,803 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Logs</title>
+<link rel="stylesheet" href="/runner_one/assets/css/style.css">
+<link type="application/atom+xml" rel="alternate" href="/runner_one/feed.xml" />
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Logs</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Logs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Logs page" />
+<meta property="og:description" content="Logs page" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"/runner_one/logs.html","headline":"Logs","description":"Logs page","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<nav><pre><center><a href="/runner_one/">Main</a>                          <a href="/runner_one/about">About</a>                          <a href="/runner_one/notes">Notes</a>                          <a href="/runner_one/logs">Logs</a>                          <a href="/runner_one/status">Status</a></center></pre></nav>
+
+
+<h3 id="build-logs-sample">Build logs sample</h3>
+
+<blockquote>
+
+  <h4 id="set-up-job">Set up job</h4>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Current runner version: <span class="s1">'2.275.1'</span>
+Operating System
+  Ubuntu
+  18.04.5
+  LTS
+Virtual Environment
+  Environment: ubuntu-18.04
+  Version: 20201210.0
+  Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20201210.0/images/linux/Ubuntu1804-README.md
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository <span class="s1">'actions/checkout@v2'</span>
+</code></pre></div></div>
+<blockquote>
+
+  <h4 id="run-actionscheckoutv2">Run actions/checkout@v2</h4>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run actions/checkout@v2
+  with:
+    fetch-depth: 0
+    repository: wryyyyyyyy/runner_one
+    token: <span class="k">***</span>
+    ssh-strict: <span class="nb">true
+    </span>persist-credentials: <span class="nb">true
+    </span>clean: <span class="nb">true
+    </span>lfs: <span class="nb">false
+    </span>submodules: <span class="nb">false
+</span>Syncing repository: wryyyyyyyy/runner_one
+Getting Git version info
+  Working directory is <span class="s1">'/home/runner/work/runner_one/runner_one'</span>
+  /usr/bin/git version
+  git version 2.29.2
+Deleting the contents of <span class="s1">'/home/runner/work/runner_one/runner_one'</span>
+Initializing the repository
+  /usr/bin/git init /home/runner/work/runner_one/runner_one
+  Initialized empty Git repository <span class="k">in</span> /home/runner/work/runner_one/runner_one/.git/
+  /usr/bin/git remote add origin https://github.com/wryyyyyyyy/runner_one
+Disabling automatic garbage collection
+  /usr/bin/git config <span class="nt">--local</span> gc.auto 0
+Setting up auth
+  /usr/bin/git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> core<span class="se">\.</span>sshCommand
+  /usr/bin/git submodule foreach <span class="nt">--recursive</span> git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> <span class="s1">'core\.sshCommand'</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--local</span> <span class="nt">--unset-all</span> <span class="s1">'core.sshCommand'</span> <span class="o">||</span> :
+  /usr/bin/git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> http<span class="se">\.</span>https<span class="se">\:\/\/</span>github<span class="se">\.</span>com<span class="se">\/\.</span>extraheader
+  /usr/bin/git submodule foreach <span class="nt">--recursive</span> git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> <span class="s1">'http\.https\:\/\/github\.com\/\.extraheader'</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--local</span> <span class="nt">--unset-all</span> <span class="s1">'http.https://github.com/.extraheader'</span> <span class="o">||</span> :
+  /usr/bin/git config <span class="nt">--local</span> http.https://github.com/.extraheader AUTHORIZATION: basic <span class="k">***</span>
+Fetching the repository
+  /usr/bin/git <span class="nt">-c</span> protocol.version<span class="o">=</span>2 fetch <span class="nt">--prune</span> <span class="nt">--progress</span> <span class="nt">--no-recurse-submodules</span> origin +refs/heads/<span class="k">*</span>:refs/remotes/origin/<span class="k">*</span> +refs/tags/<span class="k">*</span>:refs/tags/<span class="k">*</span>
+  remote: Enumerating objects: 566, <span class="k">done</span><span class="nb">.</span>
+  remote: Counting objects:   0% <span class="o">(</span>1/566<span class="o">)</span>
+  remote: Counting objects:   1% <span class="o">(</span>6/566<span class="o">)</span>
+  remote: Counting objects:   2% <span class="o">(</span>12/566<span class="o">)</span>
+  remote: Counting objects:   3% <span class="o">(</span>17/566<span class="o">)</span>
+  remote: Counting objects:   4% <span class="o">(</span>23/566<span class="o">)</span>
+  remote: Counting objects:   5% <span class="o">(</span>29/566<span class="o">)</span>
+  remote: Counting objects:   6% <span class="o">(</span>34/566<span class="o">)</span>
+  remote: Counting objects:   7% <span class="o">(</span>40/566<span class="o">)</span>
+  remote: Counting objects:   8% <span class="o">(</span>46/566<span class="o">)</span>
+  remote: Counting objects:   9% <span class="o">(</span>51/566<span class="o">)</span>
+  remote: Counting objects:  10% <span class="o">(</span>57/566<span class="o">)</span>
+  remote: Counting objects:  11% <span class="o">(</span>63/566<span class="o">)</span>
+  remote: Counting objects:  12% <span class="o">(</span>68/566<span class="o">)</span>
+  remote: Counting objects:  13% <span class="o">(</span>74/566<span class="o">)</span>
+  remote: Counting objects:  14% <span class="o">(</span>80/566<span class="o">)</span>
+  remote: Counting objects:  15% <span class="o">(</span>85/566<span class="o">)</span>
+  remote: Counting objects:  16% <span class="o">(</span>91/566<span class="o">)</span>
+  remote: Counting objects:  17% <span class="o">(</span>97/566<span class="o">)</span>
+  remote: Counting objects:  18% <span class="o">(</span>102/566<span class="o">)</span>
+  remote: Counting objects:  19% <span class="o">(</span>108/566<span class="o">)</span>
+  remote: Counting objects:  20% <span class="o">(</span>114/566<span class="o">)</span>
+  remote: Counting objects:  21% <span class="o">(</span>119/566<span class="o">)</span>
+  remote: Counting objects:  22% <span class="o">(</span>125/566<span class="o">)</span>
+  remote: Counting objects:  23% <span class="o">(</span>131/566<span class="o">)</span>
+  remote: Counting objects:  24% <span class="o">(</span>136/566<span class="o">)</span>
+  remote: Counting objects:  25% <span class="o">(</span>142/566<span class="o">)</span>
+  remote: Counting objects:  26% <span class="o">(</span>148/566<span class="o">)</span>
+  remote: Counting objects:  27% <span class="o">(</span>153/566<span class="o">)</span>
+  remote: Counting objects:  28% <span class="o">(</span>159/566<span class="o">)</span>
+  remote: Counting objects:  29% <span class="o">(</span>165/566<span class="o">)</span>
+  remote: Counting objects:  30% <span class="o">(</span>170/566<span class="o">)</span>
+  remote: Counting objects:  31% <span class="o">(</span>176/566<span class="o">)</span>
+  remote: Counting objects:  32% <span class="o">(</span>182/566<span class="o">)</span>
+  remote: Counting objects:  33% <span class="o">(</span>187/566<span class="o">)</span>
+  remote: Counting objects:  34% <span class="o">(</span>193/566<span class="o">)</span>
+  remote: Counting objects:  35% <span class="o">(</span>199/566<span class="o">)</span>
+  remote: Counting objects:  36% <span class="o">(</span>204/566<span class="o">)</span>
+  remote: Counting objects:  37% <span class="o">(</span>210/566<span class="o">)</span>
+  remote: Counting objects:  38% <span class="o">(</span>216/566<span class="o">)</span>
+  remote: Counting objects:  39% <span class="o">(</span>221/566<span class="o">)</span>
+  remote: Counting objects:  40% <span class="o">(</span>227/566<span class="o">)</span>
+  remote: Counting objects:  41% <span class="o">(</span>233/566<span class="o">)</span>
+  remote: Counting objects:  42% <span class="o">(</span>238/566<span class="o">)</span>
+  remote: Counting objects:  43% <span class="o">(</span>244/566<span class="o">)</span>
+  remote: Counting objects:  44% <span class="o">(</span>250/566<span class="o">)</span>
+  remote: Counting objects:  45% <span class="o">(</span>255/566<span class="o">)</span>
+  remote: Counting objects:  46% <span class="o">(</span>261/566<span class="o">)</span>
+  remote: Counting objects:  47% <span class="o">(</span>267/566<span class="o">)</span>
+  remote: Counting objects:  48% <span class="o">(</span>272/566<span class="o">)</span>
+  remote: Counting objects:  49% <span class="o">(</span>278/566<span class="o">)</span>
+  remote: Counting objects:  50% <span class="o">(</span>283/566<span class="o">)</span>
+  remote: Counting objects:  51% <span class="o">(</span>289/566<span class="o">)</span>
+  remote: Counting objects:  52% <span class="o">(</span>295/566<span class="o">)</span>
+  remote: Counting objects:  53% <span class="o">(</span>300/566<span class="o">)</span>
+  remote: Counting objects:  54% <span class="o">(</span>306/566<span class="o">)</span>
+  remote: Counting objects:  55% <span class="o">(</span>312/566<span class="o">)</span>
+  remote: Counting objects:  56% <span class="o">(</span>317/566<span class="o">)</span>
+  remote: Counting objects:  57% <span class="o">(</span>323/566<span class="o">)</span>
+  remote: Counting objects:  58% <span class="o">(</span>329/566<span class="o">)</span>
+  remote: Counting objects:  59% <span class="o">(</span>334/566<span class="o">)</span>
+  remote: Counting objects:  60% <span class="o">(</span>340/566<span class="o">)</span>
+  remote: Counting objects:  61% <span class="o">(</span>346/566<span class="o">)</span>
+  remote: Counting objects:  62% <span class="o">(</span>351/566<span class="o">)</span>
+  remote: Counting objects:  63% <span class="o">(</span>357/566<span class="o">)</span>
+  remote: Counting objects:  64% <span class="o">(</span>363/566<span class="o">)</span>
+  remote: Counting objects:  65% <span class="o">(</span>368/566<span class="o">)</span>
+  remote: Counting objects:  66% <span class="o">(</span>374/566<span class="o">)</span>
+  remote: Counting objects:  67% <span class="o">(</span>380/566<span class="o">)</span>
+  remote: Counting objects:  68% <span class="o">(</span>385/566<span class="o">)</span>
+  remote: Counting objects:  69% <span class="o">(</span>391/566<span class="o">)</span>
+  remote: Counting objects:  70% <span class="o">(</span>397/566<span class="o">)</span>
+  remote: Counting objects:  71% <span class="o">(</span>402/566<span class="o">)</span>
+  remote: Counting objects:  72% <span class="o">(</span>408/566<span class="o">)</span>
+  remote: Counting objects:  73% <span class="o">(</span>414/566<span class="o">)</span>
+  remote: Counting objects:  74% <span class="o">(</span>419/566<span class="o">)</span>
+  remote: Counting objects:  75% <span class="o">(</span>425/566<span class="o">)</span>
+  remote: Counting objects:  76% <span class="o">(</span>431/566<span class="o">)</span>
+  remote: Counting objects:  77% <span class="o">(</span>436/566<span class="o">)</span>
+  remote: Counting objects:  78% <span class="o">(</span>442/566<span class="o">)</span>
+  remote: Counting objects:  79% <span class="o">(</span>448/566<span class="o">)</span>
+  remote: Counting objects:  80% <span class="o">(</span>453/566<span class="o">)</span>
+  remote: Counting objects:  81% <span class="o">(</span>459/566<span class="o">)</span>
+  remote: Counting objects:  82% <span class="o">(</span>465/566<span class="o">)</span>
+  remote: Counting objects:  83% <span class="o">(</span>470/566<span class="o">)</span>
+  remote: Counting objects:  84% <span class="o">(</span>476/566<span class="o">)</span>
+  remote: Counting objects:  85% <span class="o">(</span>482/566<span class="o">)</span>
+  remote: Counting objects:  86% <span class="o">(</span>487/566<span class="o">)</span>
+  remote: Counting objects:  87% <span class="o">(</span>493/566<span class="o">)</span>
+  remote: Counting objects:  88% <span class="o">(</span>499/566<span class="o">)</span>
+  remote: Counting objects:  89% <span class="o">(</span>504/566<span class="o">)</span>
+  remote: Counting objects:  90% <span class="o">(</span>510/566<span class="o">)</span>
+  remote: Counting objects:  91% <span class="o">(</span>516/566<span class="o">)</span>
+  remote: Counting objects:  92% <span class="o">(</span>521/566<span class="o">)</span>
+  remote: Counting objects:  93% <span class="o">(</span>527/566<span class="o">)</span>
+  remote: Counting objects:  94% <span class="o">(</span>533/566<span class="o">)</span>
+  remote: Counting objects:  95% <span class="o">(</span>538/566<span class="o">)</span>
+  remote: Counting objects:  96% <span class="o">(</span>544/566<span class="o">)</span>
+  remote: Counting objects:  97% <span class="o">(</span>550/566<span class="o">)</span>
+  remote: Counting objects:  98% <span class="o">(</span>555/566<span class="o">)</span>
+  remote: Counting objects:  99% <span class="o">(</span>561/566<span class="o">)</span>
+  remote: Counting objects: 100% <span class="o">(</span>566/566<span class="o">)</span>
+  remote: Counting objects: 100% <span class="o">(</span>566/566<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+  remote: Compressing objects:   0% <span class="o">(</span>1/305<span class="o">)</span>
+  remote: Compressing objects:   1% <span class="o">(</span>4/305<span class="o">)</span>
+  remote: Compressing objects:   2% <span class="o">(</span>7/305<span class="o">)</span>
+  remote: Compressing objects:   3% <span class="o">(</span>10/305<span class="o">)</span>
+  remote: Compressing objects:   4% <span class="o">(</span>13/305<span class="o">)</span>
+  remote: Compressing objects:   5% <span class="o">(</span>16/305<span class="o">)</span>
+  remote: Compressing objects:   6% <span class="o">(</span>19/305<span class="o">)</span>
+  remote: Compressing objects:   7% <span class="o">(</span>22/305<span class="o">)</span>
+  remote: Compressing objects:   8% <span class="o">(</span>25/305<span class="o">)</span>
+  remote: Compressing objects:   9% <span class="o">(</span>28/305<span class="o">)</span>
+  remote: Compressing objects:  10% <span class="o">(</span>31/305<span class="o">)</span>
+  remote: Compressing objects:  11% <span class="o">(</span>34/305<span class="o">)</span>
+  remote: Compressing objects:  12% <span class="o">(</span>37/305<span class="o">)</span>
+  remote: Compressing objects:  13% <span class="o">(</span>40/305<span class="o">)</span>
+  remote: Compressing objects:  14% <span class="o">(</span>43/305<span class="o">)</span>
+  remote: Compressing objects:  15% <span class="o">(</span>46/305<span class="o">)</span>
+  remote: Compressing objects:  16% <span class="o">(</span>49/305<span class="o">)</span>
+  remote: Compressing objects:  17% <span class="o">(</span>52/305<span class="o">)</span>
+  remote: Compressing objects:  18% <span class="o">(</span>55/305<span class="o">)</span>
+  remote: Compressing objects:  19% <span class="o">(</span>58/305<span class="o">)</span>
+  remote: Compressing objects:  20% <span class="o">(</span>61/305<span class="o">)</span>
+  remote: Compressing objects:  21% <span class="o">(</span>65/305<span class="o">)</span>
+  remote: Compressing objects:  22% <span class="o">(</span>68/305<span class="o">)</span>
+  remote: Compressing objects:  23% <span class="o">(</span>71/305<span class="o">)</span>
+  remote: Compressing objects:  24% <span class="o">(</span>74/305<span class="o">)</span>
+  remote: Compressing objects:  25% <span class="o">(</span>77/305<span class="o">)</span>
+  remote: Compressing objects:  26% <span class="o">(</span>80/305<span class="o">)</span>
+  remote: Compressing objects:  27% <span class="o">(</span>83/305<span class="o">)</span>
+  remote: Compressing objects:  28% <span class="o">(</span>86/305<span class="o">)</span>
+  remote: Compressing objects:  29% <span class="o">(</span>89/305<span class="o">)</span>
+  remote: Compressing objects:  30% <span class="o">(</span>92/305<span class="o">)</span>
+  remote: Compressing objects:  31% <span class="o">(</span>95/305<span class="o">)</span>
+  remote: Compressing objects:  32% <span class="o">(</span>98/305<span class="o">)</span>
+  remote: Compressing objects:  33% <span class="o">(</span>101/305<span class="o">)</span>
+  remote: Compressing objects:  34% <span class="o">(</span>104/305<span class="o">)</span>
+  remote: Compressing objects:  35% <span class="o">(</span>107/305<span class="o">)</span>
+  remote: Compressing objects:  36% <span class="o">(</span>110/305<span class="o">)</span>
+  remote: Compressing objects:  37% <span class="o">(</span>113/305<span class="o">)</span>
+  remote: Compressing objects:  38% <span class="o">(</span>116/305<span class="o">)</span>
+  remote: Compressing objects:  39% <span class="o">(</span>119/305<span class="o">)</span>
+  remote: Compressing objects:  40% <span class="o">(</span>122/305<span class="o">)</span>
+  remote: Compressing objects:  41% <span class="o">(</span>126/305<span class="o">)</span>
+  remote: Compressing objects:  42% <span class="o">(</span>129/305<span class="o">)</span>
+  remote: Compressing objects:  43% <span class="o">(</span>132/305<span class="o">)</span>
+  remote: Compressing objects:  44% <span class="o">(</span>135/305<span class="o">)</span>
+  remote: Compressing objects:  45% <span class="o">(</span>138/305<span class="o">)</span>
+  remote: Compressing objects:  46% <span class="o">(</span>141/305<span class="o">)</span>
+  remote: Compressing objects:  47% <span class="o">(</span>144/305<span class="o">)</span>
+  remote: Compressing objects:  48% <span class="o">(</span>147/305<span class="o">)</span>
+  remote: Compressing objects:  49% <span class="o">(</span>150/305<span class="o">)</span>
+  remote: Compressing objects:  50% <span class="o">(</span>153/305<span class="o">)</span>
+  remote: Compressing objects:  51% <span class="o">(</span>156/305<span class="o">)</span>
+  remote: Compressing objects:  52% <span class="o">(</span>159/305<span class="o">)</span>
+  remote: Compressing objects:  53% <span class="o">(</span>162/305<span class="o">)</span>
+  remote: Compressing objects:  54% <span class="o">(</span>165/305<span class="o">)</span>
+  remote: Compressing objects:  55% <span class="o">(</span>168/305<span class="o">)</span>
+  remote: Compressing objects:  56% <span class="o">(</span>171/305<span class="o">)</span>
+  remote: Compressing objects:  57% <span class="o">(</span>174/305<span class="o">)</span>
+  remote: Compressing objects:  58% <span class="o">(</span>177/305<span class="o">)</span>
+  remote: Compressing objects:  59% <span class="o">(</span>180/305<span class="o">)</span>
+  remote: Compressing objects:  60% <span class="o">(</span>183/305<span class="o">)</span>
+  remote: Compressing objects:  61% <span class="o">(</span>187/305<span class="o">)</span>
+  remote: Compressing objects:  62% <span class="o">(</span>190/305<span class="o">)</span>
+  remote: Compressing objects:  63% <span class="o">(</span>193/305<span class="o">)</span>
+  remote: Compressing objects:  64% <span class="o">(</span>196/305<span class="o">)</span>
+  remote: Compressing objects:  65% <span class="o">(</span>199/305<span class="o">)</span>
+  remote: Compressing objects:  66% <span class="o">(</span>202/305<span class="o">)</span>
+  remote: Compressing objects:  67% <span class="o">(</span>205/305<span class="o">)</span>
+  remote: Compressing objects:  68% <span class="o">(</span>208/305<span class="o">)</span>
+  remote: Compressing objects:  69% <span class="o">(</span>211/305<span class="o">)</span>
+  remote: Compressing objects:  70% <span class="o">(</span>214/305<span class="o">)</span>
+  remote: Compressing objects:  71% <span class="o">(</span>217/305<span class="o">)</span>
+  remote: Compressing objects:  72% <span class="o">(</span>220/305<span class="o">)</span>
+  remote: Compressing objects:  73% <span class="o">(</span>223/305<span class="o">)</span>
+  remote: Compressing objects:  74% <span class="o">(</span>226/305<span class="o">)</span>
+  remote: Compressing objects:  75% <span class="o">(</span>229/305<span class="o">)</span>
+  remote: Compressing objects:  76% <span class="o">(</span>232/305<span class="o">)</span>
+  remote: Compressing objects:  77% <span class="o">(</span>235/305<span class="o">)</span>
+  remote: Compressing objects:  78% <span class="o">(</span>238/305<span class="o">)</span>
+  remote: Compressing objects:  79% <span class="o">(</span>241/305<span class="o">)</span>
+  remote: Compressing objects:  80% <span class="o">(</span>244/305<span class="o">)</span>
+  remote: Compressing objects:  81% <span class="o">(</span>248/305<span class="o">)</span>
+  remote: Compressing objects:  82% <span class="o">(</span>251/305<span class="o">)</span>
+  remote: Compressing objects:  83% <span class="o">(</span>254/305<span class="o">)</span>
+  remote: Compressing objects:  84% <span class="o">(</span>257/305<span class="o">)</span>
+  remote: Compressing objects:  85% <span class="o">(</span>260/305<span class="o">)</span>
+  remote: Compressing objects:  86% <span class="o">(</span>263/305<span class="o">)</span>
+  remote: Compressing objects:  87% <span class="o">(</span>266/305<span class="o">)</span>
+  remote: Compressing objects:  88% <span class="o">(</span>269/305<span class="o">)</span>
+  remote: Compressing objects:  89% <span class="o">(</span>272/305<span class="o">)</span>
+  remote: Compressing objects:  90% <span class="o">(</span>275/305<span class="o">)</span>
+  remote: Compressing objects:  91% <span class="o">(</span>278/305<span class="o">)</span>
+  remote: Compressing objects:  92% <span class="o">(</span>281/305<span class="o">)</span>
+  remote: Compressing objects:  93% <span class="o">(</span>284/305<span class="o">)</span>
+  remote: Compressing objects:  94% <span class="o">(</span>287/305<span class="o">)</span>
+  remote: Compressing objects:  95% <span class="o">(</span>290/305<span class="o">)</span>
+  remote: Compressing objects:  96% <span class="o">(</span>293/305<span class="o">)</span>
+  remote: Compressing objects:  97% <span class="o">(</span>296/305<span class="o">)</span>
+  remote: Compressing objects:  98% <span class="o">(</span>299/305<span class="o">)</span>
+  remote: Compressing objects:  99% <span class="o">(</span>302/305<span class="o">)</span>
+  remote: Compressing objects: 100% <span class="o">(</span>305/305<span class="o">)</span>
+  remote: Compressing objects: 100% <span class="o">(</span>305/305<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+  Receiving objects:   0% <span class="o">(</span>1/2036<span class="o">)</span>
+  Receiving objects:   1% <span class="o">(</span>21/2036<span class="o">)</span>
+  Receiving objects:   2% <span class="o">(</span>41/2036<span class="o">)</span>
+  Receiving objects:   3% <span class="o">(</span>62/2036<span class="o">)</span>
+  Receiving objects:   4% <span class="o">(</span>82/2036<span class="o">)</span>
+  Receiving objects:   5% <span class="o">(</span>102/2036<span class="o">)</span>
+  Receiving objects:   6% <span class="o">(</span>123/2036<span class="o">)</span>
+  Receiving objects:   7% <span class="o">(</span>143/2036<span class="o">)</span>
+  Receiving objects:   8% <span class="o">(</span>163/2036<span class="o">)</span>
+  Receiving objects:   9% <span class="o">(</span>184/2036<span class="o">)</span>
+  Receiving objects:  10% <span class="o">(</span>204/2036<span class="o">)</span>
+  Receiving objects:  11% <span class="o">(</span>224/2036<span class="o">)</span>
+  Receiving objects:  12% <span class="o">(</span>245/2036<span class="o">)</span>
+  Receiving objects:  13% <span class="o">(</span>265/2036<span class="o">)</span>
+  Receiving objects:  14% <span class="o">(</span>286/2036<span class="o">)</span>
+  Receiving objects:  15% <span class="o">(</span>306/2036<span class="o">)</span>
+  Receiving objects:  16% <span class="o">(</span>326/2036<span class="o">)</span>
+  Receiving objects:  17% <span class="o">(</span>347/2036<span class="o">)</span>
+  Receiving objects:  18% <span class="o">(</span>367/2036<span class="o">)</span>
+  Receiving objects:  19% <span class="o">(</span>387/2036<span class="o">)</span>
+  Receiving objects:  20% <span class="o">(</span>408/2036<span class="o">)</span>
+  Receiving objects:  21% <span class="o">(</span>428/2036<span class="o">)</span>
+  Receiving objects:  22% <span class="o">(</span>448/2036<span class="o">)</span>
+  Receiving objects:  23% <span class="o">(</span>469/2036<span class="o">)</span>
+  Receiving objects:  24% <span class="o">(</span>489/2036<span class="o">)</span>
+  Receiving objects:  25% <span class="o">(</span>509/2036<span class="o">)</span>
+  Receiving objects:  26% <span class="o">(</span>530/2036<span class="o">)</span>
+  Receiving objects:  27% <span class="o">(</span>550/2036<span class="o">)</span>
+  Receiving objects:  28% <span class="o">(</span>571/2036<span class="o">)</span>
+  Receiving objects:  29% <span class="o">(</span>591/2036<span class="o">)</span>
+  Receiving objects:  30% <span class="o">(</span>611/2036<span class="o">)</span>
+  Receiving objects:  31% <span class="o">(</span>632/2036<span class="o">)</span>
+  Receiving objects:  32% <span class="o">(</span>652/2036<span class="o">)</span>
+  Receiving objects:  33% <span class="o">(</span>672/2036<span class="o">)</span>
+  Receiving objects:  34% <span class="o">(</span>693/2036<span class="o">)</span>
+  Receiving objects:  35% <span class="o">(</span>713/2036<span class="o">)</span>
+  Receiving objects:  36% <span class="o">(</span>733/2036<span class="o">)</span>
+  Receiving objects:  37% <span class="o">(</span>754/2036<span class="o">)</span>
+  Receiving objects:  38% <span class="o">(</span>774/2036<span class="o">)</span>
+  Receiving objects:  39% <span class="o">(</span>795/2036<span class="o">)</span>
+  Receiving objects:  40% <span class="o">(</span>815/2036<span class="o">)</span>
+  Receiving objects:  41% <span class="o">(</span>835/2036<span class="o">)</span>
+  Receiving objects:  42% <span class="o">(</span>856/2036<span class="o">)</span>
+  Receiving objects:  43% <span class="o">(</span>876/2036<span class="o">)</span>
+  Receiving objects:  44% <span class="o">(</span>896/2036<span class="o">)</span>
+  Receiving objects:  45% <span class="o">(</span>917/2036<span class="o">)</span>
+  Receiving objects:  46% <span class="o">(</span>937/2036<span class="o">)</span>
+  Receiving objects:  47% <span class="o">(</span>957/2036<span class="o">)</span>
+  Receiving objects:  48% <span class="o">(</span>978/2036<span class="o">)</span>
+  Receiving objects:  49% <span class="o">(</span>998/2036<span class="o">)</span>
+  Receiving objects:  50% <span class="o">(</span>1018/2036<span class="o">)</span>
+  Receiving objects:  51% <span class="o">(</span>1039/2036<span class="o">)</span>
+  Receiving objects:  52% <span class="o">(</span>1059/2036<span class="o">)</span>
+  Receiving objects:  53% <span class="o">(</span>1080/2036<span class="o">)</span>
+  Receiving objects:  54% <span class="o">(</span>1100/2036<span class="o">)</span>
+  Receiving objects:  55% <span class="o">(</span>1120/2036<span class="o">)</span>
+  Receiving objects:  56% <span class="o">(</span>1141/2036<span class="o">)</span>
+  Receiving objects:  57% <span class="o">(</span>1161/2036<span class="o">)</span>
+  Receiving objects:  58% <span class="o">(</span>1181/2036<span class="o">)</span>
+  Receiving objects:  59% <span class="o">(</span>1202/2036<span class="o">)</span>
+  Receiving objects:  60% <span class="o">(</span>1222/2036<span class="o">)</span>
+  Receiving objects:  61% <span class="o">(</span>1242/2036<span class="o">)</span>
+  Receiving objects:  62% <span class="o">(</span>1263/2036<span class="o">)</span>
+  Receiving objects:  63% <span class="o">(</span>1283/2036<span class="o">)</span>
+  Receiving objects:  64% <span class="o">(</span>1304/2036<span class="o">)</span>
+  Receiving objects:  65% <span class="o">(</span>1324/2036<span class="o">)</span>
+  Receiving objects:  66% <span class="o">(</span>1344/2036<span class="o">)</span>
+  Receiving objects:  67% <span class="o">(</span>1365/2036<span class="o">)</span>
+  Receiving objects:  68% <span class="o">(</span>1385/2036<span class="o">)</span>
+  Receiving objects:  69% <span class="o">(</span>1405/2036<span class="o">)</span>
+  Receiving objects:  70% <span class="o">(</span>1426/2036<span class="o">)</span>
+  remote: Total 2036 <span class="o">(</span>delta 362<span class="o">)</span>, reused 418 <span class="o">(</span>delta 227<span class="o">)</span>, pack-reused 1470
+  Receiving objects:  71% <span class="o">(</span>1446/2036<span class="o">)</span>
+  Receiving objects:  72% <span class="o">(</span>1466/2036<span class="o">)</span>
+  Receiving objects:  73% <span class="o">(</span>1487/2036<span class="o">)</span>
+  Receiving objects:  74% <span class="o">(</span>1507/2036<span class="o">)</span>
+  Receiving objects:  75% <span class="o">(</span>1527/2036<span class="o">)</span>
+  Receiving objects:  76% <span class="o">(</span>1548/2036<span class="o">)</span>
+  Receiving objects:  77% <span class="o">(</span>1568/2036<span class="o">)</span>
+  Receiving objects:  78% <span class="o">(</span>1589/2036<span class="o">)</span>
+  Receiving objects:  79% <span class="o">(</span>1609/2036<span class="o">)</span>
+  Receiving objects:  80% <span class="o">(</span>1629/2036<span class="o">)</span>
+  Receiving objects:  81% <span class="o">(</span>1650/2036<span class="o">)</span>
+  Receiving objects:  82% <span class="o">(</span>1670/2036<span class="o">)</span>
+  Receiving objects:  83% <span class="o">(</span>1690/2036<span class="o">)</span>
+  Receiving objects:  84% <span class="o">(</span>1711/2036<span class="o">)</span>
+  Receiving objects:  85% <span class="o">(</span>1731/2036<span class="o">)</span>
+  Receiving objects:  86% <span class="o">(</span>1751/2036<span class="o">)</span>
+  Receiving objects:  87% <span class="o">(</span>1772/2036<span class="o">)</span>
+  Receiving objects:  88% <span class="o">(</span>1792/2036<span class="o">)</span>
+  Receiving objects:  89% <span class="o">(</span>1813/2036<span class="o">)</span>
+  Receiving objects:  90% <span class="o">(</span>1833/2036<span class="o">)</span>
+  Receiving objects:  91% <span class="o">(</span>1853/2036<span class="o">)</span>
+  Receiving objects:  92% <span class="o">(</span>1874/2036<span class="o">)</span>
+  Receiving objects:  93% <span class="o">(</span>1894/2036<span class="o">)</span>
+  Receiving objects:  94% <span class="o">(</span>1914/2036<span class="o">)</span>
+  Receiving objects:  95% <span class="o">(</span>1935/2036<span class="o">)</span>
+  Receiving objects:  96% <span class="o">(</span>1955/2036<span class="o">)</span>
+  Receiving objects:  97% <span class="o">(</span>1975/2036<span class="o">)</span>
+  Receiving objects:  98% <span class="o">(</span>1996/2036<span class="o">)</span>
+  Receiving objects:  99% <span class="o">(</span>2016/2036<span class="o">)</span>
+  Receiving objects: 100% <span class="o">(</span>2036/2036<span class="o">)</span>
+  Receiving objects: 100% <span class="o">(</span>2036/2036<span class="o">)</span>, 569.92 KiB | 1.97 MiB/s, <span class="k">done</span><span class="nb">.</span>
+  Resolving deltas:   0% <span class="o">(</span>0/1173<span class="o">)</span>
+  Resolving deltas:   1% <span class="o">(</span>12/1173<span class="o">)</span>
+  Resolving deltas:   2% <span class="o">(</span>24/1173<span class="o">)</span>
+  Resolving deltas:   3% <span class="o">(</span>36/1173<span class="o">)</span>
+  Resolving deltas:   4% <span class="o">(</span>47/1173<span class="o">)</span>
+  Resolving deltas:   5% <span class="o">(</span>59/1173<span class="o">)</span>
+  Resolving deltas:   6% <span class="o">(</span>71/1173<span class="o">)</span>
+  Resolving deltas:   7% <span class="o">(</span>83/1173<span class="o">)</span>
+  Resolving deltas:   8% <span class="o">(</span>94/1173<span class="o">)</span>
+  Resolving deltas:   9% <span class="o">(</span>106/1173<span class="o">)</span>
+  Resolving deltas:  10% <span class="o">(</span>118/1173<span class="o">)</span>
+  Resolving deltas:  11% <span class="o">(</span>130/1173<span class="o">)</span>
+  Resolving deltas:  12% <span class="o">(</span>141/1173<span class="o">)</span>
+  Resolving deltas:  13% <span class="o">(</span>153/1173<span class="o">)</span>
+  Resolving deltas:  14% <span class="o">(</span>165/1173<span class="o">)</span>
+  Resolving deltas:  15% <span class="o">(</span>176/1173<span class="o">)</span>
+  Resolving deltas:  16% <span class="o">(</span>188/1173<span class="o">)</span>
+  Resolving deltas:  17% <span class="o">(</span>200/1173<span class="o">)</span>
+  Resolving deltas:  18% <span class="o">(</span>212/1173<span class="o">)</span>
+  Resolving deltas:  19% <span class="o">(</span>223/1173<span class="o">)</span>
+  Resolving deltas:  20% <span class="o">(</span>235/1173<span class="o">)</span>
+  Resolving deltas:  21% <span class="o">(</span>247/1173<span class="o">)</span>
+  Resolving deltas:  22% <span class="o">(</span>259/1173<span class="o">)</span>
+  Resolving deltas:  23% <span class="o">(</span>270/1173<span class="o">)</span>
+  Resolving deltas:  24% <span class="o">(</span>282/1173<span class="o">)</span>
+  Resolving deltas:  25% <span class="o">(</span>294/1173<span class="o">)</span>
+  Resolving deltas:  26% <span class="o">(</span>305/1173<span class="o">)</span>
+  Resolving deltas:  27% <span class="o">(</span>317/1173<span class="o">)</span>
+  Resolving deltas:  28% <span class="o">(</span>329/1173<span class="o">)</span>
+  Resolving deltas:  29% <span class="o">(</span>341/1173<span class="o">)</span>
+  Resolving deltas:  30% <span class="o">(</span>352/1173<span class="o">)</span>
+  Resolving deltas:  31% <span class="o">(</span>364/1173<span class="o">)</span>
+  Resolving deltas:  32% <span class="o">(</span>376/1173<span class="o">)</span>
+  Resolving deltas:  33% <span class="o">(</span>388/1173<span class="o">)</span>
+  Resolving deltas:  34% <span class="o">(</span>399/1173<span class="o">)</span>
+  Resolving deltas:  35% <span class="o">(</span>411/1173<span class="o">)</span>
+  Resolving deltas:  36% <span class="o">(</span>423/1173<span class="o">)</span>
+  Resolving deltas:  37% <span class="o">(</span>435/1173<span class="o">)</span>
+  Resolving deltas:  38% <span class="o">(</span>446/1173<span class="o">)</span>
+  Resolving deltas:  39% <span class="o">(</span>458/1173<span class="o">)</span>
+  Resolving deltas:  40% <span class="o">(</span>470/1173<span class="o">)</span>
+  Resolving deltas:  41% <span class="o">(</span>481/1173<span class="o">)</span>
+  Resolving deltas:  42% <span class="o">(</span>493/1173<span class="o">)</span>
+  Resolving deltas:  43% <span class="o">(</span>505/1173<span class="o">)</span>
+  Resolving deltas:  44% <span class="o">(</span>517/1173<span class="o">)</span>
+  Resolving deltas:  45% <span class="o">(</span>528/1173<span class="o">)</span>
+  Resolving deltas:  46% <span class="o">(</span>540/1173<span class="o">)</span>
+  Resolving deltas:  47% <span class="o">(</span>552/1173<span class="o">)</span>
+  Resolving deltas:  48% <span class="o">(</span>564/1173<span class="o">)</span>
+  Resolving deltas:  49% <span class="o">(</span>575/1173<span class="o">)</span>
+  Resolving deltas:  50% <span class="o">(</span>587/1173<span class="o">)</span>
+  Resolving deltas:  51% <span class="o">(</span>599/1173<span class="o">)</span>
+  Resolving deltas:  52% <span class="o">(</span>610/1173<span class="o">)</span>
+  Resolving deltas:  53% <span class="o">(</span>622/1173<span class="o">)</span>
+  Resolving deltas:  54% <span class="o">(</span>634/1173<span class="o">)</span>
+  Resolving deltas:  55% <span class="o">(</span>646/1173<span class="o">)</span>
+  Resolving deltas:  56% <span class="o">(</span>657/1173<span class="o">)</span>
+  Resolving deltas:  57% <span class="o">(</span>669/1173<span class="o">)</span>
+  Resolving deltas:  58% <span class="o">(</span>681/1173<span class="o">)</span>
+  Resolving deltas:  59% <span class="o">(</span>693/1173<span class="o">)</span>
+  Resolving deltas:  60% <span class="o">(</span>704/1173<span class="o">)</span>
+  Resolving deltas:  61% <span class="o">(</span>717/1173<span class="o">)</span>
+  Resolving deltas:  62% <span class="o">(</span>728/1173<span class="o">)</span>
+  Resolving deltas:  63% <span class="o">(</span>739/1173<span class="o">)</span>
+  Resolving deltas:  64% <span class="o">(</span>751/1173<span class="o">)</span>
+  Resolving deltas:  65% <span class="o">(</span>763/1173<span class="o">)</span>
+  Resolving deltas:  66% <span class="o">(</span>775/1173<span class="o">)</span>
+  Resolving deltas:  67% <span class="o">(</span>786/1173<span class="o">)</span>
+  Resolving deltas:  68% <span class="o">(</span>798/1173<span class="o">)</span>
+  Resolving deltas:  69% <span class="o">(</span>810/1173<span class="o">)</span>
+  Resolving deltas:  70% <span class="o">(</span>822/1173<span class="o">)</span>
+  Resolving deltas:  71% <span class="o">(</span>833/1173<span class="o">)</span>
+  Resolving deltas:  72% <span class="o">(</span>845/1173<span class="o">)</span>
+  Resolving deltas:  73% <span class="o">(</span>857/1173<span class="o">)</span>
+  Resolving deltas:  74% <span class="o">(</span>869/1173<span class="o">)</span>
+  Resolving deltas:  75% <span class="o">(</span>880/1173<span class="o">)</span>
+  Resolving deltas:  76% <span class="o">(</span>892/1173<span class="o">)</span>
+  Resolving deltas:  77% <span class="o">(</span>904/1173<span class="o">)</span>
+  Resolving deltas:  78% <span class="o">(</span>915/1173<span class="o">)</span>
+  Resolving deltas:  79% <span class="o">(</span>927/1173<span class="o">)</span>
+  Resolving deltas:  80% <span class="o">(</span>939/1173<span class="o">)</span>
+  Resolving deltas:  81% <span class="o">(</span>951/1173<span class="o">)</span>
+  Resolving deltas:  82% <span class="o">(</span>962/1173<span class="o">)</span>
+  Resolving deltas:  83% <span class="o">(</span>974/1173<span class="o">)</span>
+  Resolving deltas:  84% <span class="o">(</span>986/1173<span class="o">)</span>
+  Resolving deltas:  85% <span class="o">(</span>998/1173<span class="o">)</span>
+  Resolving deltas:  86% <span class="o">(</span>1009/1173<span class="o">)</span>
+  Resolving deltas:  87% <span class="o">(</span>1021/1173<span class="o">)</span>
+  Resolving deltas:  88% <span class="o">(</span>1033/1173<span class="o">)</span>
+  Resolving deltas:  89% <span class="o">(</span>1044/1173<span class="o">)</span>
+  Resolving deltas:  90% <span class="o">(</span>1056/1173<span class="o">)</span>
+  Resolving deltas:  91% <span class="o">(</span>1068/1173<span class="o">)</span>
+  Resolving deltas:  92% <span class="o">(</span>1080/1173<span class="o">)</span>
+  Resolving deltas:  93% <span class="o">(</span>1091/1173<span class="o">)</span>
+  Resolving deltas:  94% <span class="o">(</span>1103/1173<span class="o">)</span>
+  Resolving deltas:  95% <span class="o">(</span>1115/1173<span class="o">)</span>
+  Resolving deltas:  96% <span class="o">(</span>1127/1173<span class="o">)</span>
+  Resolving deltas:  97% <span class="o">(</span>1138/1173<span class="o">)</span>
+  Resolving deltas:  98% <span class="o">(</span>1150/1173<span class="o">)</span>
+  Resolving deltas:  99% <span class="o">(</span>1162/1173<span class="o">)</span>
+  Resolving deltas: 100% <span class="o">(</span>1173/1173<span class="o">)</span>
+  Resolving deltas: 100% <span class="o">(</span>1173/1173<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+  From https://github.com/wryyyyyyyy/runner_one
+   <span class="k">*</span> <span class="o">[</span>new branch]      gh-pages   -&gt; origin/gh-pages
+  /usr/bin/git branch <span class="nt">--list</span> <span class="nt">--remote</span> origin/gh-pages
+    origin/gh-pages
+  /usr/bin/git rev-parse refs/remotes/origin/gh-pages
+  686796df6b3a8cd48f8a41a62512ee5c99ce608f
+Determining the checkout info
+Checking out the ref
+  /usr/bin/git checkout <span class="nt">--progress</span> <span class="nt">--force</span> <span class="nt">-B</span> gh-pages refs/remotes/origin/gh-pages
+  Switched to a new branch <span class="s1">'gh-pages'</span>
+  Branch <span class="s1">'gh-pages'</span> <span class="nb">set </span>up to track remote branch <span class="s1">'gh-pages'</span> from <span class="s1">'origin'</span><span class="nb">.</span>
+/usr/bin/git log <span class="nt">-1</span> <span class="nt">--format</span><span class="o">=</span><span class="s1">'%H'</span>
+<span class="s1">'686796df6b3a8cd48f8a41a62512ee5c99ce608f'</span>
+</code></pre></div></div>
+<blockquote>
+
+  <h3 id="install-bundler">Install bundler</h3>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run <span class="nb">sudo </span>gem <span class="nb">install </span>bundler
+  <span class="nb">sudo </span>gem <span class="nb">install </span>bundler
+  bundle <span class="nb">install
+  </span>shell: /bin/bash <span class="nt">-e</span> <span class="o">{</span>0<span class="o">}</span>
+Successfully installed bundler-2.2.5
+Parsing documentation <span class="k">for </span>bundler-2.2.5
+Installing ri documentation <span class="k">for </span>bundler-2.2.5
+Done installing documentation <span class="k">for </span>bundler after 3 seconds
+1 gem installed
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies............
+Following files may not be writable, so <span class="nb">sudo </span>is needed:
+  /usr/local/bin
+  /var/lib/gems/2.5.0
+  /var/lib/gems/2.5.0/build_info
+  /var/lib/gems/2.5.0/cache
+  /var/lib/gems/2.5.0/doc
+  /var/lib/gems/2.5.0/extensions
+  /var/lib/gems/2.5.0/gems
+  /var/lib/gems/2.5.0/specifications
+Fetching minitest 5.14.3
+Fetching concurrent-ruby 1.1.7
+Installing minitest 5.14.3
+Installing concurrent-ruby 1.1.7
+Fetching thread_safe 0.3.6
+Installing thread_safe 0.3.6
+Fetching zeitwerk 2.4.2
+Installing zeitwerk 2.4.2
+Fetching public_suffix 3.1.1
+Using bundler 2.2.5
+Fetching coffee-script-source 1.11.1
+Installing public_suffix 3.1.1
+Installing coffee-script-source 1.11.1
+Fetching execjs 2.7.0
+Fetching colorator 1.1.0
+Installing execjs 2.7.0
+Installing colorator 1.1.0
+Fetching unf_ext 0.0.7.7
+Fetching eventmachine 1.2.7
+Installing unf_ext 0.0.7.7 with native extensions
+Installing eventmachine 1.2.7 with native extensions
+Fetching http_parser.rb 0.6.0
+Installing http_parser.rb 0.6.0 with native extensions
+Fetching ffi 1.14.2
+Fetching faraday-net_http 1.0.1
+Installing faraday-net_http 1.0.1
+Installing ffi 1.14.2 with native extensions
+Fetching multipart-post 2.1.1
+Installing multipart-post 2.1.1
+Fetching ruby2_keywords 0.0.2
+Installing ruby2_keywords 0.0.2
+Fetching forwardable-extended 2.6.0
+Installing forwardable-extended 2.6.0
+Fetching gemoji 3.0.1
+Installing gemoji 3.0.1
+Fetching rb-fsevent 0.10.4
+Installing rb-fsevent 0.10.4
+Fetching rexml 3.2.4
+Fetching liquid 4.0.3
+Installing rexml 3.2.4
+Installing liquid 4.0.3
+Fetching mercenary 0.3.6
+Installing mercenary 0.3.6
+Fetching rouge 3.23.0
+Fetching safe_yaml 1.0.5
+Installing safe_yaml 1.0.5
+Installing rouge 3.23.0
+Fetching racc 1.5.2
+Installing racc 1.5.2 with native extensions
+Fetching jekyll-paginate 1.1.0
+Installing jekyll-paginate 1.1.0
+Fetching rubyzip 2.3.0
+Fetching jekyll-swiss 1.0.0
+Installing rubyzip 2.3.0
+Installing jekyll-swiss 1.0.0
+Fetching unicode-display_width 1.7.0
+Fetching i18n 0.9.5
+Installing unicode-display_width 1.7.0
+Installing i18n 0.9.5
+Fetching tzinfo 1.2.9
+Fetching addressable 2.7.0
+Installing tzinfo 1.2.9
+Installing addressable 2.7.0
+Fetching coffee-script 2.4.1
+Fetching unf 0.1.4
+Installing coffee-script 2.4.1
+Installing unf 0.1.4
+Fetching em-websocket 0.5.2
+Installing em-websocket 0.5.2
+Fetching faraday 1.3.0
+Fetching pathutil 0.16.2
+Installing faraday 1.3.0
+Installing pathutil 0.16.2
+Fetching ethon 0.12.0
+Fetching rb-inotify 0.10.1
+Installing rb-inotify 0.10.1
+Installing ethon 0.12.0
+Fetching kramdown 2.3.0
+Fetching nokogiri 1.11.1 <span class="o">(</span>x86_64-linux<span class="o">)</span>
+Installing kramdown 2.3.0
+Installing nokogiri 1.11.1 <span class="o">(</span>x86_64-linux<span class="o">)</span>
+Fetching terminal-table 1.8.0
+Installing terminal-table 1.8.0
+Fetching ruby-enum 0.8.0
+Installing ruby-enum 0.8.0
+Fetching activesupport 6.0.3.4
+Installing activesupport 6.0.3.4
+Fetching jekyll-coffeescript 1.1.1
+Installing jekyll-coffeescript 1.1.1
+Fetching simpleidn 0.1.1
+Fetching sawyer 0.8.2
+Installing simpleidn 0.1.1
+Installing sawyer 0.8.2
+Fetching sass-listen 4.0.0
+Fetching listen 3.4.0
+Installing sass-listen 4.0.0
+Installing listen 3.4.0
+Fetching typhoeus 1.4.0
+Installing typhoeus 1.4.0
+Fetching kramdown-parser-gfm 1.1.0
+Installing kramdown-parser-gfm 1.1.0
+Fetching commonmarker 0.17.13
+Fetching html-pipeline 2.14.0
+Installing html-pipeline 2.14.0
+Installing commonmarker 0.17.13 with native extensions
+Fetching dnsruby 1.61.5
+Fetching octokit 4.20.0
+Installing dnsruby 1.61.5
+Installing octokit 4.20.0
+Fetching sass 3.7.4
+Fetching jekyll-watch 2.2.1
+Installing sass 3.7.4
+Installing jekyll-watch 2.2.1
+Fetching jekyll-gist 1.5.0
+Installing jekyll-gist 1.5.0
+Fetching github-pages-health-check 1.16.1
+Fetching jekyll-sass-converter 1.5.2
+Installing github-pages-health-check 1.16.1
+Installing jekyll-sass-converter 1.5.2
+Fetching jekyll 3.9.0
+Installing jekyll 3.9.0
+Fetching jekyll-avatar 0.7.0
+Fetching jekyll-commonmark 1.3.1
+Installing jekyll-commonmark 1.3.1
+Installing jekyll-avatar 0.7.0
+Fetching jekyll-default-layout 0.1.4
+Fetching jekyll-feed 0.15.1
+Installing jekyll-default-layout 0.1.4
+Installing jekyll-feed 0.15.1
+Fetching jekyll-github-metadata 2.13.0
+Fetching jekyll-mentions 1.6.0
+Installing jekyll-github-metadata 2.13.0
+Installing jekyll-mentions 1.6.0
+Fetching jekyll-optional-front-matter 0.3.2
+Fetching jekyll-readme-index 0.3.0
+Installing jekyll-optional-front-matter 0.3.2
+Installing jekyll-readme-index 0.3.0
+Fetching jekyll-redirect-from 0.16.0
+Fetching jekyll-relative-links 0.6.1
+Installing jekyll-redirect-from 0.16.0
+Installing jekyll-relative-links 0.6.1
+Fetching jekyll-remote-theme 0.4.2
+Fetching jekyll-seo-tag 2.6.1
+Installing jekyll-remote-theme 0.4.2
+Installing jekyll-seo-tag 2.6.1
+Fetching jekyll-sitemap 1.4.0
+Fetching jekyll-titles-from-headings 0.5.3
+Installing jekyll-sitemap 1.4.0
+Installing jekyll-titles-from-headings 0.5.3
+Fetching jemoji 0.12.0
+Installing jemoji 0.12.0
+Fetching jekyll-commonmark-ghpages 0.1.6
+Fetching jekyll-theme-architect 0.1.1
+Installing jekyll-commonmark-ghpages 0.1.6
+Installing jekyll-theme-architect 0.1.1
+Fetching jekyll-theme-cayman 0.1.1
+Fetching jekyll-theme-dinky 0.1.1
+Installing jekyll-theme-cayman 0.1.1
+Installing jekyll-theme-dinky 0.1.1
+Fetching jekyll-theme-hacker 0.1.2
+Fetching jekyll-theme-leap-day 0.1.1
+Installing jekyll-theme-hacker 0.1.2
+Fetching jekyll-theme-merlot 0.1.1
+Installing jekyll-theme-leap-day 0.1.1
+Installing jekyll-theme-merlot 0.1.1
+Fetching jekyll-theme-midnight 0.1.1
+Fetching jekyll-theme-minimal 0.1.1
+Installing jekyll-theme-midnight 0.1.1
+Installing jekyll-theme-minimal 0.1.1
+Fetching jekyll-theme-modernist 0.1.1
+Fetching jekyll-theme-primer 0.5.4
+Installing jekyll-theme-modernist 0.1.1
+Installing jekyll-theme-primer 0.5.4
+Fetching jekyll-theme-slate 0.1.1
+Fetching jekyll-theme-tactile 0.1.1
+Installing jekyll-theme-slate 0.1.1
+Installing jekyll-theme-tactile 0.1.1
+Fetching jekyll-theme-time-machine 0.1.1
+Fetching minima 2.5.1
+Installing jekyll-theme-time-machine 0.1.1
+Installing minima 2.5.1
+Fetching github-pages 209
+Installing github-pages 209
+Bundle <span class="nb">complete</span><span class="o">!</span> 5 Gemfile dependencies, 92 gems now installed.
+Use <span class="sb">`</span>bundle info <span class="o">[</span>gemname]<span class="sb">`</span> to see where a bundled gem is installed.
+Post-install message from dnsruby:
+Installing dnsruby...
+  For issues and <span class="nb">source </span>code: https://github.com/alexdalitz/dnsruby
+  For general discussion <span class="o">(</span>please tell us how you use dnsruby<span class="o">)</span>: https://groups.google.com/forum/#!forum/dnsruby
+Post-install message from sass:
+
+Ruby Sass has reached end-of-life and should no longer be used.
+
+<span class="k">*</span> If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+  primary implementation: https://sass-lang.com/install
+
+<span class="k">*</span> If you use Sass as a plug-in <span class="k">for </span>a Ruby web framework, we recommend using the
+  sassc gem: https://github.com/sass/sassc-ruby#readme
+
+<span class="k">*</span> For more details, please refer to the Sass blog:
+  https://sass-lang.com/blog/posts/7828841
+
+Post-install message from html-pipeline:
+<span class="nt">-------------------------------------------------</span>
+Thank you <span class="k">for </span>installing html-pipeline!
+You must bundle Filter gem dependencies.
+See html-pipeline README.md <span class="k">for </span>more details.
+https://github.com/jch/html-pipeline#dependencies
+<span class="nt">-------------------------------------------------</span>
+</code></pre></div></div>
+<blockquote>
+
+  <h3 id="build-site">Build site</h3>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Run <span class="nb">cd </span>docs
+  <span class="nb">cd </span>docs
+  bundle <span class="nb">exec </span>jekyll b <span class="nt">--trace</span>
+  <span class="nb">date</span> <span class="o">&gt;</span> generated.txt
+  git log <span class="nt">-1</span> <span class="o">&gt;</span> log.txt
+  git config user.name github-actions
+  git config user.email github-actions@github.com
+  git add <span class="nb">.</span>
+  git commit <span class="nt">-m</span> <span class="s2">"generated"</span>
+  git push
+  shell: /bin/bash <span class="nt">-e</span> <span class="o">{</span>0<span class="o">}</span>
+Configuration file: /home/runner/work/runner_one/runner_one/docs/_config.yml
+            Source: <span class="nb">.</span>
+       Destination: _site
+ Incremental build: disabled. Enable with <span class="nt">--incremental</span>
+      Generating...
+       Jekyll Feed: Generating feed <span class="k">for </span>posts
+                    <span class="k">done in </span>0.254 seconds.
+ Auto-regeneration: disabled. Use <span class="nt">--watch</span> to enable.
+<span class="o">[</span>gh-pages b46534e] generated
+ 6 files changed, 15 insertions<span class="o">(</span>+<span class="o">)</span>, 15 deletions<span class="o">(</span>-<span class="o">)</span>
+To https://github.com/wryyyyyyyy/runner_one
+   ecc1a61..b46534e  gh-pages -&gt; gh-pages
+</code></pre></div></div>
+<blockquote>
+
+  <h3 id="post-run-actionscheckoutv2">Post run actions/checkout@v2</h3>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Post job cleanup.
+/usr/bin/git version
+git version 2.29.2
+/usr/bin/git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> core<span class="se">\.</span>sshCommand
+/usr/bin/git submodule foreach <span class="nt">--recursive</span> git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> <span class="s1">'core\.sshCommand'</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--local</span> <span class="nt">--unset-all</span> <span class="s1">'core.sshCommand'</span> <span class="o">||</span> :
+/usr/bin/git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> http<span class="se">\.</span>https<span class="se">\:\/\/</span>github<span class="se">\.</span>com<span class="se">\/\.</span>extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config <span class="nt">--local</span> <span class="nt">--unset-all</span> http.https://github.com/.extraheader
+/usr/bin/git submodule foreach <span class="nt">--recursive</span> git config <span class="nt">--local</span> <span class="nt">--name-only</span> <span class="nt">--get-regexp</span> <span class="s1">'http\.https\:\/\/github\.com\/\.extraheader'</span> <span class="o">&amp;&amp;</span> git config <span class="nt">--local</span> <span class="nt">--unset-all</span> <span class="s1">'http.https://github.com/.extraheader'</span> <span class="o">||</span> :
+</code></pre></div></div>
+<blockquote>
+
+  <h3 id="complete-job">Complete job</h3>
+
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cleaning up orphan processes
+</code></pre></div></div>
+
+
+<p><center><pre>copyright &copy; 2021 by <a href="/runner_one">runner_one</a> | source: <a href="https://github.com/wryyyyyyyy/runner_one">Github</a> | <a href="https://wryyyyyyyy.github.io/runner_one/feed.xml">RSS</a></pre></center></p>
+</body>
+</html>
+

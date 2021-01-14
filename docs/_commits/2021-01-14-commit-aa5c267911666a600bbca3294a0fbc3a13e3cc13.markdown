@@ -1,0 +1,12 @@
+---
+layout: post
+title: 2021-01-14-commit-aa5c267911666a600bbca3294a0fbc3a13e3cc13
+author: commit
+tags: commit aa5c267911666a600bbca3294a0fbc3a13e3cc13
+---
+
+commit aa5c267911666a600bbca3294a0fbc3a13e3cc13
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 07:11:09 2021 +0100
+
+    workflow && templates updated

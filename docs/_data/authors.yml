@@ -1,11 +1,3 @@
-benbalter:
-  picture: /img/benbalter.png
-  twitter: jekyllrb
-
-potus:
-  picture: /img/potus.png
-  twitter: whitehouse
-
 commit:
   picture: /img/logo.png
   twitter: runner_one-commit
