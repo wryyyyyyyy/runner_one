@@ -85,17 +85,17 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-commonmark-ghpages
+#  - jekyll-paginate
+#  - jekyll-commonmark-ghpages
   - github-pages
 
 feed:
-  path: ./_site/feed.xml
+  path: /feed.xml
 
 #  collections:
 #    commits:
-#      path: feed/commits.xml
+#      path: /feed/commits.xml
 #    posts:
-#      path: feed/posts.xml
+#      path: /feed/posts.xml
 #    drafts:
-#      path: feed/drafts.xml
+#      path: /feed/drafts.xml
