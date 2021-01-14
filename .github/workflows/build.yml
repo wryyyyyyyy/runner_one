@@ -26,6 +26,7 @@ jobs:
           echo "---" > docs/_commits/$logdata-commit-$logfile.md
           echo "layout: post" >> docs/_commits/$logdata-commit-$logfile.md
           echo "title: $logdata-commit-$logfile" >> docs/_commits/$logdata-commit-$logfile.md
+          echo "author: commit-$logfile" >> docs/_commits/$logdata-commit-$logfile.md
           echo "tags: commit $logfile" >> docs/_commits/$logdata-commit-$logfile.md
           echo "---" >> docs/_commits/$logdata-commit-$logfile.md
           echo "" >> docs/_commits/$logdata-commit-$logfile.md
