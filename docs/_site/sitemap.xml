@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/docs/about.html</loc>
+<loc>/runner_one/about.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/default.html</loc>
+<loc>/runner_one/default.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/</loc>
+<loc>/runner_one/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/logs.html</loc>
+<loc>/runner_one/logs.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/notes.html</loc>
+<loc>/runner_one/notes.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/status.html</loc>
+<loc>/runner_one/status.html</loc>
 </url>
 </urlset>
