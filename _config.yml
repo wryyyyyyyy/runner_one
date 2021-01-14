@@ -1,6 +1,6 @@
 # Where things are
 source              : .
-destination         : docs/_site
+destination         : docs/
 collections_dir     : docs/_collection
 plugins_dir         : docs/_plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : docs/_layouts
@@ -28,7 +28,7 @@ strict_front_matter : false
 # Filtering Content
 show_drafts         : false
 limit_posts         : 15
-future              : false
+future              : true
 unpublished         : false
 
 # Plugins
@@ -36,7 +36,7 @@ unpublished         : false
 #plugins             : []
 
 # Conversion
-markdown            : kramdown
+markdown            : CommonMarkGhPages
 highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
@@ -75,6 +75,10 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
+commonmark:
+  options           : ["SMART", "FOOTNOTES"]
+  extensions        : ["strikethrough", "autolink", "table", "tagfilter"]
+
 theme: jekyll-theme-minimal
 
 plugins:
@@ -82,4 +86,16 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-commonmark
   - github-pages
+
+feed:
+  path: feed/atom.xml
+
+  collections:
+    commits:
+      path: feed/commits.xml
+    posts:
+      path: feed/posts.xml
+    drafts:
+      path: feed/drafts.xml
