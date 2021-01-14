@@ -1,4 +1,4 @@
-#### README.md
+{% include index.tpl %}
 
 | Test | CI | Deployment |
 | ------------ | ------------ | ------------ |

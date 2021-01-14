@@ -35,24 +35,21 @@ jobs:
           echo "" >> docs/_commits/$logdata-commit-$logfile.markdown
           git log -1 >> docs/_commits/$logdata-commit-$logfile.markdown
 
-      - name: Generate site
+      - name: Generate site #bundle exec jekyll new _site --force
         run: |
           echo GENERATE STAGE
-          bundle exec jekyll new _site --force
-          cp -f Gemfile.conf _site/Gemfile
-          cp -f config.conf _site/_config.yml
           cp -f Gemfile.conf docs/Gemfile
           cp -f config.conf docs/_config.yml
+#          cp -f Gemfile.conf docs/Gemfile
+#          cp -f config.conf docs/_config.yml
 
       - name: Build site
         run: |
           echo BUILD STAGE
-          cd _site
-          bundle exec jekyll b --trace
-          cd ../
           cd docs
           bundle exec jekyll b --trace
           cd ../
+#          bundle exec jekyll b --trace
 #          cp -f _site/*.xml -t docs/
 #          cp -f _site/*.txt -t docs/
 #          cp -f _site/*.html -t docs/

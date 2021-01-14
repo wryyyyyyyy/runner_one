@@ -1,6 +1,6 @@
 ---
 title: Main
-layout: index
+layout: default
 description: Main page
 ---
 
