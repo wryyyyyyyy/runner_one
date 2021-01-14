@@ -9,8 +9,6 @@ description: About page
 
 {% include posts.tpl %}
 
-{% post_url 2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45 %}
-
 [Link to a post]({% link _posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md %})
 
 <table>
