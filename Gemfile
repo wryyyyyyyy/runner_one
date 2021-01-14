@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem 'tzinfo-data'
+gem 'tzinfo (~> 1.2)'
 gem 'jekyll'
 
 group :jekyll_plugins do
@@ -8,5 +10,4 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-paginate'
   gem 'github-pages'
-  gem 'tzinfo-data'
 end
