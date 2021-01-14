@@ -9,10 +9,15 @@ includes_dir        : _includes
 sass:
   sass_dir          : _sass
 collections:
-  commits: true
-  posts: true
-  drafts: true
-  output: true
+  commits:
+    output: true
+    permalink: /commits/:path/
+  posts:
+    output: true
+    permalink: /posts/:path/
+  drafts:
+    output: true
+    permalink: /drafts/:path/
 
 # Handling Reading
 safe                : false
