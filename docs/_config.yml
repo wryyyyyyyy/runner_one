@@ -1,13 +1,13 @@
 # Where things are
 source              : .
-destination         : _site
-collections_dir     : _collection
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+destination         : ./_site/
+collections_dir     : ./_collection/
+plugins_dir         : ./_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : ./_layouts/
+data_dir            : ./_data/
+includes_dir        : ./_includes/
 sass:
-  sass_dir          : _sass
+  sass_dir          : ./_sass/
 collections:
   commits:
     output: true
@@ -95,14 +95,12 @@ feed:
 
   collections:
     commits:
-      path: commits.xml
+      tags: true
+      path: ./feed/commits.xml
     posts:
-      path: posts.xml
+      tags: true
+      path: ./feed/posts.xml
     drafts:
-      path: drafts.xml
+      tags: true
+      path: ./feed/drafts.xml
 
-  categories:
-    jekyll:
-      path: jeykill.xml
-    update:
-      path: update.xml

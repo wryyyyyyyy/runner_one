@@ -1,6 +1,6 @@
 # Where things are
 source              : docs/
-destination         : docs/_site
+destination         : .
 collections_dir     : docs/_collection
 plugins_dir         : docs/_plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : docs/_layouts
@@ -11,13 +11,13 @@ sass:
 collections:
   - posts
     output: true
-    permalink: /posts/:title/
+#    permalink: /posts/:title/
   - commits
     output: true
-    permalink: /commits/:title/
+#    permalink: /commits/:title/
   - drafts
     output: true
-    permalink: /drafts/:title/
+#    permalink: /drafts/:title/
 
 # Handling Reading
 safe                : false
@@ -29,7 +29,7 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : true
+show_drafts         : false
 limit_posts         : 15
 future              : true
 unpublished         : false
@@ -55,7 +55,7 @@ show_dir_listing    : false
 
 # Outputting
 #permalink           : date
-permalink           : pretty
+permalink           : date
 paginate_path       : /page:num
 timezone            : null
 
@@ -79,7 +79,7 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : true
 
-theme: minima
+#theme: minima
 
 plugins:
   - jekyll-feed
@@ -90,15 +90,13 @@ plugins:
 
 feed:
   tags: true
-  path: atom.xml
+  path: feed/atom.xml
   posts_limit: 15
 
   collections:
-    - commits
-      path: "/commits.xml"
-    - drafts
-      path: "/drafts.xml"
-
-  categories:
-    - jekyll
-    - update
+    commits:
+      path: feed/commits.xml
+    posts:
+      path: feed/posts.xml
+    drafts:
+      path: feed/drafts.xml
