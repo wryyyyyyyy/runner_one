@@ -1,5 +1,4 @@
 ---
-permalink: /logs.html
 title: Logs
 layout: default
 description: Logs page

@@ -1,5 +1,4 @@
 ---
-permalink: /notes.html
 title: Notes
 layout: default
 description: Notes page

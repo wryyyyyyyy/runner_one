@@ -1,6 +1,6 @@
 # Where things are
 source              : .
-destination         : ..
+destination         : _site
 collections_dir     : _collection
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
@@ -79,7 +79,7 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
-theme: minima
+theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
@@ -95,9 +95,9 @@ feed:
 
   collections:
     commits:
-      path: ./feed/commits.xml
+      path: feed/commits.xml
     posts:
-      path: ./feed/posts.xml
+      path: feed/posts.xml
     drafts:
-      path: ./feed/drafts.xml
+      path: feed/drafts.xml
 
