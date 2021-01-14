@@ -3,7 +3,7 @@ title: Status
 layout: page
 description: Status page
 ---
-<center>
+
 <table>
   <thead>
     <tr>
@@ -20,4 +20,3 @@ description: Status page
     </tr>
   </center></tbody>
 </table>
-</center>
