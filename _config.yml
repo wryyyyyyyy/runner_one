@@ -28,7 +28,7 @@ strict_front_matter : false
 # Filtering Content
 show_drafts         : false
 limit_posts         : 15
-future              : true
+future              : false
 unpublished         : false
 
 # Plugins
@@ -51,7 +51,6 @@ baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-#permalink           : date
 permalink           : date
 paginate_path       : /page:num
 timezone            : null
@@ -84,16 +83,3 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - github-pages
-
-feed:
-  tags: true
-  path: docs/_site/feed/atom.xml
-  posts_limit: 15
-
-  collections:
-    commits:
-      path: docs/_site/feed/commits.xml
-    posts:
-      path: docs/_site/feed/posts.xml
-    drafts:
-      path: docs/_site/feed/drafts.xml
