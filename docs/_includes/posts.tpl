@@ -1,8 +1,8 @@
 <ul>
-  {% for posts in site.posts %}
+  {% for posts in (1..5) %}
     <li>
       {{ posts }}
-      <a href="{{ site.baseurl }}{{ page.url }}">{{ post.title }} at {{ page.title }}</a>
+      <a href="#">{{ post.title }} at {{ page.title }}</a>
     </li>
   {% endfor %}
 </ul>
