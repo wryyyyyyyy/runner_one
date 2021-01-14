@@ -1,0 +1,15 @@
+---
+layout: post
+title: 2021-01-14-commit-4e9207f973def9b657c75565345403430f0c300f
+author: commit
+tags: commit 4e9207f973def9b657c75565345403430f0c300f
+---
+
+commit 4e9207f973def9b657c75565345403430f0c300f
+Merge: 0c7a475 0ad391e
+Author: wryyyyyyyy <33553950+wryyyyyyyy@users.noreply.github.com>
+Date:   Thu Jan 14 09:38:16 2021 +0100
+
+    Merge pull request #1 from wryyyyyyyy/dependabot/bundler/tzinfo-tw-2.0
+    
+    Update tzinfo requirement from ~> 1.2 to ~> 2.0
