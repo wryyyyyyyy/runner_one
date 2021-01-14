@@ -51,7 +51,7 @@ jobs:
           cp -f _site/*.xml -t docs/
           cp -f _site/*.txt -t docs/
           cp -f _site/.gitignore docs/
-          cp -Rf _site/docs/ -t ./
+          cp -Rf _site/docs -t /
           cp -Rf _site/drafts -t docs/
           cp -Rf _site/commits -t docs/
 
