@@ -36,12 +36,14 @@ jobs:
       - name: Build site
         run: |
           bundle exec jekyll new _site --force
+          cp -f ./config.conf ./_site/_config.yml
           cd _site
           bundle exec jekyll b --trace
           cd ..
-          cp -f ./_site/*.html ./docs/
+          cp -f ./_site/docs/*.html ./docs/
           cp -f ./_site/*.xml ./docs/
           cp -f ./_site/*.txt ./docs/
+          cp -f ./_site/.gitignore ./docs/
           cp -Rf ./_site/assets/ -t ./docs/
           cp -Rf ./_site/drafts/ -t ./docs/
           cp -Rf ./_site/commits/ -t ./docs/
