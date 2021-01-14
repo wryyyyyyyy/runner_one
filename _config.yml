@@ -80,17 +80,21 @@ commonmark:
   extensions        : ["strikethrough", "autolink", "table", "tagfilter"]
 
 theme: jekyll-theme-minimal
+
 title: Runner One
 description: >-
-  Here some desc.
+  Just a kind of some starter project for Github Actions testing purposes.
+  Can be labelled as template for future projects including Github Pages
+  uses Jekyll as static site generator. Produced rendered default pages
+  over CI workflow.
 author: wryyyyyyyy
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-#  - jekyll-paginate
-#  - jekyll-commonmark-ghpages
+  - jekyll-paginate
+  - jekyll-commonmark-ghpages
   - github-pages
 
 feed:

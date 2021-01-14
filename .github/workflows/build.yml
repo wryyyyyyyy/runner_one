@@ -19,9 +19,9 @@ jobs:
           sudo apt update
           sudo gem update --system
           sudo gem update
-          sudo gem install jekyll bundler liquid
+          sudo gem install bundler
           bundle init
-          bundle install
+          bundle install jekyll liquid
 
       - name: Prepare post
         run: |
@@ -47,7 +47,7 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new _site
+          bundle exec jekyll new _site --force
           cd ./_site
           bundle exec jekyll b --trace
           git config user.name github-actions
