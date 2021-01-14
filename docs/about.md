@@ -42,6 +42,17 @@ description: About page
   </ul>
 {% endfor %}
 
+#### for commit in site.commits
+{% for commit in site.commits %}
+
+<a href="{{ commit.url | prepend: site.baseurl }}">
+  <h2>{{ commit.title }}</h2>
+</a>
+
+<p class="post-excerpt">{{ commit.description | truncate: 160 }}</p>
+
+{% endfor %}
+
 #### table
 <table>
   <thead>
