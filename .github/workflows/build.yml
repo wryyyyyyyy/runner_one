@@ -16,8 +16,8 @@ jobs:
 
       - name: Install bundler
         run: |
-          sudo gem install bundler
-          sudo gem update
+          sudo gem install bundler -N
+          sudo gem update -N
           bundle install -j3
 #          sudo apt update
 #          sudo gem update --system
