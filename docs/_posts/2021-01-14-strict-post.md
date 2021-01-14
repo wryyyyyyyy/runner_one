@@ -1,5 +1,5 @@
 ---
-title: Strict
+title: strict post
 layout: post
 description: Just a strict post
 ---

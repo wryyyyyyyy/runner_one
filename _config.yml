@@ -9,12 +9,13 @@ includes_dir        : docs/_includes
 sass:
   sass_dir:           docs/_sass
 collections:
-  posts:
-    output: true
-  commits:
-    output: true
-  drafts:
-    output: true
+  output            : true
+posts:
+  output            : true
+commits:
+  output            : true
+drafts:
+  output            : true
 
 # Handling Reading
 safe                : false

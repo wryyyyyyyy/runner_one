@@ -30,6 +30,8 @@ jobs:
           echo "---" >> docs/_commits/$logdata-commit-$logfile.md
           echo "" >> docs/_commits/$logdata-commit-$logfile.md
           git log -1 >> docs/_commits/$logdata-commit-$logfile.md
+          bundle exec jekyll new www
+          cd www && bundle exec jekyll b --trace && cd ..
 
       - name: Build site
         run: |

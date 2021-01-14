@@ -42,6 +42,9 @@ description: About page
   </ul>
 {% endfor %}
 
+### post_url
+{% post_url 2021-01-14-just-a-strict-post %}
+
 #### table
 <table>
   <thead>

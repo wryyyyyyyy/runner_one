@@ -1,5 +1,5 @@
 ---
-title: Draft
+title: just a draft post
 layout: post
 description: Just a draft post
 ---
