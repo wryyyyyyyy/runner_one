@@ -20,8 +20,8 @@ jobs:
           sudo gem update --system
           sudo gem update
           sudo gem install bundler
+          bundle install -j3 --system --with="jekyll liquid jekyll-feed jekyll-sitemap jekyll-seo-tag jekyll-paginate jekyll-commonmark-ghpages github-pages"
           bundle init
-          bundle install jekyll liquid
 
       - name: Prepare post
         run: |
