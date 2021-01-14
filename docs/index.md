@@ -1,48 +1,60 @@
 ---
 title: Main
-layout: index
+layout: default
 description: Main page
 ---
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
 
-### Main page
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
 
-Just a kind of some starter project for [Github Actions](https://github.com/wryyyyyyyy/runner_one/actions) testing purposes.
-Can be labelled as template for future projects including [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages) uses [Jekyll](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll) as
-static site generator.
-Produced rendered default pages over [CI workflow](https://docs.github.com/en/free-pro-team@latest/actions/guides/setting-up-continuous-integration-using-workflow-templates)
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
 
-```yaml
-name: CI
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/' | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
 
-on:
-  push:
-    branches: [ gh-pages ]
-  pull_request:
-    branches: [ gh-pages ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Install bundler
-        run: |
-          sudo gem install bundler
-          bundle install
-
-      - name: Build site
-        run: |
-          cd docs
-          bundle exec jekyll b --trace
-          date > generated.txt
-          git log -1 > _posts/`git log -1 --format='%H'`.md
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "generated"
-          git push
-
-```
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
