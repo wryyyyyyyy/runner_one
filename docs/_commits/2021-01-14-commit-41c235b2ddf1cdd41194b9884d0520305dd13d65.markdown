@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-14-commit-41c235b2ddf1cdd41194b9884d0520305dd13d65
+author: commit
+tags: commit 41c235b2ddf1cdd41194b9884d0520305dd13d65
+---
+
+commit 41c235b2ddf1cdd41194b9884d0520305dd13d65
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 17:32:24 2021 +0100
+
+    config updated
