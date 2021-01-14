@@ -43,8 +43,8 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new docs/_site --force
-          cd docs/_site
+          bundle exec jekyll new docs/_site
+          cd docs
           bundle exec jekyll b --trace
           date > generated.txt
           git config user.name github-actions
