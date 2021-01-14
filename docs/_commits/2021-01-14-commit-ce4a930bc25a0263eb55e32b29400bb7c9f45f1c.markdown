@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-14-commit-ce4a930bc25a0263eb55e32b29400bb7c9f45f1c
+author: commit
+tags: commit ce4a930bc25a0263eb55e32b29400bb7c9f45f1c
+---
+
+commit ce4a930bc25a0263eb55e32b29400bb7c9f45f1c
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 23:53:07 2021 +0100
+
+    workflow changed
