@@ -21,7 +21,7 @@ jobs:
           sudo gem update
           sudo gem install jekyll bundler liquid
           bundle init
-          bundle exec rake
+          bundle install
 
       - name: Prepare post
         run: |
