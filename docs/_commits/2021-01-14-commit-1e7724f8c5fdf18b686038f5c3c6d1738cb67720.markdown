@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-14-commit-1e7724f8c5fdf18b686038f5c3c6d1738cb67720
+author: commit
+tags: commit 1e7724f8c5fdf18b686038f5c3c6d1738cb67720
+---
+
+commit 1e7724f8c5fdf18b686038f5c3c6d1738cb67720
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 11:33:21 2021 +0100
+
+    config, templates updated
