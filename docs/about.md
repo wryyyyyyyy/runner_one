@@ -40,7 +40,7 @@ description: About page
   <ul>
     {% for post in tag[1] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      <li><p>{{ commit.content | markdownify }}</p></li>
+      <li><p>{{ post.content | markdownify }}</p></li>
     {% endfor %}
   </ul>
 {% endfor %}

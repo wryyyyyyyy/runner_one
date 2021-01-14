@@ -1,6 +1,6 @@
 ---
 title: Notes
-layout: default
+layout: page
 description: Notes page
 ---
 

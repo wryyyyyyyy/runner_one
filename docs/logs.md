@@ -1,6 +1,6 @@
 ---
 title: Logs
-layout: default
+layout: page
 description: Logs page
 ---
 

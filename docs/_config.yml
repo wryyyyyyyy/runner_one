@@ -11,13 +11,10 @@ sass:
 collections:
   commits:
     output: true
-#    permalink: /commits/:path/
   posts:
     output: true
-#    permalink: /posts/:path/
   drafts:
     output: true
-#    permalink: /drafts/:path/
 
 # Handling Reading
 safe                : false
@@ -29,10 +26,10 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : false
+show_drafts         : true
 limit_posts         : 15
-future              : false
-unpublished         : false
+future              : true
+unpublished         : true
 
 # Plugins
 #whitelist           : []
@@ -90,7 +87,7 @@ plugins:
 
 feed:
   tags: true
-  path: feed/atom.xml
+  path: atom.xml
   posts_limit: 15
 
   collections:

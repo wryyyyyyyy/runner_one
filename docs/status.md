@@ -1,6 +1,6 @@
 ---
 title: Status
-layout: default
+layout: page
 description: Status page
 ---
 
