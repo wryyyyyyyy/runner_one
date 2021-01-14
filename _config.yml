@@ -79,5 +79,3 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - github-pages
-
-JEKYLL_ENV=production
