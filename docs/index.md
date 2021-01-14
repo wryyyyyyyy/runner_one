@@ -4,12 +4,10 @@ layout: index
 description: Main page
 ---
 
-#### Posts
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
+#### About
+```
+  Just a kind of some starter project for Github Actions testing purposes.
+  Can be labelled as template for future projects including Github Pages
+  uses Jekyll as static site generator. Produced rendered default pages
+  over CI workflow.
+```

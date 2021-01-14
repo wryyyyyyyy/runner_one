@@ -4,8 +4,19 @@ layout: default
 description: About page
 ---
 
+#### Posts
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
 #### Workflow
 ```yaml
+
 name: CI
 
 on:
@@ -44,20 +55,22 @@ jobs:
       - name: Build site
         run: |
           bundle exec jekyll new _site --force
+          cp -f config.conf -t _site/_config.yml
+          cp -f Gemfile.conf -t _site/Gemfile
           cd _site
           bundle exec jekyll b --trace
+          cp -f docs/*.html -t ../docs/
+          cp -f *.xml -t ../docs/
+          cp -f *.txt -t ../docs/
+          cp -f .gitignore ../docs/
+          cp -Rf docs/assets/ -t ../docs/
+          cp -Rf drafts/ -t ../docs/
+          cp -Rf commits/ -t ../docs/
           cd ..
-          cp -f ./_site/*.html ./docs/
-          cp -f ./_site/*.xml ./docs/
-          cp -f ./_site/*.txt ./docs/
-          cp -Rf ./_site/assets/ -t ./docs/
-          cp -Rf ./_site/drafts/ -t ./docs/
-          cp -Rf ./_site/commits/ -t ./docs/
-          pwd
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "site generated and published"
+          git commit -m "site generated"
           git push
 
 ```
