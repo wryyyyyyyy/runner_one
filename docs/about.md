@@ -4,6 +4,13 @@ layout: default
 description: About page
 ---
 
+>
+>
+>#### include posts.tpl
+>
+>
+{% include posts.tpl %}
+
 #### for post in site.posts
 <ul>
   {% for post in site.posts %}

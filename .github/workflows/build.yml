@@ -16,8 +16,10 @@ jobs:
 
       - name: Install bundler
         run: |
+          sudo apt update && sudo apt upgrade
+          sudo gem update --system
           sudo gem update
-          sudo gem install bundler
+          sudo gem install jekyll bundler
           bundle install
 
       - name: Prepare post

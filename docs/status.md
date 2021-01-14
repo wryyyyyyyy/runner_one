@@ -3,9 +3,6 @@ title: Status
 layout: page
 description: Status page
 ---
-
-### Status page
-
 <center>
 <table>
   <thead>

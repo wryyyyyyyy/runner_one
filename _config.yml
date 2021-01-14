@@ -90,7 +90,8 @@ plugins:
   - github-pages
 
 feed:
-  path: atom.xml
+  tags               : true
+  path               : atom.xml
 
 #  collections:
 #    commits:

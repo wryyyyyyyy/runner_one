@@ -1,8 +1,9 @@
 ---
 title: Main
-layout: default
+layout: index
 description: Main page
 ---
+
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
