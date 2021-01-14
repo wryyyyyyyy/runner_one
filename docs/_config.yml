@@ -10,7 +10,9 @@ sass:
   sass_dir          : _sass
 collections:
   commits: true
-    output: true
+  posts: true
+  drafts: true
+  output: true
 
 # Handling Reading
 safe                : false
