@@ -1,3 +1,11 @@
+---
+title: About
+layout: default
+description: About page
+---
+
+#### Workflow
+```yaml
 name: CI
 
 on:
@@ -49,5 +57,24 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "site generated"
+          git commit -m "site generated and published"
           git push
+
+```
+
+<table>
+  <thead>
+    <tr>
+      <th><center>&nbsp;</center></th>
+      <th><center>Valid Atom 1.0</center></th>
+      <th><center>&nbsp;</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><center>&nbsp;</center></td>
+      <td><center><a href="https://validator.w3.org/feed/check.cgi?url=https://wryyyyyyyy.github.io/runner_one/atom.xml"><img src="https://wryyyyyyyy.github.io/runner_one/assets/img/valid-atom.png" alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></center></td>
+      <td><center>&nbsp;</center></td>
+    </tr>
+  </tbody>
+</table>

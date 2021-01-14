@@ -1,0 +1,11 @@
+---
+layout: post
+title: 2021-01-14-commit-c4fa14b1a1d65266752e55dd99e7436b63e0c36a
+tags: commit c4fa14b1a1d65266752e55dd99e7436b63e0c36a
+---
+
+commit c4fa14b1a1d65266752e55dd99e7436b63e0c36a
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 03:00:27 2021 +0100
+
+    templates updated

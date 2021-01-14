@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+{% feed_meta %}
+{% seo %}
+</head>
+<body>
+{% include navigation.tpl %}
+
+<p>{{ page.date }} - Written by {{ page.author }}</p>
+
+{{ content }}
+
+{% include footer.tpl %}
