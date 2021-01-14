@@ -46,7 +46,7 @@ jobs:
         run: |
           echo BUILD STAGE
           cd _site
-          bundle exec jekyll b --trace
+          bundle exec jekyll b --trace --incremental
           cp -f *.xml -t ../docs/
           cp -f *.txt -t ../docs/
           cp -f .gitignore ../docs/
