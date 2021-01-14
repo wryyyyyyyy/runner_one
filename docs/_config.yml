@@ -54,7 +54,7 @@ show_dir_listing    : false
 #permalink           : date
 permalink           : pretty
 paginate_path       : /page:num
-timezone            : Europe/Berlin
+timezone            : null
 
 quiet               : false
 verbose             : false
