@@ -30,23 +30,24 @@ jobs:
           echo "---" >> docs/_commits/$logdata-commit-$logfile.md
           echo "" >> docs/_commits/$logdata-commit-$logfile.md
           git log -1 >> docs/_commits/$logdata-commit-$logfile.md
-          bundle exec jekyll new www
-          cd www
-          bundle exec jekyll b --trace
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "generated www"
-          git push
-          cd ..
-
-#      - name: Build site
-#        run: |
-#          cd docs
+#          bundle exec jekyll new www
+#          cd www
 #          bundle exec jekyll b --trace
-#          date > generated.txt
 #          git config user.name github-actions
 #          git config user.email github-actions@github.com
 #          git add .
-#          git commit -m "generated docs"
+#          git commit -m "generated www"
 #          git push
+#          cd ..
+
+      - name: Build site
+        run: |
+          bundle exec jekyll new docs/_site
+          cd docs/_site
+          bundle exec jekyll b --trace
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated docs"
+          git push
