@@ -6,7 +6,7 @@ source "https://rubygems.org"
 #gem 'rspec'
 
 gem 'tzinfo-data'
-gem 'tzinfo', '~> 2.0'
+gem 'tzinfo', '~> 1.2.9'
 gem 'wdm', '~> 0.1.0'
 
 gem 'jekyll', '~> 3.9.0'
