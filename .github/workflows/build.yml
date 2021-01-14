@@ -48,7 +48,7 @@ jobs:
           bundle exec jekyll b --trace --incremental
           mv -f _site/*.xml -t docs/
           mv -f _site/*.txt -t docs/
-          mv -f *.html -t docs/
+          mv -f _site/*.html -t docs/
           mv -f _site/.gitignore docs/.gitignore
           mv -f _site/drafts -t docs/drafts
           mv -f _site/commits -t docs/commits
