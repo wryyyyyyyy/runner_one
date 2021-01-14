@@ -10,7 +10,8 @@ sass:
   sass_dir:           _sass
 collections:
   posts:
-    output          : true
+    commits:
+      output        : true
 
 # Handling Reading
 safe                : false
@@ -36,14 +37,14 @@ markdown            : kramdown
 highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
-incremental         : false
+incremental         : true
 
 # Serving
 detach              : false
 port                : 4000
 host                : 127.0.0.1
 baseurl             : "/runner_one" # does not include hostname
-show_dir_listing    : false
+show_dir_listing    : true
 
 # Outputting
 permalink           : date
@@ -51,7 +52,7 @@ paginate_path       : /page:num
 timezone            : null
 
 quiet               : false
-verbose             : false
+verbose             : true
 defaults            : []
 
 liquid:

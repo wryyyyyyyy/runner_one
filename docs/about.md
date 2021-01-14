@@ -7,7 +7,19 @@ description: About page
 
 ### About CI build process
 
-{% include posts.tpl %}
+{% for commit in site.commits %}
+  <h2>{{ commit.date }} - {{ commit.title }}</h2>
+  <p>{{ commit.content | markdownify }}</p>
+{% endfor %}
+
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
