@@ -34,7 +34,7 @@ jobs:
       - name: Build site
         run: |
           cd docs
-          bundle exec jekyll b --trace
+          bundle exec jekyll b --trace --watch --incremental
           date > generated.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
