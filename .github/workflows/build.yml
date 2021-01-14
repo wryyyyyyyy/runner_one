@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
@@ -16,8 +16,10 @@ jobs:
 
       - name: Install bundler
         run: |
+          sudo apt-get update && sudo apt-get upgrade
           sudo gem install bundler
           bundle install
+          sudo gem update
 
       - name: Prepare post
         run: |
@@ -43,8 +45,7 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new www --force
-          cd www
+          cd docs
           bundle exec jekyll b --trace
           git config user.name github-actions
           git config user.email github-actions@github.com
