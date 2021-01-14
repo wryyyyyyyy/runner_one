@@ -1,20 +1,20 @@
 # Where things are
 source              : .
-destination         : www/
-collections_dir     : docs/_collection
-plugins_dir         : docs/_plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : docs/_layouts
-data_dir            : docs/_data
-includes_dir        : docs/_includes
+destination         : ./_site
+collections_dir     : ./docs
+plugins_dir         : ./docs/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : ./docs/_layouts
+data_dir            : ./docs/_data
+includes_dir        : ./docs/_includes
 sass:
-  sass_dir          : docs/_sass
+  sass_dir          : ./docs/_sass
 collections:
   posts:
-    output: true
+    output          : true
   commits:
-    output: true
+    output          : true
   drafts:
-    output: true
+    output          : true
 
 # Handling Reading
 safe                : false
@@ -26,7 +26,7 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : false
+show_drafts         : true
 limit_posts         : 15
 future              : true
 unpublished         : false
@@ -36,7 +36,7 @@ unpublished         : false
 #plugins             : []
 
 # Conversion
-markdown            : CommonMarkGhPages
+markdown            : kramdown
 highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
@@ -90,12 +90,12 @@ plugins:
   - github-pages
 
 feed:
-  path: feed/atom.xml
+  path: ./_site/feed.xml
 
-  collections:
-    commits:
-      path: feed/commits.xml
-    posts:
-      path: feed/posts.xml
-    drafts:
-      path: feed/drafts.xml
+#  collections:
+#    commits:
+#      path: feed/commits.xml
+#    posts:
+#      path: feed/posts.xml
+#    drafts:
+#      path: feed/drafts.xml

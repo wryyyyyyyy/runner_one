@@ -16,10 +16,9 @@ jobs:
 
       - name: Install bundler
         run: |
-          sudo apt-get update && sudo apt-get upgrade
           sudo gem install bundler
           bundle install
-          sudo gem update
+#          sudo gem update
 
       - name: Prepare post
         run: |
@@ -45,10 +44,11 @@ jobs:
 
       - name: Build site
         run: |
-          cd docs
+          bundle exec jekyll new _site
+          cd ./_site
           bundle exec jekyll b --trace
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "generated www"
+          git commit -m "./_site generated"
           git push
