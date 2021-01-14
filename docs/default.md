@@ -1,7 +1,7 @@
 ---
-title: Main
-layout: index
-description: Main page
+title: Default
+layout: default
+description: Default page
 ---
 
 <!-- This loops through the paginated posts -->
