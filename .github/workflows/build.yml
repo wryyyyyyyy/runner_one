@@ -45,7 +45,6 @@ jobs:
       - name: Build site
         run: |
           echo BUILD STAGE
-          cd _site
           bundle exec jekyll b --trace --incremental
           cp -f *.xml -t ../docs/
           cp -f *.txt -t ../docs/
@@ -53,7 +52,6 @@ jobs:
           cp -Rf docs -t ../
           cp -Rf _site/drafts -t ../docs/
           cp -Rf _site/commits -t ../docs/
-          cd ../
 
       - name: Deploy site
         run: |

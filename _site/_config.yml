@@ -63,3 +63,7 @@ collections:
     output          : true
   drafts:
     output          : true
+
+feed:
+  tags               : true
+  path               : atom.xml
