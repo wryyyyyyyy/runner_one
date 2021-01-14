@@ -9,13 +9,13 @@ includes_dir        : _includes
 sass:
   sass_dir          : _sass
 collections:
-  _posts:
+  - posts
     output: true
     permalink: /posts/:title/
-  _commits:
+  - commits
     output: true
     permalink: /commits/:title/
-  _drafts:
+  - drafts
     output: true
     permalink: /drafts/:title/
 
@@ -49,6 +49,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
+url                 : "https://wryyyyyyyy.github.io"
 baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
@@ -76,9 +77,9 @@ kramdown:
   input             : GFM
   hard_wrap         : false
   footnote_nr       : 1
-  show_warnings     : false
+  show_warnings     : true
 
-theme: jekyll-theme-minimal
+theme: minima
 
 plugins:
   - jekyll-feed
@@ -86,3 +87,18 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - github-pages
+
+feed:
+  tags: true
+  path: atom.xml
+  posts_limit: 15
+
+  collections:
+    - commits
+      path: "/commits.xml"
+    - drafts
+      path: "/drafts.xml"
+
+  categories:
+    - jekyll
+    - update

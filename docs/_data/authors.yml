@@ -7,5 +7,5 @@ potus:
   twitter: whitehouse
 
 commit:
-  picture: /img/commit.png
+  picture: /img/logo.png
   twitter: runner_one-commit
