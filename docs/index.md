@@ -1,4 +1,5 @@
 ---
+permalink: /index.html
 title: Main
 layout: index
 description: Main page

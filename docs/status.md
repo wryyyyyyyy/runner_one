@@ -1,4 +1,5 @@
 ---
+permalink: /status.html
 title: Status
 layout: page
 description: Status page
