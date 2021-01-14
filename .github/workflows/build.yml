@@ -47,13 +47,13 @@ jobs:
           echo BUILD STAGE
           cd _site
           bundle exec jekyll b --trace
-          cd ..
-          cp -f _site/*.xml -t docs/
-          cp -f _site/*.txt -t docs/
-          cp -f _site/.gitignore docs/
-          cp -Rf _site/docs -t /
-          cp -Rf _site/drafts -t docs/
-          cp -Rf _site/commits -t docs/
+          cp -f *.xml -t ../docs/
+          cp -f *.txt -t ../docs/
+          cp -f .gitignore ../docs/
+          cp -Rf docs -t ../
+          cp -Rf _site/drafts -t ../docs/
+          cp -Rf _site/commits -t ../docs/
+          cd ../
 
       - name: Deploy site
         run: |
