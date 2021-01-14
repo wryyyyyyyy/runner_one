@@ -16,13 +16,13 @@ jobs:
 
       - name: Install bundler
         run: |
-          sudo apt update
-          sudo gem update --system
-          sudo gem update
-          sudo gem install bundler
-          bundle config set --local with 'jekyll liquid jekyll-feed jekyll-sitemap jekyll-seo-tag jekyll-paginate jekyll-commonmark-ghpages github-pages'
           bundle install -j3
-          bundle init
+#          sudo apt update
+#          sudo gem update --system
+#          sudo gem update
+#          sudo gem install bundler
+#          bundle config set --local with 'jekyll liquid jekyll-feed jekyll-sitemap jekyll-seo-tag jekyll-paginate jekyll-commonmark-ghpages github-pages'
+#          bundle init
 
       - name: Prepare post
         run: |
