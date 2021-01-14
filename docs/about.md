@@ -9,7 +9,7 @@ description: About page
 
 {% include posts.tpl %}
 
-[Link to a post]({% link _posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md %})
+[Link to a post]({% link {{ site.baseurl }}/_posts/2021-01-13-commit-d0cd19b2122e15d985a76eb0978e1745d8e69d45.md %})
 
 <table>
   <thead>
