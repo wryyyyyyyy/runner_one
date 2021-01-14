@@ -42,7 +42,7 @@ jobs:
 
       - name: Build site
         run: |
-          bundle exec jekyll new docs/_site
+          bundle exec jekyll new docs/_site --force
           cd docs/_site
           bundle exec jekyll b --trace
           date > generated.txt
