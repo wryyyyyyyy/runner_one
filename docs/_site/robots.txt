@@ -1,1 +1,1 @@
-Sitemap: /runner_one/sitemap.xml
+Sitemap: http://localhost:4000/docs/sitemap.xml

@@ -10,7 +10,8 @@ sass:
   sass_dir:           docs/_sass
 collections:
   posts:
-    output          : true
+    commits:
+      output        : true
 
 # Handling Reading
 safe                : false
@@ -22,14 +23,14 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : null
+show_drafts         : true
 limit_posts         : 0
 future              : false
 unpublished         : false
 
 # Plugins
-whitelist           : []
-plugins             : []
+#whitelist           : []
+#plugins             : []
 
 # Conversion
 markdown            : kramdown
@@ -51,7 +52,7 @@ paginate_path       : /page:num
 timezone            : null
 
 quiet               : false
-verbose             : false
+verbose             : true
 defaults            : []
 
 liquid:
@@ -70,4 +71,13 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
-#theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+#  - jekyll-paginate
+  - github-pages
+
+JEKYLL_ENV=production

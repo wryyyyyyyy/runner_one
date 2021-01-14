@@ -5,14 +5,13 @@ layout: default
 description: About page
 ---
 
-### About CI build process
-
+#### for commit in site.commits
 {% for commit in site.commits %}
   <h2>{{ commit.date }} - {{ commit.title }}</h2>
   <p>{{ commit.content | markdownify }}</p>
 {% endfor %}
 
-
+#### for post in site.posts
 <ul>
   {% for post in site.posts %}
     <li>
@@ -21,6 +20,7 @@ description: About page
   {% endfor %}
 </ul>
 
+#### for tag in site.tags
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
@@ -30,6 +30,7 @@ description: About page
   </ul>
 {% endfor %}
 
+#### table
 <table>
   <thead>
     <tr>

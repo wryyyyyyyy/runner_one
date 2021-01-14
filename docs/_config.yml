@@ -23,9 +23,9 @@ markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter : false
 
 # Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
+show_drafts         : true
+limit_posts         : 15
+future              : true
 unpublished         : false
 
 # Plugins
@@ -37,22 +37,23 @@ markdown            : kramdown
 highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
-incremental         : true
+incremental         : false
 
 # Serving
 detach              : false
 port                : 4000
 host                : 127.0.0.1
 baseurl             : "/runner_one" # does not include hostname
-show_dir_listing    : true
+show_dir_listing    : false
 
 # Outputting
-permalink           : date
+#permalink           : date
+permalink           : pretty
 paginate_path       : /page:num
-timezone            : null
+timezone            : Europe/Berlin
 
 quiet               : false
-verbose             : true
+verbose             : false
 defaults            : []
 
 liquid:
@@ -79,3 +80,5 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-paginate
   - github-pages
+
+JEKYLL_ENV=production
