@@ -3,7 +3,6 @@ title: Main page
 layout: default
 description: Main index page
 ---
-
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}

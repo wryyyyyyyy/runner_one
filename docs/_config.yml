@@ -33,26 +33,14 @@ layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 sass:
-  sass_dir          : _sass
+  sass_dir          : sass
 collections:
   posts:
     output          : true
-    permalink       : /posts/:year/:month/:day/:title/
   commits:
     output          : true
-    permalink       : /commits/:year/:month/:day/:title/
   drafts:
     output          : true
-    permalink       : /drafts/:title/
-  notes:
-    output          : true
-    permalink       : /notes/:year/:month/:day/:title/
-  pages:
-    output          : true
-    permalink       : /pages/:year/:month/:day/:title/
-  logs:
-    output          : true
-    permalink       : /logs/:year/:month/:day/:title/
 
 markdown: kramdown
 
