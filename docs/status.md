@@ -4,6 +4,6 @@ layout: default
 description: Test|CI|Deploy GithubCI status page
 ---
 
-{% include table.tpl %}
+{% include badges.tpl %}
 
 {% include atom.tpl %}
