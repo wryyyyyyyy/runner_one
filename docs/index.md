@@ -4,8 +4,6 @@ layout: default
 description: Main index page
 ---
 
-### Posts
-
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -30,9 +28,7 @@ description: Main index page
     <span>Next &raquo;</span>
   {% endif %}
 </div>
-
 {% else %}
-
 <div class="post-list">
   <ul>
     {% for post in site.posts %}
@@ -42,5 +38,4 @@ description: Main index page
     {% endfor %}
   </ul>
 </div>
-
 {% endif %}

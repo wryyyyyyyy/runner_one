@@ -4,19 +4,12 @@ layout: default
 description: Notes page
 ---
 
-#1
-```
-  Some Note. This is Note #1
-
-```
-#2
-```
-  Some Note. This is Note #2
-
-```
-
-#3
-```
-  Some Note. This is Note #3
-
-```
+<div class="post-list">
+  <ul>
+    {% for note in site.drafts %}
+      <li>
+        <a href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
