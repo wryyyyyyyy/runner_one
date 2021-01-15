@@ -41,17 +41,15 @@ jobs:
           cp -f Gemfile.conf docs/Gemfile
           cp -f config.conf_docs docs/_config.yml
           cd docs
-          bundle exec jekyll new _site
-          bundle exec jekyll b --trace
+          bundle exec jekyll new _site --force
           cd ../
-
 
       - name: Build site
         run: |
           echo BUILD STAGE
-#          cd docs
-#          bundle exec jekyll b --trace
-#          cd ../
+          cd docs
+          bundle exec jekyll b --trace
+          cd ../
 
       - name: Deploy site
         run: |
