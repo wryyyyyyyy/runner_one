@@ -6,9 +6,9 @@
 
 @font-face { font-family: 'Noto Sans'; font-weight: 700; font-style: italic; src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot"); src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold Italic"), local("Noto-Sans-700italic"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2") format("woff2"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff") format("woff"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf") format("truetype"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans") format("svg"); }
 
-.highlight table td { padding: 5px; display:inline-block; text-align: center; }
+.highlight table td { padding: 0px; margin: 0; display:inline-block; text-align: center; }
 
-.highlight table pre { margin: 0; display:inline-block; text-align: center; }
+.highlight table pre { margin: 0; display:inline-block; text-align: center; padding: 0px; }
 
 .highlight .cm { color: #999988; font-style: italic; }
 
@@ -130,11 +130,11 @@
 
 .highlight .w { color: #bbbbbb; }
 
-.highlight { background-color: #f8f8f8; }
+.highlight { background-color: #f8f8f8; padding: 0px; margin: 0; }
 
 body { background-color: #aaa; padding: 50px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
 
-h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 20px; }
+h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 0px; }
 
 p, ul, ol, table, pre, dl { margin: 0 0 0px; }
 
@@ -149,31 +149,31 @@ h3, h4, h5, h6 { color: #494949; }
 a { color: #267CB9; text-decoration: none; display:inline-block; }
 
 /* a:hover, a:focus { color: #069; font-weight: bold; } */
-a:hover, a:focus { color: #069; font-weight: bold; display:inline-block; }
+a:hover, a:focus { color: #069; font-weight: bold; display:inline-block; margin: 0px; }
 
 a small { font-size: 11px; color: #777; margin-top: -0.3em; display:inline-block; }
 
-a:hover small { color: #777; display:inline-block; }
+a:hover small { color: #777; display:inline-block; margin: 0px;}
 
-.wrapper { width: 860px; margin: 0 auto; }
+.wrapper { width: 860px; margin: 0px; }
 
-blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 20px; font-style: italic; }
+blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 0px; font-style: italic; }
 
 code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; }
 
 pre { padding: 8px 15px; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
 
 /* table { width: 100%; border-collapse: collapse; } */
-table { width: 100%; border-collapse: collapse; text-align: center; }
+table { width: 100%; border-collapse: collapse; text-align: center; margin: 0px; }
 
 /* th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #e5e5e5; } */
-th, td { text-align: center; padding: 5px 20px 20px 5px; } /* border-bottom: 1px solid #e5e5e5; } */
+th, td { text-align: center; padding: 0px 0px 0px 0px; } /* border-bottom: 1px solid #e5e5e5; } */
 
 dt { color: #444; font-weight: 700; }
 
 /* th { color: #444; padding: 0px; } */
-th { color: #444; }
-td { color: #444; }
+th { color: #444; margin: 0px; }
+td { color: #444; margin: 0px; }
 
 img { max-width: 100%; }
 
@@ -191,9 +191,9 @@ header ul a { line-height: 1; font-size: 11px; color: #676767; display:inline-bl
 
 header ul a:hover, header ul a:focus { color: #675C5C; font-weight: bold; display:inline-block; }
 
-header ul a:active { background-color: #f0f0f0; }
+header ul a:active { background-color: #f0f0f0; margin: 0px; }
 
-strong { color: #222; font-weight: 700; }
+strong { color: #222; font-weight: 700; margin: 0px; }
 
 header ul li + li + li { border-right: none; width: 89px; }
 
