@@ -8,7 +8,7 @@ description: Main page
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ {{ baseurl }}/post.url }}">{{ post.title }}</a>
+      <a href="{{ baseurl }}/{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.content | markdownify }}</p>
     </li>
   {% endfor %}
