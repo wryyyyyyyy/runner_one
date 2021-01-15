@@ -51,10 +51,10 @@ baseurl             : "/runner_one" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
-permalink           : date
+permalink           : pretty
 paginate_path       : /runner_one/page:num/
-paginate            : 15
-timezone            : null
+paginate            : 5
+timezone            : UTC
 
 quiet               : false
 verbose             : true
@@ -101,4 +101,4 @@ plugins:
 
 feed:
   tags               : true
-  path               : atom.xml
+  path               : feed.xml

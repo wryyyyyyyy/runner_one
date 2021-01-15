@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: StarterOne
-email: StarterOne@starter.one
+title: RunnerOne
+email: RunnerOne@Runner.One
 description: >- # this means to ignore newlines until "baseurl:"
   Just a kind of some starter project for Github Actions testing purposes.
   Can be labelled as template for future projects including Github Pages
@@ -40,6 +40,10 @@ collections:
     output          : true
   drafts:
     output          : true
+
+show_drafts         : true
+limit_posts         : 10
+future              : true
 
 theme: minima
 

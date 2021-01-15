@@ -9,8 +9,7 @@ description: Notes page
 <ul>
   {% for draft in site.drafts %}
     <li>
-      <a href="{{ draft.url }}">{{ draft.title }}</a>
-      <p>{{ draft.content | markdownify }}</p>
+      <a href="{{ draft.url | prepend: site.baseurl }}">{{ draft.title }}</a>
     </li>
   {% endfor %}
 </ul>
