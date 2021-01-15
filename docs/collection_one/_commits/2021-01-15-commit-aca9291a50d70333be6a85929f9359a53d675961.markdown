@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-aca9291a50d70333be6a85929f9359a53d675961
+author: commit
+tags: commit aca9291a50d70333be6a85929f9359a53d675961
+---
+
+commit aca9291a50d70333be6a85929f9359a53d675961
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 23:23:01 2021 +0100
+
+    templates changed
