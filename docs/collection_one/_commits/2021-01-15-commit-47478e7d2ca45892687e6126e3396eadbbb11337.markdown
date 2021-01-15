@@ -1,0 +1,13 @@
+---
+layout: default
+title: 2021-01-15-commit-47478e7d2ca45892687e6126e3396eadbbb11337
+author: commit
+tags: commit 47478e7d2ca45892687e6126e3396eadbbb11337
+---
+
+commit 47478e7d2ca45892687e6126e3396eadbbb11337
+Merge: c12281f 39d1ef2
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 23:02:10 2021 +0100
+
+    Merge branch 'gh-pages' of github.com:wryyyyyyyy/runner_one into gh-pages
