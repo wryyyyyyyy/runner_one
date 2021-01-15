@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="/runner_one/assets/css/style.css">
+<title>About page</title>
+<link type="application/atom+xml" rel="alternate" href="https://wryyyyyyyy.github.io/runner_one/feed.xml" title="RunnerOne" />
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>About page | RunnerOne</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="About page" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="About project concept page" />
+<meta property="og:description" content="About project concept page" />
+<link rel="canonical" href="https://wryyyyyyyy.github.io/runner_one/about.html" />
+<meta property="og:url" content="https://wryyyyyyyy.github.io/runner_one/about.html" />
+<meta property="og:site_name" content="RunnerOne" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://wryyyyyyyy.github.io/runner_one/about.html","headline":"About page","description":"About project concept page","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<nav><pre><center><a href="/runner_one/">Main</a>                          <a href="/runner_one/about">About</a>                          <a href="/runner_one/notes">Notes</a>                          <a href="/runner_one/logs">Logs</a>                          <a href="/runner_one/status">Status</a></center></pre></nav>
+
+<blockquote>
+  <p>Just a kind of some starter project for Github Actions testing purposes.
+Can be labelled as template for future projects including Github Pages
+uses Jekyll as static site generator. Produced rendered default pages
+over CI workflow.</p>
+</blockquote>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="na">name</span><span class="pi">:</span> <span class="s">CI</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">Ubuntu-20.04</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">fetch-depth</span><span class="pi">:</span> <span class="m">0</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install bundler</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo INSTALL STAGE</span>
+          <span class="s">sudo gem install bundler -N</span>
+          <span class="s">sudo gem update -N</span>
+          <span class="s">bundle install -j2</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Prepare logs</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo PREPARE LOGS STAGE</span>
+          <span class="s">export logdata=`date '+%Y-%m-%d'`</span>
+          <span class="s">export logfile=`git log -1 --format='%H'`</span>
+          <span class="s">echo "---" &gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "layout: default" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "title: $logdata-commit-$logfile" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "author: commit" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "tags: commit $logfile" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "---" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">git log -1 &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Generate site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo GENERATE STAGE</span>
+          <span class="s">cp -f Gemfile.conf docs/Gemfile</span>
+          <span class="s">cp -f config.conf docs/_config.yml</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo BUILD STAGE</span>
+          <span class="s">cd docs</span>
+          <span class="s">bundle exec jekyll b --trace</span>
+          <span class="s">cd ../</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo DEPLOY STAGE</span>
+          <span class="s">git config user.name github-actions</span>
+          <span class="s">git config user.email github-actions@github.com</span>
+          <span class="s">git add .</span>
+          <span class="s">git commit -m "site generated and deployed"</span>
+          <span class="s">git push</span>
+
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th><center>&nbsp;</center></th>
+      <th><center>Valid Atom 1.0</center></th>
+      <th><center>&nbsp;</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><center>&nbsp;</center></td>
+      <td><center><a href="https://validator.w3.org/feed/check.cgi?url=https://wryyyyyyyy.github.io/runner_one/feed.xml"><img src="https://wryyyyyyyy.github.io/runner_one/assets/img/valid-atom.png" alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></center></td>
+      <td><center>&nbsp;</center></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><center><pre>copyright &copy; 2021 by <a href="/runner_one">runner_one</a> | source: <a href="https://github.com/wryyyyyyyy/runner_one">Github</a> | <a href="/runner_one/feed.xml">Atom/RSS Feed</a></pre></center></p>
+</body>
+</html>
+

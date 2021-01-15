@@ -1,0 +1,13 @@
+---
+layout: default
+title: 2021-01-15-commit-a1358465bb2aa2026b0a5b6e92ab5661f01ab70d
+author: commit
+tags: commit a1358465bb2aa2026b0a5b6e92ab5661f01ab70d
+---
+
+commit a1358465bb2aa2026b0a5b6e92ab5661f01ab70d
+Merge: 80d9cf6 1359707
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 06:02:26 2021 +0100
+
+    config and templates changed
