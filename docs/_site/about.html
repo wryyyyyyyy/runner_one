@@ -24,11 +24,74 @@
 <body>
 <nav><pre><center><a href="/runner_one/">Main</a>                          <a href="/runner_one/about">About</a>                          <a href="/runner_one/notes">Notes</a>                          <a href="/runner_one/logs">Logs</a>                          <a href="/runner_one/status">Status</a></center></pre></nav>
 
-<h4 id="about">About</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Just a kind of some starter project for Github Actions testing purposes.
-  Can be labelled as template for future projects including Github Pages
-  uses Jekyll as static site generator. Produced rendered default pages
-  over CI workflow.
+<h5 id="about">About</h5>
+
+<blockquote>
+  <p>Just a kind of some starter project for Github Actions testing purposes.
+ Can be labelled as template for future projects including Github Pages
+ uses Jekyll as static site generator. Produced rendered default pages
+ over CI workflow.</p>
+</blockquote>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="na">name</span><span class="pi">:</span> <span class="s">CI</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+  <span class="na">pull_request</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="pi">[</span> <span class="nv">gh-pages</span> <span class="pi">]</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">Ubuntu-20.04</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">fetch-depth</span><span class="pi">:</span> <span class="m">0</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install bundler</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo INSTALL STAGE</span>
+          <span class="s">sudo gem install bundler -N</span>
+          <span class="s">sudo gem update -N</span>
+          <span class="s">bundle install -j2</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Prepare logs</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo PREPARE LOGS STAGE</span>
+          <span class="s">export logdata=`date '+%Y-%m-%d'`</span>
+          <span class="s">export logfile=`git log -1 --format='%H'`</span>
+          <span class="s">echo "---" &gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "layout: default" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "title: $logdata-commit-$logfile" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "author: commit" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "tags: commit $logfile" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "---" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">echo "" &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+          <span class="s">git log -1 &gt;&gt; docs/_commits/$logdata-commit-$logfile.markdown</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Generate site</span> <span class="c1">#bundle exec jekyll new _site --force</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo GENERATE STAGE</span>
+          <span class="s">cp -f Gemfile.conf docs/Gemfile</span>
+          <span class="s">cp -f config.conf docs/_config.yml</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo BUILD STAGE</span>
+          <span class="s">cd docs</span>
+          <span class="s">bundle exec jekyll b --trace</span>
+          <span class="s">cd ../</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy site</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">echo DEPLOY STAGE</span>
+          <span class="s">git config user.name github-actions</span>
+          <span class="s">git config user.email github-actions@github.com</span>
+          <span class="s">git add .</span>
+          <span class="s">git commit -m "site generated and deployed"</span>
+          <span class="s">git push</span>
 
 </code></pre></div></div>
 
