@@ -1,3 +1,5 @@
+{% highlight shell | newline_to_br %}
+
 2021-01-15T08:49:11.9940647Z ##[section]Starting: Request a runner to run this job
 2021-01-15T08:49:12.3424570Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'Ubuntu-20.04'
 2021-01-15T08:49:12.3424669Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'Ubuntu-20.04'
@@ -926,3 +928,5 @@
 2021-01-15T08:51:22.8917958Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
 2021-01-15T08:51:22.8949193Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
 2021-01-15T08:51:22.9219886Z Cleaning up orphan processes
+
+{% endhighlight %}
