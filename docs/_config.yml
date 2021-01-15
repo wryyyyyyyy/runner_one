@@ -68,5 +68,3 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
-
-
