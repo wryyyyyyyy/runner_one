@@ -27,7 +27,7 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #####################################
 source              : .
 destination         : _site
-collections_dir     : ./
+collections_dir     : _collection
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
@@ -53,7 +53,6 @@ collections:
   logs:
     output          : true
     permalink       : /logs/:year/:month/:day/:title/
-
 
 # Build settings
 markdown: kramdown
