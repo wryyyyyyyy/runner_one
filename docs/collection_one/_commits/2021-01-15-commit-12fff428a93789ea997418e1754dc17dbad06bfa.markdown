@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-12fff428a93789ea997418e1754dc17dbad06bfa
+author: commit
+tags: commit 12fff428a93789ea997418e1754dc17dbad06bfa
+---
+
+commit 12fff428a93789ea997418e1754dc17dbad06bfa
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 11:29:21 2021 +0100
+
+    templates changed
