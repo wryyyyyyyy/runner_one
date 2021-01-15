@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-c359777701dab17788a84bfa0fd169e74cd605d8
+author: commit
+tags: commit c359777701dab17788a84bfa0fd169e74cd605d8
+---
+
+commit c359777701dab17788a84bfa0fd169e74cd605d8
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 16:51:33 2021 +0100
+
+    templates changed
