@@ -1,1 +1,0 @@
-<img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg"></img>
