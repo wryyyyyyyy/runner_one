@@ -26,7 +26,7 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #github_username:  RunnerOne
 
 source              : .
-destination         : _site
+destination         : site
 collections_dir     : collection
 plugins_dir         : plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : layouts
