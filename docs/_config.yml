@@ -27,7 +27,7 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #####################################
 source              : .
 destination         : _site
-collections_dir     : _collection
+collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data
@@ -54,7 +54,6 @@ collections:
     output          : true
     permalink       : /logs/:year/:month/:day/:title/
 
-# Build settings
 markdown: kramdown
 
 theme: jekyll-theme-minimal
@@ -67,9 +66,6 @@ plugins:
   - jekyll-commonmark-ghpages
   - github-pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
