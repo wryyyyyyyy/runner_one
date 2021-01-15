@@ -6,10 +6,12 @@ description: Notes page
 
 ### Notes
 
+<div class="post-list">
 <ul>
-  {% for draft in site.drafts %}
+  {% for post in site.drafts %}
     <li>
-      <a href="{{ draft.url | prepend: site.baseurl }}">{{ draft.title }}</a>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
+</div>

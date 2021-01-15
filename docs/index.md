@@ -30,7 +30,9 @@ description: Main page
     <span>Next &raquo;</span>
   {% endif %}
 </div>
+
 {% else %}
+
 <div class="post-list">
   <ul>
     {% for post in site.posts %}
@@ -40,4 +42,5 @@ description: Main page
     {% endfor %}
   </ul>
 </div>
+
 {% endif %}

@@ -45,7 +45,10 @@ jobs:
         run: |
           echo BUILD STAGE
           cd docs
+          bundle exec jekyll cleanup
+          echo STAGE CLEANED
           bundle exec jekyll b --trace
+          echo STAGE BUILDED
           cd ../
 
       - name: Deploy site

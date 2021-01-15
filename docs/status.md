@@ -14,11 +14,13 @@ description: Status page
       <th><center>Deployment</center></th>
     </tr>
   </thead>
-  <tbody><center>
+  <center>
+  <tbody>
     <tr>
       <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg" alt="test" /></center></td>
       <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg" alt="GithubCI" /></center></td>
       <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg" alt="Deployment" /></center></td>
     </tr>
-  </center></tbody>
+  </tbody>
+  </center>
 </table>
