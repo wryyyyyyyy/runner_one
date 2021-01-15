@@ -40,14 +40,16 @@ jobs:
           echo GENERATE STAGE
           cp -f Gemfile.conf docs/Gemfile
           cp -f config.conf docs/_config.yml
-          bundle exec jekyll b --trace
+          cd docs
+          bundle exec jekyll new _site
+          cd ..
 
       - name: Build site
         run: |
           echo BUILD STAGE
-#          cd docs
-#          bundle exec jekyll b --trace
-#          cd ../
+          cd docs
+          bundle exec jekyll b --trace
+          cd ../
 
       - name: Deploy site
         run: |
