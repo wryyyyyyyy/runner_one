@@ -29,11 +29,11 @@ source              : .
 destination         : _site
 collections_dir     : collection_one
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : docs/_layouts
-data_dir            : docs/_data
-includes_dir        : docs/_includes
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
 sass:
-  sass_dir          : docs/_sass
+  sass_dir          : _sass
 collections:
   posts:
     output          : true
@@ -73,3 +73,7 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
+
+feed:
+  tags               : true
+  path               : atom.xml

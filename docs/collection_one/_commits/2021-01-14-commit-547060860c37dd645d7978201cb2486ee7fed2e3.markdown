@@ -1,0 +1,11 @@
+---
+layout: post
+title: 2021-01-14-commit-547060860c37dd645d7978201cb2486ee7fed2e3
+tags: commit 547060860c37dd645d7978201cb2486ee7fed2e3
+---
+
+commit 547060860c37dd645d7978201cb2486ee7fed2e3
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 03:34:19 2021 +0100
+
+    templates & workflow updated

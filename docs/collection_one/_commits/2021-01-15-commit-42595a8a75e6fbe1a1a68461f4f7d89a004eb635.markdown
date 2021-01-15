@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-42595a8a75e6fbe1a1a68461f4f7d89a004eb635
+author: commit
+tags: commit 42595a8a75e6fbe1a1a68461f4f7d89a004eb635
+---
+
+commit 42595a8a75e6fbe1a1a68461f4f7d89a004eb635
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 03:25:25 2021 +0100
+
+    config changed

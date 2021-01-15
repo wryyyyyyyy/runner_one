@@ -1,0 +1,13 @@
+---
+layout: post
+title: 2021-01-14-commit-ee43fde3a08c5742b48d543ba1a0ab3366006693
+author: commit
+tags: commit ee43fde3a08c5742b48d543ba1a0ab3366006693
+---
+
+commit ee43fde3a08c5742b48d543ba1a0ab3366006693
+Merge: c1c0cc8 0c5366d
+Author: wryyyyyyyy <no@spam.here>
+Date:   Thu Jan 14 09:57:14 2021 +0100
+
+    templates updated

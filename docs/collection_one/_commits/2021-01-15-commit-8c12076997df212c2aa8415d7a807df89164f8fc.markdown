@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-8c12076997df212c2aa8415d7a807df89164f8fc
+author: commit
+tags: commit 8c12076997df212c2aa8415d7a807df89164f8fc
+---
+
+commit 8c12076997df212c2aa8415d7a807df89164f8fc
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 09:10:11 2021 +0100
+
+    templates changed
