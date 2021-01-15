@@ -27,7 +27,7 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #####################################
 source              : .
 destination         : _site
-collections_dir     : .
+collections_dir     : collection_one
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
 data_dir            : _data

@@ -46,9 +46,7 @@ jobs:
           echo BUILD STAGE
           cd docs
           bundle exec jekyll b --trace
-          cd _site
-          bundle exec jekyll b --trace
-          cd ../../
+          cd ../
 
       - name: Deploy site
         run: |
