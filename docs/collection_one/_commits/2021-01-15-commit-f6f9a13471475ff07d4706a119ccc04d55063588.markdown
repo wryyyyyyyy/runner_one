@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-f6f9a13471475ff07d4706a119ccc04d55063588
+author: commit
+tags: commit f6f9a13471475ff07d4706a119ccc04d55063588
+---
+
+commit f6f9a13471475ff07d4706a119ccc04d55063588
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 15:17:37 2021 +0100
+
+    templates changed
