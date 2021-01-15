@@ -6,12 +6,10 @@ description: About page
 
 ### About
 
->
 > Just a kind of some starter project for Github Actions testing purposes.
 > Can be labelled as template for future projects including Github Pages
 > uses Jekyll as static site generator. Produced rendered default pages
 > over CI workflow.
->
 
 ```yaml
 
@@ -52,7 +50,7 @@ jobs:
           echo "" >> docs/_commits/$logdata-commit-$logfile.markdown
           git log -1 >> docs/_commits/$logdata-commit-$logfile.markdown
 
-      - name: Generate site #bundle exec jekyll new _site --force
+      - name: Generate site
         run: |
           echo GENERATE STAGE
           cp -f Gemfile.conf docs/Gemfile
