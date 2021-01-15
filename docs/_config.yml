@@ -25,7 +25,8 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #twitter_username: RunnerOne
 #github_username:  RunnerOne
 
-collections_dir     : collection
+destination         : .
+collections_dir     : _collection
 plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data

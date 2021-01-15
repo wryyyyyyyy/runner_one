@@ -1,7 +1,7 @@
 ---
 title: Status page
 layout: default
-description: Test/Build/Deployment CI status page
+description: Test|Build|Deployment GithubCI status page
 ---
 
 <center>
