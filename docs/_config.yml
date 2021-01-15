@@ -25,9 +25,28 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #twitter_username: RunnerOne
 #github_username:  RunnerOne
 
+source              : .
+destination         : _site
+collections_dir     : collection
+plugins_dir         : plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : layouts
+data_dir            : data
+includes_dir        : includes
+sass:
+  sass_dir          : sass
+collections:
+  posts:
+    output          : true
+  commits:
+    output          : true
+  drafts:
+    output          : true
+
 # Build settings
 markdown: kramdown
-theme: minima
+
+theme: jekyll-theme-hacker
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
