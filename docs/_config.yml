@@ -25,6 +25,28 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #twitter_username: StarterOne
 #github_username:  StarterOne
 
+collections_dir     : .
+plugins_dir         : _plugins
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir          : _sass
+
+collections:
+  posts:
+    output          : true
+  commits:
+    output          : true
+  drafts:
+    output          : true
+
+theme: minima
+
+feed:
+  tags               : true
+  path               : feed.xml
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -47,24 +69,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
 
-collections_dir     : .
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-sass:
-  sass_dir          : _sass
 
-collections:
-  posts:
-    output          : true
-  commits:
-    output          : true
-  drafts:
-    output          : true
-
-theme: minima
-
-feed:
-  tags               : true
-  path               : feed.xml
