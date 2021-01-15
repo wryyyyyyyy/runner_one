@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-ac404d732e6175bfe94ae4e7a40290ee54395d4c
+author: commit
+tags: commit ac404d732e6175bfe94ae4e7a40290ee54395d4c
+---
+
+commit ac404d732e6175bfe94ae4e7a40290ee54395d4c
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 17:16:11 2021 +0100
+
+    templates changed
