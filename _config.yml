@@ -53,7 +53,7 @@ show_dir_listing    : false
 # Outputting
 permalink           : pretty
 paginate_path       : /runner_one/page:num/
-paginate            : 5
+paginate            : 15
 timezone            : UTC
 
 quiet               : false
