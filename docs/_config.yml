@@ -25,22 +25,6 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 #twitter_username: RunnerOne
 #github_username:  RunnerOne
 
-destination         : .
-collections_dir     : _collection
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-sass:
-  sass_dir          : _sass
-collections:
-  posts:
-    output          : true
-  commits:
-    output          : true
-  drafts:
-    output          : true
-
 # Build settings
 markdown: kramdown
 theme: minima
