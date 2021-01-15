@@ -46,6 +46,3 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
-
-paginate_path: "/runner_one/page:num/"
-paginate: 15
