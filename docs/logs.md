@@ -1,10 +1,11 @@
 ---
 title: Logs
-layout: post
+layout: default
 description: Logs page
 ---
 
-#### Commits
+### Commits
+
 <ul>
   {% for commit in site.commits %}
     <li>

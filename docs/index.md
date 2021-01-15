@@ -4,9 +4,10 @@ layout: default
 description: Main page
 ---
 
-#### Posts
+### Posts
+
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <h1><a href="{{ post.url | relative }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ post.date }}</span>
   </p>

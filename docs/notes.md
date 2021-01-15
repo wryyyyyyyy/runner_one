@@ -1,14 +1,15 @@
 ---
 title: Notes
-layout: page
+layout: default
 description: Notes page
 ---
 
-#### Notes
+### Notes
+
 <ul>
   {% for draft in site.drafts %}
     <li>
-      <a href="{{ baseurl }}/{{ draft.url }}">{{ draft.title }}</a>
+      <a href="{{ {{ draft.url | relative }}">{{ draft.title }}</a>
       <p>{{ draft.content | markdownify }}</p>
     </li>
   {% endfor %}

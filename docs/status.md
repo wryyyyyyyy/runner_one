@@ -1,8 +1,10 @@
 ---
 title: Status
-layout: page
+layout: default
 description: Status page
 ---
+
+### Status
 
 <table>
   <thead>
