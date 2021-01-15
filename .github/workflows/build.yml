@@ -41,7 +41,7 @@ jobs:
           cp -f Gemfile.conf docs/Gemfile
           cp -f config.conf docs/_config.yml
           cd docs
-          bundle exec jekyll new _site
+          bundle exec jekyll new _site --force
           cd ..
 
       - name: Build site
