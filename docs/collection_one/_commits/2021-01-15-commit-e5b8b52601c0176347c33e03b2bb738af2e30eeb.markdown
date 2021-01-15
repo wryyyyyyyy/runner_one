@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-e5b8b52601c0176347c33e03b2bb738af2e30eeb
+author: commit
+tags: commit e5b8b52601c0176347c33e03b2bb738af2e30eeb
+---
+
+commit e5b8b52601c0176347c33e03b2bb738af2e30eeb
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 17:27:38 2021 +0100
+
+    badges changed
