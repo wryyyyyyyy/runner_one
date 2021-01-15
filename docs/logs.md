@@ -4,7 +4,7 @@ layout: default
 description: Logs page
 ---
 
-{% raw %}{% include rawlog.tpl %}{% endraw %}
+{{ rawlog.txt | newline_to_br }}
 
 {% for log in site.commits %}
 <a href="{{ log.url | prepend: site.baseurl }}">{{ log.title }}</a>
