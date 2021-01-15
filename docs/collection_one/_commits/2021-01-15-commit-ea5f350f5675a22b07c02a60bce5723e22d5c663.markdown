@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-ea5f350f5675a22b07c02a60bce5723e22d5c663
+author: commit
+tags: commit ea5f350f5675a22b07c02a60bce5723e22d5c663
+---
+
+commit ea5f350f5675a22b07c02a60bce5723e22d5c663
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 14:29:59 2021 +0100
+
+    table style changed
