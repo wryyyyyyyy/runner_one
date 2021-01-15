@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-be0ca7d2ab9d43a19c98a8a04d3770b8a7835a34
+author: commit
+tags: commit be0ca7d2ab9d43a19c98a8a04d3770b8a7835a34
+---
+
+commit be0ca7d2ab9d43a19c98a8a04d3770b8a7835a34
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 15:34:52 2021 +0100
+
+    status templates changed
