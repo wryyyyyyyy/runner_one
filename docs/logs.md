@@ -10,7 +10,7 @@ description: Logs page
 <ul>
   {% for post in site.commits %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.content | markdownify }}</p>
     </li>
   {% endfor %}
