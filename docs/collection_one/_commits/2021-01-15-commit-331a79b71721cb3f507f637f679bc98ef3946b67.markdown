@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-331a79b71721cb3f507f637f679bc98ef3946b67
+author: commit
+tags: commit 331a79b71721cb3f507f637f679bc98ef3946b67
+---
+
+commit 331a79b71721cb3f507f637f679bc98ef3946b67
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 15:45:42 2021 +0100
+
+    templates changed
