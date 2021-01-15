@@ -4,6 +4,6 @@ layout: default
 description: Logs page
 ---
 
-{% include rawlog.txt %}
+{% include rawlog.tpl %}
 
 {% include atom.tpl %}
