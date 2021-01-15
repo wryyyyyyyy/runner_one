@@ -5,8 +5,8 @@ description: Logs page
 ---
 
 #### Raw Log Output
-{% include rawlog.tpl %}
----
+{{ rawlog.txt }}
+
 
 #### Commits history
 {% for log in site.commits %}
