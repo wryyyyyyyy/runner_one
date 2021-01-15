@@ -1,1 +1,1 @@
-|....<img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg">....|....<img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg">....|....<img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg">....|
+<center>| <img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg"> | <img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg"> | <img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg"> |</center>
