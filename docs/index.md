@@ -4,9 +4,11 @@ layout: default
 description: Main index page
 ---
 
+#### Site posts
 {% for post in site.posts %}
-<p><pre><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></pre></p>
+>
+> <pre><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></pre>
+>
 {% endfor %}
-
-
+---
 {% include atom.tpl %}
