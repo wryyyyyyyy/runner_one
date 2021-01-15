@@ -38,3 +38,5 @@ description: Main index page
   </ul>
 </div>
 {% endif %}
+
+{% include atom.tpl %}
