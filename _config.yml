@@ -11,10 +11,22 @@ sass:
 collections:
   posts:
     output          : true
+    permalink       : /:year/:month/:day/:title/
   commits:
     output          : true
+    permalink       : /commits/:year/:month/:day/:title/
   drafts:
     output          : true
+    permalink       : /drafts/:title/
+  notes:
+    output          : true
+    permalink       : /notes/:year/:month/:day/:title/
+  pages:
+    output          : true
+    permalink       : /pages/:year/:month/:day/:title/
+  logs:
+    output          : true
+    permalink       : /logs/:year/:month/:day/:title/
 
 # Handling Reading
 safe                : false
