@@ -1,4 +1,4 @@
-{% highlight shell | newline_to_br %}
+{% highlight shell %}
 
 2021-01-15T08:49:11.9940647Z ##[section]Starting: Request a runner to run this job
 2021-01-15T08:49:12.3424570Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'Ubuntu-20.04'
