@@ -3,23 +3,17 @@ title: Status page
 layout: default
 description: Test|Build|Deployment GithubCI status page
 ---
-<center>
-<table>
-  <thead>
-    <tr>
-      <th><center>Test</center></th>
-      <th><center>CI</center></th>
-      <th><center>Deployment</center></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg" alt="test" /></center></td>
-      <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg" alt="GithubCI" /></center></td>
-      <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg" alt="Deployment" /></center></td>
-    </tr>
-  </tbody>
-</table>
-</center>
+
+<div class="row">
+  <div class="col" style="height: auto; background-color: red">
+    <img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg" />
+  </div>
+   <div class="col" style="height: auto; background-color: yellow">
+    <img src="https://github.com/wryyyyyyyy/runner_one/workflows/CI/badge.svg" />
+  </div>
+   <div class="col" style="height: auto background-color: green">
+    <img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg" />
+  </div>
+</div>
 
 {% include atom.tpl %}
