@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-2e0c9c583e712043e20ac65503b09ab0a18d0723
+author: commit
+tags: commit 2e0c9c583e712043e20ac65503b09ab0a18d0723
+---
+
+commit 2e0c9c583e712043e20ac65503b09ab0a18d0723
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 18:04:09 2021 +0100
+
+    badges changed
