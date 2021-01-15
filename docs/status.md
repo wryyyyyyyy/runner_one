@@ -21,3 +21,5 @@ description: Test|Build|Deployment GithubCI status page
   </tbody>
 </table>
 </center>
+
+{% include atom.tpl %}

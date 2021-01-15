@@ -38,20 +38,23 @@ jobs:
           echo PREPARE LOGS STAGE
           export logdata=`date '+%Y-%m-%d'`
           export logfile=`git log -1 --format='%H'`
-          echo "---" > docs/_commits/$logdata-commit-$logfile.markdown
-          echo "layout: default" >> docs/_commits/$logdata-commit-$logfile.markdown
-          echo "title: $logdata-commit-$logfile" >> docs/_commits/$logdata-commit-$logfile.markdown
-          echo "author: commit" >> docs/_commits/$logdata-commit-$logfile.markdown
-          echo "tags: commit $logfile" >> docs/_commits/$logdata-commit-$logfile.markdown
-          echo "---" >> docs/_commits/$logdata-commit-$logfile.markdown
-          echo "" >> docs/_commits/$logdata-commit-$logfile.markdown
-          git log -1 >> docs/_commits/$logdata-commit-$logfile.markdown
+          echo "---" > docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "layout: default" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "title: $logdata-commit-$logfile" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "author: commit" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "tags: commit $logfile" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "---" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          echo "" >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
+          git log -1 >> docs/collection_one/_commits/$logdata-commit-$logfile.markdown
 
       - name: Generate site
         run: |
           echo GENERATE STAGE
           cp -f Gemfile.conf docs/Gemfile
-          cp -f config.conf docs/_config.yml
+          cp -f config.conf_docs docs/_config.yml
+          cd docs
+          bundle exec jekyll new _site --force
+          cd ../
 
       - name: Build site
         run: |
@@ -70,3 +73,5 @@ jobs:
           git push
 
 ```
+
+{% include atom.tpl %}
