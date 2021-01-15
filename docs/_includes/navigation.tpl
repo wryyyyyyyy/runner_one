@@ -1,4 +1,4 @@
-{% include css.tpl %}
+
 <div class="navmenu">
 <div class="navmenuitem" id="main"><a href="{{ site.baseurl }}/">Main</a></div>
 <div class="navmenuitem" id="about"><a href="{{ site.baseurl }}/about">About</a></div>
