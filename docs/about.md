@@ -4,7 +4,7 @@ layout: default
 description: About project concept page
 ---
 
-   __Just a kind of some starter project for Github Actions testing purposes. Can be labelled as template for future       projects including Github Page uses Jekyll as static site generator. Produced rendered default pages over CI workflow.__
+   _Just a kind of some starter project for Github Actions testing purposes. Can be labelled as template for future       projects including Github Page uses Jekyll as static site generator. Produced rendered default pages over CI workflow._
 
 
 ```yaml
