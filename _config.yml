@@ -80,7 +80,7 @@ commonmark:
   options           : ["SMART", "FOOTNOTES"]
   extensions        : ["strikethrough", "autolink", "table", "tagfilter"]
 
-theme: minima
+theme: jekyll-theme-hacker
 
 title: RunnerOne
 

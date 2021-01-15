@@ -6,6 +6,7 @@ description: Status page
 
 ### Status
 
+<center>
 <table>
   <thead>
     <tr>
@@ -14,7 +15,6 @@ description: Status page
       <th><center>Deployment</center></th>
     </tr>
   </thead>
-  <center>
   <tbody>
     <tr>
       <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/test/badge.svg" alt="test" /></center></td>
@@ -22,5 +22,5 @@ description: Status page
       <td><center><img src="https://github.com/wryyyyyyyy/runner_one/workflows/deploy/badge.svg" alt="Deployment" /></center></td>
     </tr>
   </tbody>
-  </center>
 </table>
+</center>

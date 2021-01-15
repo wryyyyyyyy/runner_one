@@ -27,7 +27,7 @@ url: "https://wryyyyyyyy.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-sitemap
