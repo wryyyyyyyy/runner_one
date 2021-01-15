@@ -1,8 +1,0 @@
----
-title: chill one
-layout: default
-description: just a post for some chilling
-author: chiller_one
----
-
-  Just a some single test post which shall be renderen a bit after.
