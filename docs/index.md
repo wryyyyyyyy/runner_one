@@ -4,12 +4,13 @@ layout: default
 description: Main page
 ---
 
-##### Posts
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ baseurl }}/{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
+#### Posts
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}

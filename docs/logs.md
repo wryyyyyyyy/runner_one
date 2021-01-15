@@ -8,7 +8,7 @@ description: Logs page
 <ul>
   {% for commit in site.commits %}
     <li>
-      <a href="{{ baseurl }}/{{ commit.url }}">{{ commit.title }}</a>
+      <a href="{{ commit.url | relative }}">{{ commit.title }}</a>
       <p>{{ commit.content | markdownify }}</p>
     </li>
   {% endfor %}

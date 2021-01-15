@@ -52,7 +52,8 @@ show_dir_listing    : false
 
 # Outputting
 permalink           : date
-paginate_path       : /page:num
+paginate_path       : /runner_one/page:num/
+paginate            : 15
 timezone            : null
 
 quiet               : false
@@ -81,7 +82,8 @@ commonmark:
 
 theme: minima
 
-title: Runner One
+title: RunnerOne
+
 description: >-
   Just a kind of some starter project for Github Actions testing purposes.
   Can be labelled as template for future projects including Github Pages
