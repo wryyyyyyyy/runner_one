@@ -37,22 +37,22 @@ sass:
 collections:
   posts:
     output          : true
-    permalink       : pretty
+    permalink       : /posts/:year/:month/:day/:title/
   commits:
     output          : true
-    permalink       : pretty
+    permalink       : /commits/:year/:month/:day/:title/
   drafts:
     output          : true
-    permalink       : pretty
+    permalink       : /drafts/:title/
   notes:
     output          : true
-    permalink       : pretty
+    permalink       : /notes/:year/:month/:day/:title/
   pages:
     output          : true
-    permalink       : pretty
+    permalink       : /pages/:year/:month/:day/:title/
   logs:
     output          : true
-    permalink       : pretty
+    permalink       : /logs/:year/:month/:day/:title/
 
 
 # Build settings
