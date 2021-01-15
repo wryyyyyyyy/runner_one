@@ -8,9 +8,4 @@ description: Logs page
 <a href="{{ log.url | prepend: site.baseurl }}">{{ log.title }}</a>
 {% endfor %}
 
-div {
-  column-count: 3;
-    {% include rawlog.tpl %}
-}
-
 {% include atom.tpl %}
