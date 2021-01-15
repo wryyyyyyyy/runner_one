@@ -1,1 +1,1 @@
-<center><img src="{{ site.baseurl }}/assets/img/valid-atom.png"></center>
+<center><img src="https://validator.w3.org/feed/images/valid-atom.png"></center>
