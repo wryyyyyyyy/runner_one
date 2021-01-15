@@ -3,7 +3,6 @@ title: Logs
 layout: default
 description: Logs page
 ---
-
 <div class="post-list">
 <ul>
   {% for commit in site.commits %}

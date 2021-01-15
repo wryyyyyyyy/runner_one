@@ -3,7 +3,6 @@ title: Status page
 layout: default
 description: Test|Build|Deployment GithubCI status page
 ---
-
 <center>
 <table>
   <thead>
