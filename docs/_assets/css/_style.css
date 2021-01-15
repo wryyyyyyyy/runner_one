@@ -51,7 +51,7 @@
  url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans") format("svg")
 }
 .highlight table td {
- padding:5px
+ padding:0px
 }
 .highlight table pre {
  margin:0
@@ -332,7 +332,7 @@ a:hover small {
 blockquote {
  border-left:1px solid #e5e5e5;
  margin:0;
- padding:0 0 0 20px;
+ padding:0 0 0 0px;
  font-style:italic
 }
 code,
@@ -358,7 +358,7 @@ table {
 th,
 td {
  text-align:left;
- padding:5px 160px;
+ padding:5px 10px;
  border-bottom:1px solid #e5e5e5;
 }
 dt {

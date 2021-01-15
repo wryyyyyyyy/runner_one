@@ -1,7 +1,7 @@
 ---
-title: Logs
+title: Logs page
 layout: default
-description: Logs page
+description: Logs page for better visual control
 ---
 
 {% include rawlog.tpl %}

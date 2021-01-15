@@ -1,7 +1,7 @@
 ---
-title: Notes
+title: Notes page
 layout: default
-description: Notes page
+description: Notes page for some short notices.
 ---
 
 {% for note in site.drafts %}
