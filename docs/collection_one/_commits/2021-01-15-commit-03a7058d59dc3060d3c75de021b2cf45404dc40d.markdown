@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-03a7058d59dc3060d3c75de021b2cf45404dc40d
+author: commit
+tags: commit 03a7058d59dc3060d3c75de021b2cf45404dc40d
+---
+
+commit 03a7058d59dc3060d3c75de021b2cf45404dc40d
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 22:18:21 2021 +0100
+
+    templates changed
