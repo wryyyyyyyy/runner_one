@@ -8,10 +8,10 @@ description: Logs page
 
 <div class="post-list">
 <ul>
-  {% for post in site.commits %}
+  {% for commit in site.commits %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.content | markdownify }}</p>
+      <a href="{{ commit.url | prepend: site.baseurl }}">{{ commit.title }}</a>
+      <p>{{ commit.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>

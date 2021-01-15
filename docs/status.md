@@ -1,10 +1,8 @@
 ---
-title: Status
+title: Status page
 layout: default
-description: Status page
+description: Test/Build/Deployment CI status page
 ---
-
-### Status
 
 <center>
 <table>

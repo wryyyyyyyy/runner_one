@@ -1,7 +1,7 @@
 ---
-title: Main
+title: Main page
 layout: default
-description: Main page
+description: Main index page
 ---
 
 ### Posts

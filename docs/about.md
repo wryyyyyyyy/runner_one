@@ -1,7 +1,7 @@
 ---
-title: About
+title: About page
 layout: default
-description: About page
+description: About project concept page
 ---
 
 ### About

@@ -2,6 +2,7 @@
 title: second post
 layout: default
 description: Just a second draft post
+author: commit
 ---
 
 ### Note 2
