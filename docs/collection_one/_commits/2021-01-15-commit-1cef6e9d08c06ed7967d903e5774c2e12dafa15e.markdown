@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-1cef6e9d08c06ed7967d903e5774c2e12dafa15e
+author: commit
+tags: commit 1cef6e9d08c06ed7967d903e5774c2e12dafa15e
+---
+
+commit 1cef6e9d08c06ed7967d903e5774c2e12dafa15e
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 17:00:26 2021 +0100
+
+    templates changed
