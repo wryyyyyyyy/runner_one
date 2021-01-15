@@ -38,9 +38,9 @@ jobs:
       - name: Generate site
         run: |
           echo GENERATE STAGE
+          bundle exec jekyll new tmp --force
           cp -f Gemfile.conf tmp/Gemfile
           cp -f config.conf tmp/_config.yml
-          bundle exec jekyll new tmp --force
           cd tmp
           bundle exec jekyll b --trace
           cd ../
@@ -48,6 +48,8 @@ jobs:
       - name: Build site
         run: |
           echo BUILD STAGE
+          cp -f Gemfile.conf docs/Gemfile
+          cp -f config.conf_docs docs/_config.yml
           cd docs
           bundle exec jekyll b --trace
           cd ../
