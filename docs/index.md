@@ -5,7 +5,7 @@ description: Main index page
 ---
 
 {% for post in site.posts %}
-<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+<p><pre><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></pre></p>
 {% endfor %}
 
 

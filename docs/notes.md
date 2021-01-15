@@ -3,12 +3,8 @@ title: Notes
 layout: default
 description: Notes page
 ---
-<div class="post-list">
-  <ul>
-    {% for draft in site.drafts %}
-      <li>
-        <a href="{{ draft.url | prepend: site.baseurl }}">{{ draft.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+
+{% for note in site.drafts %}
+<p><pre><a href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a></pre></p>
+{% endfor %}
+

@@ -3,12 +3,8 @@ title: Logs
 layout: default
 description: Logs page
 ---
-<div class="post-list">
-<ul>
-  {% for commit in site.commits %}
-    <li>
-      <a href="{{ commit.url | prepend: site.baseurl }}">{{ commit.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-</div>
+
+{% for log in site.commits %}
+<p><pre><a href="{{ log.url | prepend: site.baseurl }}">{{ log.title }}</a></pre></p>
+<p><pre>{{ log.content }}</pre></p>
+{% endfor %}
