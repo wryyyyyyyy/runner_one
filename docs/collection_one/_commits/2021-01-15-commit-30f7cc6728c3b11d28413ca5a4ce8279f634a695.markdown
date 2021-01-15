@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-30f7cc6728c3b11d28413ca5a4ce8279f634a695
+author: commit
+tags: commit 30f7cc6728c3b11d28413ca5a4ce8279f634a695
+---
+
+commit 30f7cc6728c3b11d28413ca5a4ce8279f634a695
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 10:19:29 2021 +0100
+
+    .md changed
