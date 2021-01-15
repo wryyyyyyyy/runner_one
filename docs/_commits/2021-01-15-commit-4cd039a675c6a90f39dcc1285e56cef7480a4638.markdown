@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-15-commit-4cd039a675c6a90f39dcc1285e56cef7480a4638
+author: commit
+tags: commit 4cd039a675c6a90f39dcc1285e56cef7480a4638
+---
+
+commit 4cd039a675c6a90f39dcc1285e56cef7480a4638
+Author: wryyyyyyyy <no@spam.here>
+Date:   Fri Jan 15 08:10:12 2021 +0100
+
+    templates changed
