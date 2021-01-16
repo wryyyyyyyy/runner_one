@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-16-commit-d06b4d6eead019bc813bbfdaf1a03e8273791719
+author: commit
+tags: commit d06b4d6eead019bc813bbfdaf1a03e8273791719
+---
+
+commit d06b4d6eead019bc813bbfdaf1a03e8273791719
+Author: wryyyyyyyy <no@spam.here>
+Date:   Sat Jan 16 20:18:27 2021 +0100
+
+    restructured
