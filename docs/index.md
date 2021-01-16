@@ -8,6 +8,5 @@ description: Main index page
 <pre><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></pre>
 {% endfor %}
 
-<center>
+
 {% include atom.tpl %}
-</center>
