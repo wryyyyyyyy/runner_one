@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-16-commit-c09bc52b1fc9800d6374cf1ebeb22634463b4740
+author: commit
+tags: commit c09bc52b1fc9800d6374cf1ebeb22634463b4740
+---
+
+commit c09bc52b1fc9800d6374cf1ebeb22634463b4740
+Author: wryyyyyyyy <no@spam.here>
+Date:   Sat Jan 16 05:14:22 2021 +0100
+
+    templates changed
