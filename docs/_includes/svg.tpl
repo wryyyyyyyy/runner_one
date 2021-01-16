@@ -18,10 +18,10 @@
   <g fill="#fff" text-anchor="middle">
     <g font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
       <text x="45" y="15" fill="#010101" fill-opacity=".3">
-        соснули все
+        Adolf Hitler
       </text>
       <text x="45" y="14">
-        соснули все
+        Adolf Hitler
       </text>
       <text x="117" y="15" fill="#010101" fill-opacity=".3">
         14.88%
