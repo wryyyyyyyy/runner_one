@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-16-commit-f75b77b591b84371d860aba872bcee4d49207168
+author: commit
+tags: commit f75b77b591b84371d860aba872bcee4d49207168
+---
+
+commit f75b77b591b84371d860aba872bcee4d49207168
+Author: wryyyyyyyy <no@spam.here>
+Date:   Sat Jan 16 15:11:50 2021 +0100
+
+    frontend changed
