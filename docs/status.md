@@ -7,5 +7,3 @@ description: Test|CI|Deploy GithubCI status page
 {% include badges.tpl %}
 
 {% include atom.tpl %}
-
-{% include svg.tpl %}
