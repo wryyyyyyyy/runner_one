@@ -1,0 +1,12 @@
+---
+layout: default
+title: 2021-01-16-commit-7b260c683005295bb97769f313732054c95d4af9
+author: commit
+tags: commit 7b260c683005295bb97769f313732054c95d4af9
+---
+
+commit 7b260c683005295bb97769f313732054c95d4af9
+Author: wryyyyyyyy <no@spam.here>
+Date:   Sat Jan 16 11:11:32 2021 +0100
+
+    changed config
