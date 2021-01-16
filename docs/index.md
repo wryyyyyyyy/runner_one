@@ -8,6 +8,8 @@ description: Main index page
 <pre><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></pre>
 {% endfor %}
 
-[![RSS](https://gitlab.com/wryyyyyyyy/gl-starter-pack/-/commits/master?feed_token=o27B2rsP15tT37ZwHBTq&format=atom)]
+<center>
+![RSS](https://gitlab.com/wryyyyyyyy/gl-starter-pack/-/commits/master?feed_token=o27B2rsP15tT37ZwHBTq&format=atom)
+</center>
 
 {% include atom.tpl %}
