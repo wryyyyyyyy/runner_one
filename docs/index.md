@@ -9,7 +9,5 @@ description: Main index page
 {% endfor %}
 
 <center>
-![RSS](https://gitlab.com/wryyyyyyyy/gl-starter-pack/-/commits/master?feed_token=o27B2rsP15tT37ZwHBTq&format=atom)
-</center>
-
 {% include atom.tpl %}
+</center>
